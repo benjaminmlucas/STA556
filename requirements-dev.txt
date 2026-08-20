@@ -1,0 +1,7 @@
+# STA556 - Statistics and Data Science Computing Workflows in Python
+# Development dependencies: everything in requirements.txt plus textbook authoring tools
+
+-r requirements.txt
+
+# Textbook build
+jupyter-book

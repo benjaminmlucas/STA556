@@ -1,4 +1,4 @@
-# STA 556 — Week 1: Building a Professional Python Data Science Environment
+# Topic 1: Building a Professional Python Data Science Environment
 
 **Course:** STA 556 Statistics and Data Science Computing Workflows  
 **Program:** M.S. Statistics and Data Science, Northern Arizona University  
