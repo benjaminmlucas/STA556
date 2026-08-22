@@ -1,7 +1,7 @@
-# STA 556 — Week 1 Hands-On Tutorial
+# 1.1 Activity
+
 ## Build Your First Reproducible Python Data Science Project
 
-**Estimated time:** 2–3 hours  
 **Tools:** Python, VS Code, Jupyter, Git, GitHub, terminal
 
 ## Learning objectives

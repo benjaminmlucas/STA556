@@ -1,8 +1,4 @@
-# Topic 1: Building a Professional Python Data Science Environment
-
-**Course:** STA 556 Statistics and Data Science Computing Workflows  
-**Program:** M.S. Statistics and Data Science, Northern Arizona University  
-**Week 1:** Foundations — Course Introduction & Environment Setup
+# 1.1 Building a Professional Python Data Science Environment
 
 ## Why this week matters
 
@@ -515,7 +511,7 @@ This is my first recommendation because it comes directly from GitHub and provid
 
 urlWatch on YouTubehttps://www.youtube.com/watch?v=r8jQ9hVA2qs
 
-**Use this before the hands-on activity.**
+**Use this before the activity.**
 
 ## 2. Software Carpentry — "The Shell - Episode 1 - Introduction"
 
