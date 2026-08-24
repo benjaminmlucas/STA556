@@ -1,10 +1,3 @@
----
-authors:
-  - name: Benjamin Lucas Ph.D
-    email: ben.lucas@nau.edu
-    affiliation: Northern Arizona University
----
-
 # Statistics & Data Science Computing Workflows
 
 Welcome to the course materials for STA556: Statistics & Data Science Computing Workflows. This course aims to equip graduate students with the advanced computational tools and programming skills essential for modern statistics and data science. Students develop proficiency in writing robust, efficient code using industry-standard languages, including (but not limited to) Python, R, and Julia. The curriculum focuses on the practical implementation of statistical methods, covering complex data structures, data wrangling from varied sources (such as SQL and APIs), and professional-quality data visualization. Students will master algorithmic efficiency by implementing statistical algorithms such as Monte Carlo simulations, bootstrapping, and numerical optimization, from scratch. Emphasis is placed on constructing reproducible research workflows and automated reports using literate programming tools like Quarto, R Markdown, or Jupyter. Additionally, the course covers code debugging and profiling to optimize time and memory usage, alongside critical discussions on data ethics and algorithmic bias.
