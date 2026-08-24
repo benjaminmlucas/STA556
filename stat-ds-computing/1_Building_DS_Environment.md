@@ -133,7 +133,7 @@ shell differences
 
 It does not eliminate every reproducibility problem, but it gives the class a common computational baseline.
 
-Read `0_Codespaces_Introduction.md` for the student workflow, including opening/reopening a Codespace, notebooks, Git, forwarded ports, secrets, rebuilding, and stopping the Codespace.
+Re-read [0. Github Codespaces](0_Codespaces_Introduction.md) for the student workflow, including opening/reopening a Codespace, notebooks, Git, forwarded ports, secrets, rebuilding, and stopping the Codespace.
 
 ---
 
