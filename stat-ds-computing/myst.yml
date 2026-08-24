@@ -5,10 +5,10 @@ project:
   title: STA556 Statistics and Data Science Computing Workflows
   description: "Course materials for NAU's STA556: Statistics and Data Science Computing Workflows."
   keywords: ["statistics", "data science", "computing"]
-  authors:
-    - name: Benjamin Lucas Ph.D
-      email: ben.lucas@nau.edu
-      affiliation: Northern Arizona University
+  # authors:
+  #   - name: Benjamin Lucas Ph.D
+  #     email: ben.lucas@nau.edu
+  #     affiliation: Northern Arizona University
   github: https://github.com/benjaminmlucas/STA556
   # logo_text: "STA556"
 
