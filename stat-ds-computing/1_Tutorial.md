@@ -1,145 +1,147 @@
 # 1.1 Activity
 
-## Build Your First Reproducible Python Data Science Project
+## Build Your First Reproducible Python Data Science Project in GitHub Codespaces
 
-**Tools:** Python, VS Code, Jupyter, Git, GitHub, terminal
+**Tools:** GitHub Codespaces, Python, VS Code, Jupyter, Git, GitHub, integrated terminal
 
 ## Learning objectives
 
 By the end of this tutorial, you should be able to:
 
+- open and navigate a GitHub Codespace;
+- identify the repository root and `/workspaces` location;
 - navigate a project using the command line;
-- create a sensible data science project structure;
 - create and run a Python script;
 - create and run a Jupyter notebook;
-- initialize a Git repository;
+- explain the difference between Git and GitHub;
+- inspect repository status and history;
 - make commits with meaningful messages;
-- connect a local repository to GitHub;
 - push your work to GitHub;
-- explain why each component belongs in the workflow.
+- explain why the Codespace, repository, code, and documentation are all parts of a reproducible workflow.
 
 ---
 
-# Part 0 — Check your environment
+# Part 0 — Open the course Codespace
 
-Open a terminal.
+Before beginning, read:
+
+```text
+0_Codespaces_Introduction.md
+```
+
+Open the GitHub repository supplied for your STA 556 work and choose **Create codespace** (or reopen your existing Codespace).
+
+When VS Code opens in the browser, open an integrated terminal.
 
 Run:
-
-```bash
-python --version
-```
-
-If that does not work, try:
-
-```bash
-python3 --version
-```
-
-Then check Git:
-
-```bash
-git --version
-```
-
-Finally, check that VS Code is available:
-
-```bash
-code --version
-```
-
-If `code` is not recognized, you can still use VS Code through the graphical interface.
-
-### Checkpoint
-
-You should know:
-
-- your Python version;
-- your Git version;
-- where VS Code is installed.
-
----
-
-# Part 1 — Create a project directory
-
-Choose a location where you keep coursework.
-
-Create a directory for STA 556:
-
-```bash
-mkdir STA556
-cd STA556
-```
-
-Now create a project:
-
-```bash
-mkdir week01-workflow
-cd week01-workflow
-```
-
-Check your location:
 
 ```bash
 pwd
 ```
 
-List the contents:
+You should see a path beginning with:
+
+```text
+/workspaces/
+```
+
+Now run:
+
+```bash
+git status
+```
+
+Git should recognize the repository.
+
+### Important
+
+The repository has already been cloned into the Codespace. **Do not run `git init` and do not create another Git repository inside it.**
+
+---
+
+# Part 1 — Check the course environment
+
+Run:
+
+```bash
+python --version
+git --version
+```
+
+Then:
+
+```bash
+python -c "import numpy, pandas, matplotlib; print('Core packages available')"
+```
+
+### Checkpoint
+
+You should know:
+
+- your current working directory;
+- your Python version;
+- your Git version;
+- that the repository is already under version control;
+- that the core Python packages are available.
+
+If a required command or package is missing, do not immediately install it yourself. First check the course instructions or report the environment problem.
+
+---
+
+# Part 2 — Explore the Codespaces interface
+
+Identify the following parts of VS Code:
+
+```text
+Explorer       → files and directories
+Editor         → .py, .md, .ipynb, .qmd files
+Terminal       → shell commands
+Source Control → Git changes
+Ports          → forwarded web servers such as Quarto preview
+```
+
+### Question
+
+Why is it useful that these tools all operate on the same repository and computational environment?
+
+---
+
+# Part 3 — Explore the repository structure
+
+From the repository root, run:
 
 ```bash
 ls
 ```
 
-The directory should currently be empty.
-
----
-
-# Part 2 — Build a project structure
-
-Create the directories:
-
-```bash
-mkdir data
-mkdir notebooks
-mkdir src
-mkdir figures
-mkdir tests
-```
-
-Your project should now look approximately like:
+You may already have directories such as:
 
 ```text
-week01-workflow/
-├── data/
-├── notebooks/
-├── src/
-├── figures/
-└── tests/
+data/
+notebooks/
+src/
+figures/
+tests/
+reports/
 ```
 
-Create a README:
+Create any of these that are missing:
 
 ```bash
-touch README.md
+mkdir -p data notebooks src figures tests reports
 ```
 
-If you are on Windows and `touch` is unavailable, create the file from VS Code instead.
+### Important
 
----
+All course paths are written relative to the **repository root**.
 
-# Part 3 — Open the project in VS Code
+For example:
 
-From the project directory:
-
-```bash
-code .
+```text
+data/example.csv
 ```
 
-If that command does not work, open VS Code normally and select:
-
-**File → Open Folder → week01-workflow**
-
-The important idea is that VS Code should open the **project directory**, not merely an individual Python file.
+is preferred to a computer-specific absolute path.
 
 ---
 
@@ -161,19 +163,10 @@ name = "Your Name"
 print(f"Welcome to the course, {name}.")
 ```
 
-Run it from the terminal.
-
-From the project root:
+From the repository root, run:
 
 ```bash
 python src/hello_sta556.py
-```
-
-You should see something similar to:
-
-```text
-Hello from STA 556!
-Welcome to the course, Your Name.
 ```
 
 ### Challenge
@@ -184,7 +177,7 @@ Modify the program so that it also prints:
 - the semester;
 - your Python version.
 
-For the Python version, investigate:
+Hint:
 
 ```python
 import sys
@@ -202,7 +195,9 @@ Inside `notebooks/`, create:
 week01_exploration.ipynb
 ```
 
-In the notebook, create a Markdown cell containing:
+If VS Code asks you to choose a kernel, select the Python environment supplied by the Codespace.
+
+Create a Markdown cell:
 
 ```markdown
 # STA 556 Week 1 Exploration
@@ -210,7 +205,7 @@ In the notebook, create a Markdown cell containing:
 This notebook is part of my Week 1 computational workflow.
 ```
 
-Then create a code cell:
+Create a code cell:
 
 ```python
 import sys
@@ -218,9 +213,7 @@ import sys
 print(sys.version)
 ```
 
-Run the cell.
-
-Now create another code cell:
+Then:
 
 ```python
 x = 10
@@ -229,7 +222,7 @@ y = 25
 x + y
 ```
 
-Then create another:
+Then:
 
 ```python
 import math
@@ -257,10 +250,19 @@ Write 2–3 sentences in a Markdown cell.
 
 # Part 6 — Add a small data-science example
 
-In the notebook, create a small dataset:
+In the notebook:
 
 ```python
-scores = [72, 81, 91, 68, 88, 95, 77, 84]
+scores = [
+    72,
+    81,
+    91,
+    68,
+    88,
+    95,
+    77,
+    84
+]
 ```
 
 Calculate:
@@ -269,108 +271,120 @@ Calculate:
 sum(scores) / len(scores)
 ```
 
-Then import NumPy:
+Then:
 
 ```python
 import numpy as np
 
-scores = np.array(scores)
+scores = np.array(
+    scores
+)
 
 scores.mean()
-```
-
-Calculate the standard deviation:
-
-```python
 scores.std()
 ```
 
-Create a simple plot:
+Create a plot:
 
 ```python
 import matplotlib.pyplot as plt
 
-plt.hist(scores)
-plt.xlabel("Score")
-plt.ylabel("Frequency")
-plt.title("Example Score Distribution")
+plt.hist(
+    scores
+)
+plt.xlabel(
+    "Score"
+)
+plt.ylabel(
+    "Frequency"
+)
+plt.title(
+    "Example Score Distribution"
+)
 plt.show()
 ```
 
-### Discussion question
+Save it using a relative path:
 
-Why might it be useful to keep exploratory analysis like this in a notebook rather than putting everything into a Python script?
+```python
+plt.hist(
+    scores
+)
+plt.savefig(
+    "figures/scores.png",
+    dpi=300,
+    bbox_inches="tight"
+)
+plt.show()
+```
 
 ---
 
-# Part 7 — Initialize Git
+# Part 7 — Understand Git state
 
-Return to the terminal and make sure you are in the project root.
-
-Check:
-
-```bash
-pwd
-```
-
-Then:
-
-```bash
-git init
-```
-
-Git should report that an empty repository has been initialized.
-
-Check its status:
+Run:
 
 ```bash
 git status
 ```
 
-Notice that Git can now see the files in your project.
+Git should show the files you created or modified.
+
+The repository already has a Git history. Inspect it:
+
+```bash
+git log --oneline -5
+```
+
+### Question
+
+What is the difference between:
+
+```text
+a file existing in the Codespace
+```
+
+and:
+
+```text
+a file being committed to Git
+```
 
 ---
 
-# Part 8 — Create a `.gitignore`
+# Part 8 — Check `.gitignore`
 
-Some files should generally **not** be committed to Git.
-
-Create:
+Look for:
 
 ```text
 .gitignore
 ```
 
-For this introductory project, add:
+A typical course `.gitignore` should exclude items such as:
 
 ```text
 __pycache__/
 .ipynb_checkpoints/
 .env
 .DS_Store
+.pytest_cache/
 ```
-
-Later we will discuss more sophisticated Python-specific `.gitignore` files.
 
 ### Important idea
 
-A `.gitignore` file tells Git:
-
-> Do not track these files.
-
-It does **not** delete the files.
+`.gitignore` tells Git not to track specified files. It does not delete them.
 
 ---
 
-# Part 9 — Make your first commit
+# Part 9 — Make your first course commit
 
-Check the repository:
+Run:
 
 ```bash
 git status
 ```
 
-Add the project files:
+Stage your Week 1 work:
 
 ```bash
 git add .
@@ -382,243 +396,170 @@ Check again:
 git status
 ```
 
-Notice that files have moved into the **staging area**.
-
-Now commit:
-
-```bash
-git commit -m "Create initial STA 556 project structure"
-```
-
-Check the history:
-
-```bash
-git log --oneline
-```
-
-You should see your commit.
-
----
-
-# Part 10 — Make a meaningful change
-
-Go back to:
-
-```text
-src/hello_sta556.py
-```
-
-Add another line:
-
-```python
-print("I am beginning to build reproducible computational workflows.")
-```
-
-Save the file.
-
-Now run:
-
-```bash
-git status
-```
-
-Git should report that the file has been modified.
-
-Look at the difference:
-
-```bash
-git diff
-```
-
-This is an important command.
-
-It lets you ask:
-
-> What exactly changed since my last commit?
-
-Now stage and commit the change:
-
-```bash
-git add src/hello_sta556.py
-git commit -m "Add workflow message to Python script"
-```
-
-View the history:
-
-```bash
-git log --oneline
-```
-
-You should now have at least two commits.
-
----
-
-# Part 11 — Connect the project to GitHub
-
-Create a new **empty repository** on GitHub called something like:
-
-```text
-sta556-week01-workflow
-```
-
-Do not initialize it with another README if you are following this tutorial exactly.
-
-GitHub will provide a repository URL.
-
-Connect your local project:
-
-```bash
-git remote add origin YOUR_GITHUB_REPOSITORY_URL
-```
-
-Verify:
-
-```bash
-git remote -v
-```
-
-You should see your GitHub repository listed.
-
----
-
-# Part 12 — Push your project
-
-Rename your local default branch to `main` if necessary:
-
-```bash
-git branch -M main
-```
-
-Push:
-
-```bash
-git push -u origin main
-```
-
-Refresh GitHub in your browser.
-
-You should now see your project.
-
----
-
-# Part 13 — Explore your GitHub repository
-
-Look at the repository as if you were another researcher encountering it for the first time.
-
-Can you determine:
-
-- what the project is?
-- who created it?
-- what files it contains?
-- how the files are organized?
-- what the project does?
-- what has changed?
-
-If the answer is "no," your next task is to improve the README.
-
----
-
-# Part 14 — Write a useful README
-
-Open `README.md`.
-
-Add:
-
-```markdown
-# STA 556 Week 1 Workflow
-
-This repository contains my Week 1 work for STA 556:
-Statistics and Data Science Computing Workflows.
-
-## Project structure
-
-- `data/` — data files
-- `notebooks/` — Jupyter notebooks
-- `src/` — Python source code
-- `figures/` — generated figures
-- `tests/` — tests
-
-## Environment
-
-- Python 3.x
-- NumPy
-- Matplotlib
-- Jupyter
-
-## Contents
-
-The project demonstrates:
-
-- command-line navigation
-- Python scripts
-- Jupyter notebooks
-- Git version control
-- GitHub
-```
-
-Save it.
-
-Then:
-
-```bash
-git status
-git diff
-```
-
 Commit:
 
 ```bash
-git add README.md
-git commit -m "Document project structure and environment"
+git commit -m "Complete Week 1 workflow activity"
 ```
 
-Push:
+Inspect the history:
+
+```bash
+git log --oneline -5
+```
+
+---
+
+# Part 10 — Push to GitHub
+
+Push your commit:
 
 ```bash
 git push
 ```
 
----
+Refresh the GitHub repository in your browser.
 
-# Part 15 — A mini reproducibility test
+Verify that your new files and commit appear there.
 
-This is the most important exercise.
+### Why this is simpler in Codespaces
 
-Imagine that a classmate has just cloned your repository.
+You do not need to manually create a Git remote for the repository you opened as a Codespace. The repository was already cloned from GitHub and normally has its remote configured.
 
-Ask yourself:
-
-> Could they understand what this project is and how to begin using it?
-
-If possible, have a partner clone your repository:
+Check:
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git remote -v
+```
+
+---
+
+# Part 11 — Make a meaningful second change
+
+Open:
+
+```text
+src/hello_sta556.py
+```
+
+Add:
+
+```python
+print(
+    "I am beginning to build reproducible computational workflows."
+)
+```
+
+Save it.
+
+Run:
+
+```bash
+git status
+git diff
 ```
 
 Then:
 
 ```bash
-cd sta556-week01-workflow
+git add src/hello_sta556.py
+git commit -m "Add workflow message to Week 1 script"
+git push
 ```
 
-Try to run:
+### Question
+
+What information did `git diff` provide before the commit?
+
+---
+
+# Part 12 — Write useful repository documentation
+
+Open the repository `README.md` (or create one if your assignment repository does not already contain one).
+
+Add a short section describing your Week 1 work, for example:
+
+```markdown
+## Week 1 workflow
+
+This project uses the STA 556 GitHub Codespaces environment.
+
+Week 1 demonstrates:
+
+- repository-relative paths
+- Python scripts
+- Jupyter notebooks
+- Git version control
+- GitHub synchronization
+```
+
+Commit and push the change.
+
+---
+
+# Part 13 — Reproducibility check
+
+Imagine another student opens the same repository in a fresh Codespace.
+
+They should be able to:
 
 ```bash
 python src/hello_sta556.py
 ```
 
-Then open the notebook.
+and open:
 
-### If your partner cannot do this...
+```text
+notebooks/week01_exploration.ipynb
+```
 
-Do not immediately fix their computer.
+without knowing anything about your personal laptop.
 
-First ask:
+### Reflection
 
-> What information is missing from my project?
+Why is this a stronger reproducibility test than saying:
 
-This is the beginning of thinking like a data scientist who builds **reproducible workflows**.
+> "It runs on my computer"?
+
+---
+
+# Part 14 — Understand persistence
+
+Your repository files live under:
+
+```text
+/workspaces/
+```
+
+Changes there persist when a Codespace is stopped and restarted.
+
+But a file that has never been committed/pushed is not part of the GitHub repository history.
+
+Explain the difference among:
+
+```text
+saved in Codespace
+committed to Git
+pushed to GitHub
+```
+
+---
+
+# Part 15 — Stop and reopen your Codespace
+
+At the end of your work session:
+
+1. make sure important work is committed and pushed;
+2. stop the Codespace using GitHub's Codespaces controls rather than simply relying on closing the browser tab.
+
+Later, reopen the same Codespace and run:
+
+```bash
+pwd
+git status
+```
+
+Confirm your work is still present.
 
 ---
 
@@ -626,7 +567,7 @@ This is the beginning of thinking like a data scientist who builds **reproducibl
 
 Complete at least two.
 
-## Challenge A — Add a project metadata file
+## Challenge A — Project metadata
 
 Create:
 
@@ -634,7 +575,7 @@ Create:
 src/project_info.py
 ```
 
-Define variables for:
+with:
 
 ```python
 course = "STA 556"
@@ -642,20 +583,9 @@ semester = "Fall 2026"
 language = "Python"
 ```
 
-Write a function:
+Write a function that prints a useful description.
 
-```python
-def describe_project(course, semester, language):
-    ...
-```
-
-that prints a useful description.
-
-Commit the result.
-
----
-
-## Challenge B — Add another notebook
+## Challenge B — Command-line notes
 
 Create:
 
@@ -663,9 +593,7 @@ Create:
 notebooks/command_line_notes.ipynb
 ```
 
-Document five terminal commands and explain what each does.
-
----
+Document five shell commands and explain what each does.
 
 ## Challenge C — Explore Git history
 
@@ -675,120 +603,96 @@ Run:
 git log --oneline
 ```
 
-Then:
+Then investigate one commit with:
 
 ```bash
-git diff HEAD~1
+git show <commit-id>
 ```
-
-What changed in the most recent commit?
-
----
 
 ## Challenge D — Deliberately break something
 
-Modify your Python script so that it contains an error.
+Introduce an error in your Python script, run it, read the traceback, fix the error, then commit the correction.
 
-Run it.
+## Challenge E — Portability check
 
-Record the error message.
-
-Fix the problem.
-
-Then commit the correction.
-
-The goal is to recognize that error messages are **information**, not failure.
-
----
-
-## Challenge E — Create a reproducible figure
-
-In the notebook, generate a plot from the `scores` data.
-
-Save the figure to:
+Search your code for any path beginning with something like:
 
 ```text
-figures/scores.png
+C:\\Users\\...
+/Users/...
 ```
 
-Hint:
-
-```python
-plt.savefig("figures/scores.png", dpi=300, bbox_inches="tight")
-```
-
-Then commit the figure.
+Replace it with a repository-relative path.
 
 ---
 
 # Part 17 — Final reflection
 
-Answer these questions in your README or notebook.
+Answer in your README or notebook.
 
-### 1. Git vs. GitHub
+### 1. Codespaces
 
-In your own words, explain the difference between Git and GitHub.
+What is a GitHub Codespace, and why does STA 556 use one?
 
-### 2. Working directory vs. repository
+### 2. Git vs. GitHub
 
-What is the difference between a file that exists in your project folder and a file that has been committed to Git?
+Explain the difference between Git and GitHub.
 
-### 3. Why commit?
+### 3. Repository root
 
-Why is it useful to create many small, meaningful commits rather than one enormous commit at the end of a project?
+Why do course instructions assume commands are run from the repository root?
 
-### 4. Notebook vs. script
+### 4. Commit vs. push
+
+What is the difference between committing and pushing?
+
+### 5. Notebook vs. script
 
 When would you choose a Jupyter notebook? When would you choose a Python script?
 
-### 5. Reproducibility
+### 6. Reproducibility
 
-What information would another researcher need to reproduce your analysis?
+Why are relative paths and a repository-defined environment useful?
 
 ---
 
 # Completion checklist
 
-- [ ] Python runs from the terminal
-- [ ] Git runs from the terminal
-- [ ] STA 556 project directory created
-- [ ] Project subdirectories created
-- [ ] Python script created and executed
-- [ ] Jupyter notebook created and executed
-- [ ] `.gitignore` created
-- [ ] Git repository initialized
-- [ ] At least three meaningful commits created
-- [ ] GitHub repository created
-- [ ] Local repository connected to GitHub
-- [ ] Project pushed to GitHub
-- [ ] README written
-- [ ] Reproducibility test attempted
-- [ ] Reflection questions answered
+- [ ] Opened the course repository in GitHub Codespaces
+- [ ] Located the repository under `/workspaces`
+- [ ] Used the integrated terminal
+- [ ] Verified Python and Git
+- [ ] Explored the VS Code interface
+- [ ] Created/run a Python script
+- [ ] Created/run a Jupyter notebook
+- [ ] Used repository-relative paths
+- [ ] Inspected `git status`
+- [ ] Inspected Git history
+- [ ] Reviewed `.gitignore`
+- [ ] Made a meaningful commit
+- [ ] Pushed to GitHub
+- [ ] Used `git diff`
+- [ ] Updated repository documentation
+- [ ] Completed a reproducibility check
+- [ ] Explained saved vs. committed vs. pushed
+- [ ] Stopped/reopened the Codespace
 
 ---
 
 # What you should now understand
 
-The central lesson is not a particular Git command.
-
-It is this workflow:
-
 ```text
-Organize
-   ↓
-Write
-   ↓
-Run
-   ↓
-Inspect
-   ↓
-Document
-   ↓
-Commit
-   ↓
-Share
-   ↓
-Reproduce
+GitHub repository
+      ↓
+GitHub Codespace
+      ↓
+VS Code + Linux shell + Python
+      ↓
+notebooks / src / data / tests
+      ↓
+Git commits
+      ↓
+git push
+      ↓
+reproducible project history
 ```
-
-This workflow will become the foundation for the rest of STA 556.

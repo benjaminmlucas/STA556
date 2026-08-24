@@ -861,6 +861,10 @@ def double(x):
 
 then:
 
+### Codespaces import convention
+
+In STA 556, open the **repository root** as the Codespace workspace and run notebooks/scripts from that project context. This makes imports such as `from src...` predictable. Do not change into `notebooks/` and launch a separate Jupyter server from there.
+
 ```python
 from src.summaries import double
 

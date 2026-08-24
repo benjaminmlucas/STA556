@@ -397,6 +397,8 @@ During development:
 quarto preview report.qmd
 ```
 
+In GitHub Codespaces, Quarto runs the preview server **inside the Codespace**, not on your laptop. Codespaces detects the preview server and exposes it through a forwarded port. Use the **Open in Browser** notification or the VS Code **Ports** panel rather than manually typing a `localhost` address.
+
 provides a live preview.
 
 For the final output:
@@ -646,6 +648,8 @@ another user can install dependencies:
 python -m pip install -r requirements.txt
 ```
 
+This command documents how an environment can be recreated, but **students normally do not need to run it in STA 556 Codespaces** because the course dependencies are installed automatically when the Codespace is created. Treat `requirements.txt` as part of the reproducibility record rather than as a weekly installation step.
+
 This does not solve every reproducibility issue, but it records an important part of the computational environment.
 
 ---
@@ -890,6 +894,17 @@ Reproducibility makes the workflow inspectable.
 ---
 
 # 35. A strong project structure
+
+For STA 556 Codespaces, use a Quarto project configuration at the repository root when reports live in a subdirectory:
+
+```yaml
+project:
+  type: default
+  execute-dir: project
+```
+
+This makes Quarto execute code relative to the project root, matching the course convention for `data/`, `src/`, and other repository-relative paths.
+
 
 A Week 8 project might look like:
 

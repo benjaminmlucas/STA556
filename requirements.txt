@@ -1,21 +1,14 @@
-# STA556 - Statistics and Data Science Computing Workflows
-# Core runtime dependencies (unpinned; see requirements-dev.txt for authoring tools)
-
-# Numerics and data handling
 numpy
 pandas
 scipy
-
-# Statistics and modeling
-statsmodels
-scikit-learn
-sympy
-
-# Visualization
 matplotlib
 seaborn
-plotly
-
-# Notebook environment
-jupyterlab
+plotnine
+requests
+pyarrow
+tables
+pytest
+line_profiler
+numba
+jupyter
 ipykernel

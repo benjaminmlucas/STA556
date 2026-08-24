@@ -1,0 +1,24 @@
+{
+  "name": "STA 556",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+      "installTinyTex": false
+    }
+  },
+  "postCreateCommand": "python -m pip install --upgrade pip && python -m pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "quarto.quarto"
+      ],
+      "settings": {
+        "python.terminal.activateEnvironment": true,
+        "jupyter.askForKernelRestart": false,
+        "jupyter.notebookFileRoot": "${workspaceFolder}"
+      }
+    }
+  }
+}

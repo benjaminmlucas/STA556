@@ -1,6 +1,10 @@
 # Local Python environment
 textbook-env/
 
+# Course materials that should stay local
+assessment/
+instructor_notes/
+
 # macOS
 .DS_Store
 

@@ -4,6 +4,37 @@
 
 **Tools:** Python, Jupyter, Quarto, pandas, matplotlib, Git
 
+## Course computing environment: GitHub Codespaces
+
+For STA 556, the **officially supported computing environment is the course GitHub Codespace**. This gives everyone the same Linux/Python environment whether you are using a Mac, a Windows PC, or a university computer.
+
+Before beginning this activity:
+
+1. Open the repository for your course/assignment on GitHub.
+2. Open or create its Codespace.
+3. In VS Code, make sure the **repository root** is the folder open in the Explorer.
+4. Open an integrated terminal and run:
+
+```bash
+pwd
+git status
+```
+
+Your working directory should be the repository under `/workspaces/...`, and `git status` should recognize the repository.
+
+Unless an activity explicitly says otherwise:
+
+- run terminal commands from the **repository root**;
+- use repository-relative paths such as `data/...`, `src/...`, and `notebooks/...`;
+- use `python` for Python commands;
+- do **not** run `git init` inside the course repository;
+- do **not** install packages manually just because an import fails—first check the course environment and `requirements.txt`;
+- commit and push meaningful work regularly.
+
+If this is your first time using Codespaces, read `0_Codespaces_Introduction.md` before continuing.
+
+---
+
 ## Learning objectives
 
 By the end of this tutorial, you should be able to:
@@ -52,9 +83,25 @@ Also create:
 notebooks/week08_reproducibility.ipynb
 ```
 
+Create a small Quarto project configuration at the **repository root**:
+
+```text
+_quarto.yml
+```
+
+with:
+
+```yaml
+project:
+  type: default
+  execute-dir: project
+```
+
+`execute-dir: project` tells Quarto to execute report code from the project root. This keeps paths such as `data/processed/week08_data.csv` and imports such as `from src...` consistent with the rest of the course.
+
 ---
 
-# Part 1 — Check the computational environment
+# Part 1 — Verify the provided computational environment
 
 From the terminal:
 
@@ -67,6 +114,8 @@ Check:
 ```bash
 quarto --version
 ```
+
+If `quarto --version` fails in the official course Codespace, treat that as a course-environment issue rather than installing Quarto manually.
 
 Then:
 
@@ -533,6 +582,8 @@ Run:
 quarto preview reports/week08_report.qmd
 ```
 
+In GitHub Codespaces, Quarto runs the preview server **inside the Codespace**, not on your laptop. Codespaces detects the preview server and exposes it through a forwarded port. Use the **Open in Browser** notification or the VS Code **Ports** panel rather than manually typing a `localhost` address.
+
 Edit the report and observe the preview update.
 
 ### Reflection
@@ -757,6 +808,8 @@ Conceptually, another user should be able to run:
 ```bash
 python -m pip install -r requirements.txt
 ```
+
+This command documents how an environment can be recreated, but **students normally do not need to run it in STA 556 Codespaces** because the course dependencies are installed automatically when the Codespace is created. Treat `requirements.txt` as part of the reproducibility record rather than as a weekly installation step.
 
 and then:
 

@@ -183,13 +183,19 @@ This can reduce memory use and prevent incorrect type inference.
 
 # 6. Paths and reproducibility
 
-Avoid:
+## Codespaces path convention
+
+In the course Codespace, the repository is under `/workspaces/<repository-name>/`, but analysis code should normally **not hard-code that absolute location**. Work from the repository root and use relative paths.
+
+Avoid computer-specific paths such as:
 
 ```python
 pd.read_csv(
     "/Users/alex/Desktop/STA556/data.csv"
 )
 ```
+
+or Windows-specific equivalents such as `C:\\Users\\...`.
 
 Prefer:
 

@@ -14,6 +14,9 @@ project:
 
   toc:
     - file: index.md
+    - title: "0. Github Codespaces"
+      children:
+        - file: 0_Codespaces_Introduction.md
     - title: "1. Foundations"
       children:
         - file: 1_Building_DS_Environment.md

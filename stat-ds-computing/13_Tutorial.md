@@ -5,6 +5,37 @@
 **Tools:** Python, NumPy, pandas, pytest, cProfile, optional
 line_profiler, optional Numba, Jupyter/VS Code
 
+## Course computing environment: GitHub Codespaces
+
+For STA 556, the **officially supported computing environment is the course GitHub Codespace**. This gives everyone the same Linux/Python environment whether you are using a Mac, a Windows PC, or a university computer.
+
+Before beginning this activity:
+
+1. Open the repository for your course/assignment on GitHub.
+2. Open or create its Codespace.
+3. In VS Code, make sure the **repository root** is the folder open in the Explorer.
+4. Open an integrated terminal and run:
+
+```bash
+pwd
+git status
+```
+
+Your working directory should be the repository under `/workspaces/...`, and `git status` should recognize the repository.
+
+Unless an activity explicitly says otherwise:
+
+- run terminal commands from the **repository root**;
+- use repository-relative paths such as `data/...`, `src/...`, and `notebooks/...`;
+- use `python` for Python commands;
+- do **not** run `git init` inside the course repository;
+- do **not** install packages manually just because an import fails—first check the course environment and `requirements.txt`;
+- commit and push meaningful work regularly.
+
+If this is your first time using Codespaces, read `0_Codespaces_Introduction.md` before continuing.
+
+---
+
 ## Learning objectives
 
 By the end of this tutorial, you should be able to:
@@ -63,6 +94,22 @@ pytest
 ```
 
 ------------------------------------------------------------------------
+
+## Codespaces performance note
+
+All performance comparisons in this activity should be made **within your own Codespace**. Do not interpret differences between students' absolute timings as differences in code quality. Cloud machine size and system load may differ.
+
+For multiprocessing exercises, first inspect the CPU resources visible to your environment:
+
+```python
+import os
+
+os.cpu_count()
+```
+
+Parallel code is not expected to be faster for every workload or every Codespace. Measuring the overhead is part of the lesson.
+
+---
 
 # Part 1 --- One-off timing
 

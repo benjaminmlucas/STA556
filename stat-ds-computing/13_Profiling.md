@@ -178,6 +178,20 @@ print(elapsed)
 
 ------------------------------------------------------------------------
 
+## Codespaces benchmarking rule
+
+Codespaces are cloud-hosted development environments. Absolute timing can vary with machine type and system load, so **do not compare raw runtimes between students as though they were directly comparable hardware benchmarks**.
+
+For course exercises, compare implementations:
+
+```text
+on the same Codespace
+with the same input
+using the same timing method
+```
+
+The important quantity is the relative behavior of implementations within a controlled environment.
+
 # 7. Benchmark representative workloads
 
 Do not benchmark only tiny toy inputs if production inputs are large.

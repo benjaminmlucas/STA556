@@ -6,10 +6,11 @@ STA 556 is not primarily a course about learning Python syntax. It is a course a
 
 The course syllabus identifies Week 1 as the foundations module, covering:
 
-- Command-line basics (Bash/Zsh)
+- GitHub Codespaces as the common course environment
+- command-line basics in a Linux shell
 - Git and GitHub for version control
-- IDE setup
-- Reproducible computational work
+- VS Code and Jupyter
+- reproducible computational work
 
 These skills support two important course outcomes:
 
@@ -79,7 +80,64 @@ The course's emphasis on reproducible research, Git/GitHub, Jupyter, and robust 
 
 ---
 
-# 2. The command line: talking directly to your computer
+# 2. The official STA 556 environment: GitHub Codespaces
+
+STA 556 uses **GitHub Codespaces** as its officially supported computing environment.
+
+A Codespace is a development environment that runs remotely but is accessed through your web browser (or optionally through desktop VS Code). The repository is cloned into a Linux container with the course software already configured.
+
+Conceptually:
+
+```text
+Your Mac / PC / university computer
+              ↓
+         web browser
+              ↓
+      VS Code in Codespaces
+              ↓
+     Linux + Python + Git
+              ↓
+       course repository
+```
+
+This means students do not need identical personal computers or administrator access. The computational environment is defined by the repository rather than by the laptop used to access it.
+
+## The repository root
+
+When a repository is opened in Codespaces, it is normally located under:
+
+```text
+/workspaces/<repository-name>/
+```
+
+The files under `/workspaces` are the important persistent project files. Throughout STA 556, terminal commands should normally be run from the **repository root**.
+
+Check this with:
+
+```bash
+pwd
+git status
+```
+
+## Why this is part of reproducibility
+
+A repository-defined environment reduces differences such as:
+
+```text
+Mac vs. Windows
+Python version differences
+missing packages
+administrator restrictions
+shell differences
+```
+
+It does not eliminate every reproducibility problem, but it gives the class a common computational baseline.
+
+Read `0_Codespaces_Introduction.md` for the student workflow, including opening/reopening a Codespace, notebooks, Git, forwarded ports, secrets, rebuilding, and stopping the Codespace.
+
+---
+
+# 3. The command line: talking directly to your Codespace
 
 A graphical interface lets us interact with a computer by clicking.
 
@@ -157,13 +215,13 @@ An **absolute path** specifies a location from the root of the filesystem.
 
 A **relative path** specifies a location relative to your current working directory.
 
-For example:
+Inside a Codespace, the repository lives under `/workspaces`. For example:
 
 ```text
-/Users/ben/projects/sta556/data
+/workspaces/sta556/data
 ```
 
-is absolute.
+is an absolute path.
 
 Whereas:
 
@@ -171,13 +229,15 @@ Whereas:
 data/
 ```
 
-might be a relative path from the project directory.
+is a relative path from the repository root.
+
+In this course, prefer **relative paths** in analysis code. They make the same project portable across Codespaces and local computers.
 
 Understanding paths is fundamental to reproducible data science because code should not depend on a particular person's computer.
 
 ---
 
-# 3. Git is not GitHub
+# 4. Git is not GitHub
 
 These terms are often confused.
 
@@ -227,7 +287,7 @@ You can also use GitHub as much more than file storage: repositories can contain
 
 ---
 
-# 4. The basic Git workflow
+# 5. The basic Git workflow
 
 The basic workflow is:
 
@@ -312,7 +372,7 @@ sends your local commits to the remote repository on GitHub.
 
 ---
 
-# 5. Why version control matters in statistics
+# 6. Why version control matters in statistics
 
 Version control is not only a software engineering practice.
 
@@ -349,11 +409,11 @@ Git does not automatically make an analysis reproducible. It is one component of
 
 ---
 
-# 6. The Python development environment
+# 7. The Python development environment
 
 For this semester, we will use **Python** as the programming language for STA 556.
 
-The main development environment will be **Visual Studio Code (VS Code)** and/or **Jupyter**, depending on the task.
+The officially supported environment is **Visual Studio Code in GitHub Codespaces**, with Jupyter notebooks running inside that same Codespace. Students may work locally if they prefer, but submitted work should also run in the course Codespace.
 
 ## VS Code
 
@@ -393,7 +453,7 @@ We will use both.
 
 ---
 
-# 7. Environments and dependencies
+# 8. Environments and dependencies
 
 A Python program often depends on external packages.
 
@@ -424,13 +484,17 @@ scikit-learn
 
 Later in the course we will develop more systematic approaches to managing dependencies and environments.
 
+For STA 556, the repository includes a `.devcontainer/devcontainer.json` configuration and `requirements.txt`. When the Codespace is created, these define/install the common course tools.
+
 The key principle for Week 1 is:
 
 > **Your code is only one part of a computational analysis. The environment in which the code runs also matters.**
 
+As a student, you should normally **use the provided environment rather than manually reconfiguring it**. If a required package appears to be missing, report the issue before changing the environment.
+
 ---
 
-# 8. What makes a good project?
+# 9. What makes a good project?
 
 A good computational project should answer four questions.
 
@@ -452,7 +516,7 @@ A predictable project structure makes the answer obvious.
 
 ---
 
-# 9. Recommended reading
+# 10. Recommended reading
 
 ## Primary course references
 
@@ -503,7 +567,7 @@ https://skills.github.com/
 
 ---
 
-# 10. YouTube recommendations
+# 11. YouTube recommendations
 
 ## 1. GitHub — "A brief introduction to Git for beginners"
 
@@ -535,12 +599,13 @@ A longer, very practical walkthrough. It covers initializing repositories, stagi
 
 By the end of Week 1, students should be able to explain:
 
-1. What a command-line shell is and why it is useful.
-2. The difference between Git and GitHub.
-3. The difference between a working directory, staging area, and repository.
-4. Why version control is valuable for statistical research.
-5. The roles of VS Code and Jupyter.
-6. Why computational environments and dependencies matter.
-7. What a professional data science project structure looks like.
+1. What a GitHub Codespace is and why the course uses one.
+2. What a command-line shell is and why it is useful.
+3. The difference between Git and GitHub.
+4. The difference between a working directory, staging area, and repository.
+5. Why version control is valuable for statistical research.
+6. The roles of VS Code and Jupyter.
+7. Why computational environments and dependencies matter.
+8. What a professional data science project structure looks like.
 
 Most importantly, students should leave Week 1 thinking about **data science as a computational workflow**, rather than simply as writing code.
