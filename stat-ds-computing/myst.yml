@@ -7,6 +7,9 @@ project:
   keywords: ["statistics", "data science", "computing"]
   github: https://github.com/benjaminmlucas/STA556
   # logo_text: "STA556"
+  authors:
+    - name: Benjamin Lucas Ph.D
+      affiliation: Northern Arizona University
 
   toc:
     - file: index.md
