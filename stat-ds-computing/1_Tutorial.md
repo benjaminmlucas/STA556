@@ -34,8 +34,6 @@ https://github.com
 
 and sign in.
 
-If you do not yet have a GitHub account, choose **Sign up**, create an account, complete any requested email verification, and then sign in.
-
 ## 0.1 Create a new repository
 
 From GitHub:
