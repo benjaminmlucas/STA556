@@ -8,7 +8,8 @@
 
 By the end of this tutorial, you should be able to:
 
-- open and navigate a GitHub Codespace;
+- create a new GitHub repository for your STA 556 course work;
+- create and navigate a GitHub Codespace from that repository;
 - identify the repository root and `/workspaces` location;
 - navigate a project using the command line;
 - create and run a Python script;
@@ -21,17 +22,73 @@ By the end of this tutorial, you should be able to:
 
 ---
 
-# Part 0 — Open the course Codespace
+# Part 0 — Create your STA 556 GitHub repository
 
-Before beginning, read:
+For this course, you will begin by creating a GitHub repository that will hold your STA 556 work.
+
+If you are not already signed in to GitHub, go to:
 
 ```text
-0_Codespaces_Introduction.md
+https://github.com
 ```
 
-Open the GitHub repository supplied for your STA 556 work and choose **Create codespace** (or reopen your existing Codespace).
+and sign in.
 
-When VS Code opens in the browser, open an integrated terminal.
+If you do not yet have a GitHub account, choose **Sign up**, create an account, complete any requested email verification, and then sign in.
+
+## 0.1 Create a new repository
+
+From GitHub:
+
+1. click the **+** menu in the upper-right corner;
+2. choose **New repository**;
+3. give the repository a name such as:
+
+```text
+STA556
+```
+
+If you already have a repository with that name, you could use:
+
+```text
+STA556-Fall-2026
+```
+
+4. optionally add a short description such as:
+
+```text
+Course work for STA 556: Statistics and Data Science Computing Workflows
+```
+
+5. choose **Private** unless your instructor has asked you to make the repository public;
+6. check **Add a README file**;
+7. for `.gitignore`, choose **Python** if GitHub offers that option;
+8. you do not need to add a license for this activity;
+9. click **Create repository**.
+
+### Why add a README?
+
+A README gives the repository an initial file and creates the default branch immediately. It also gives you a natural place to document the project as the semester progresses.
+
+---
+
+## 0.2 Create a Codespace from your new repository
+
+On the page for the repository you just created:
+
+1. click the green **Code** button;
+2. choose the **Codespaces** tab;
+3. click **Create codespace on main**.
+
+GitHub will create a cloud development environment attached to **your new STA 556 repository**.
+
+The first Codespace may take a few minutes to start.
+
+When VS Code opens in the browser, open an integrated terminal:
+
+```text
+Terminal → New Terminal
+```
 
 Run:
 
@@ -39,7 +96,19 @@ Run:
 pwd
 ```
 
-You should see a path beginning with:
+You should see something similar to:
+
+```text
+/workspaces/STA556
+```
+
+or:
+
+```text
+/workspaces/STA556-Fall-2026
+```
+
+The exact repository name may differ, but the path should begin with:
 
 ```text
 /workspaces/
@@ -55,36 +124,93 @@ Git should recognize the repository.
 
 ### Important
 
-The repository has already been cloned into the Codespace. **Do not run `git init` and do not create another Git repository inside it.**
+When you create a Codespace from a GitHub repository, GitHub automatically places that repository inside the Codespace and configures Git for it.
+
+**Do not run `git init`.**
+
+You already have a Git repository.
 
 ---
 
-# Part 1 — Check the course environment
+# Part 1 — Set up and check your Week 1 Python environment
 
-Run:
+Because you created a new repository, you will also record the small set of Python packages needed for this activity.
+
+From the repository root, create:
+
+```text
+requirements.txt
+```
+
+Add:
+
+```text
+numpy
+pandas
+matplotlib
+jupyter
+ipykernel
+```
+
+Save the file.
+
+Now install the packages listed in it:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+This may take a little time the first time.
+
+Now check Python and Git:
 
 ```bash
 python --version
 git --version
 ```
 
-Then:
+Then verify the main packages:
 
 ```bash
 python -c "import numpy, pandas, matplotlib; print('Core packages available')"
 ```
 
+You should see:
+
+```text
+Core packages available
+```
+
+### Why create `requirements.txt`?
+
+Rather than remembering package names or installing them randomly, you have written the project's dependencies into a file that is stored with the repository.
+
+Another person can later see that the project depends on:
+
+```text
+numpy
+pandas
+matplotlib
+jupyter
+ipykernel
+```
+
+and install them with the same command.
+
+Later in the course, we will build on this idea and discuss more complete approaches to reproducible computational environments.
+
 ### Checkpoint
 
-You should know:
+At this point you should know:
 
+- the name of your STA 556 GitHub repository;
+- how you created a Codespace from that repository;
 - your current working directory;
 - your Python version;
 - your Git version;
-- that the repository is already under version control;
-- that the core Python packages are available.
-
-If a required command or package is missing, do not immediately install it yourself. First check the course instructions or report the environment problem.
+- that your repository is already under version control;
+- where your project dependencies are recorded;
+- that the packages needed for this activity are available.
 
 ---
 
@@ -94,10 +220,9 @@ Identify the following parts of VS Code:
 
 ```text
 Explorer       → files and directories
-Editor         → .py, .md, .ipynb, .qmd files
+Editor         → .py, .md, and .ipynb files
 Terminal       → shell commands
 Source Control → Git changes
-Ports          → forwarded web servers such as Quarto preview
 ```
 
 ### Question
@@ -114,22 +239,32 @@ From the repository root, run:
 ls
 ```
 
-You may already have directories such as:
+Your new repository will initially contain only a few files.
+
+Create the following project directories:
+
+```bash
+mkdir -p data notebooks src figures
+```
+
+Then run:
+
+```bash
+ls
+```
+
+You should now have a simple course-project structure similar to:
 
 ```text
+README.md
+requirements.txt
 data/
 notebooks/
 src/
 figures/
-tests/
-reports/
 ```
 
-Create any of these that are missing:
-
-```bash
-mkdir -p data notebooks src figures tests reports
-```
+We will add other project directories later in the semester when we need them.
 
 ### Important
 
@@ -330,7 +465,7 @@ git status
 
 Git should show the files you created or modified.
 
-The repository already has a Git history. Inspect it:
+Your repository already has a small Git history beginning with its creation. Inspect it:
 
 ```bash
 git log --oneline -5
@@ -475,7 +610,7 @@ What information did `git diff` provide before the commit?
 
 # Part 12 — Write useful repository documentation
 
-Open the repository `README.md` (or create one if your assignment repository does not already contain one).
+Open the `README.md` that you created when you created the repository.
 
 Add a short section describing your Week 1 work, for example:
 
@@ -499,9 +634,15 @@ Commit and push the change.
 
 # Part 13 — Reproducibility check
 
-Imagine another student opens the same repository in a fresh Codespace.
+Imagine you delete this Codespace and create a completely fresh Codespace from the same GitHub repository.
 
-They should be able to:
+The repository contains `requirements.txt`, so you could first restore the packages with:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Then you should be able to:
 
 ```bash
 python src/hello_sta556.py
@@ -513,7 +654,7 @@ and open:
 notebooks/week01_exploration.ipynb
 ```
 
-without knowing anything about your personal laptop.
+without relying on anything installed on your personal laptop.
 
 ### Reflection
 
@@ -658,8 +799,10 @@ Why are relative paths and a repository-defined environment useful?
 
 # Completion checklist
 
-- [ ] Opened the course repository in GitHub Codespaces
+- [ ] Created a new STA 556 GitHub repository
+- [ ] Created a Codespace from that repository
 - [ ] Located the repository under `/workspaces`
+- [ ] Created and used `requirements.txt`
 - [ ] Used the integrated terminal
 - [ ] Verified Python and Git
 - [ ] Explored the VS Code interface
@@ -682,9 +825,9 @@ Why are relative paths and a repository-defined environment useful?
 # What you should now understand
 
 ```text
-GitHub repository
+Create your STA 556 GitHub repository
       ↓
-GitHub Codespace
+Create a Codespace from that repository
       ↓
 VS Code + Linux shell + Python
       ↓
