@@ -413,8 +413,8 @@ scores = np.array(
     scores
 )
 
-scores.mean()
-scores.std()
+print(scores.mean())
+print(scores.std())
 ```
 
 Create a plot:
@@ -444,7 +444,7 @@ plt.hist(
     scores
 )
 plt.savefig(
-    "figures/scores.png",
+    "../figures/scores.png",
     dpi=300,
     bbox_inches="tight"
 )
