@@ -12,7 +12,7 @@ For statistical computing, these ideas matter because data representation affect
 
 ## 1. Everything in Python is an object
 
-Python's data model describes objects as the fundamental abstraction for data. Every object has an **identity**, **type**, and **value**. citeturn0search3
+Python's data model describes objects as the fundamental abstraction for data. Every object has an **identity**, **type**, and **value**.
 
 ```python
 x = 42
@@ -87,7 +87,7 @@ There is one list object and two names referring to it.
 
 ## 4. Mutable vs. immutable objects
 
-The Python data model distinguishes objects whose values can change from objects whose values cannot change after creation. citeturn0search3
+The Python data model distinguishes objects whose values can change from objects whose values cannot change after creation.
 
 Common immutable types:
 
@@ -185,7 +185,7 @@ The outer lists differ, but the inner lists are shared.
 | `dict` | Yes* | Yes | Key-value mapping |
 | `set` | No | Yes | Unique values/membership |
 
-Modern Python dictionaries preserve insertion order. Dictionaries support key lookup, membership, deletion, and comprehensions. citeturn0search12
+Modern Python dictionaries preserve insertion order. Dictionaries support key lookup, membership, deletion, and comprehensions.
 
 ### List
 
@@ -242,7 +242,7 @@ Data structures are not merely containers. They influence which operations are n
 
 ## 10. Python is dynamically typed
 
-Python is a **dynamically typed** language: types are checked during execution rather than requiring the whole program to pass a static type check before running. citeturn0search1
+Python is a **dynamically typed** language: types are checked during execution rather than requiring the whole program to pass a static type check before running.
 
 For example:
 
@@ -266,7 +266,7 @@ The values still have types; the type relationship is handled dynamically.
 
 ## 11. Type annotations
 
-Python remains dynamically typed, but it supports annotations that can be used by static analysis tools. citeturn0search0
+Python remains dynamically typed, but it supports annotations that can be used by static analysis tools.
 
 ```python
 def mean(values: list[float]) -> float:
@@ -328,7 +328,7 @@ General form:
 {key_expression: value_expression for item in iterable}
 ```
 
-Dictionary comprehensions are standard Python syntax. citeturn0search9turn0search12
+Dictionary comprehensions are standard Python syntax.
 
 ## 14. Statistical computing example
 

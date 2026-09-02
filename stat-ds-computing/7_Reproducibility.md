@@ -385,7 +385,7 @@ For PDF:
 quarto render report.qmd --to pdf
 ```
 
-Quarto's Python integration supports executable code blocks and can regenerate computational output when documents are rendered. citeturn600654search0turn600654search3
+Quarto's Python integration supports executable code blocks and can regenerate computational output when documents are rendered.
 
 ---
 
@@ -445,7 +445,7 @@ Jupyter executes Python
 HTML / PDF / Word
 ```
 
-Quarto can render Jupyter notebooks directly, and can execute them when requested. citeturn600654search0turn600654search2
+Quarto can render Jupyter notebooks directly, and can execute them when requested.
 
 ---
 
@@ -630,7 +630,7 @@ One simple method:
 python -m pip freeze > requirements.txt
 ```
 
-Quarto's documentation explicitly recommends saving package requirements so that an environment can be recreated later. citeturn600654search5
+Quarto's documentation explicitly recommends saving package requirements so that an environment can be recreated later.
 
 ---
 
@@ -749,7 +749,7 @@ one source
    └── Word
 ```
 
-Quarto supports many output formats from the same computational source. citeturn600654search4
+Quarto supports many output formats from the same computational source.
 
 This reduces duplication and keeps outputs synchronized.
 
@@ -821,7 +821,7 @@ The essential idea is that human copy-and-paste work is replaced by deterministi
 
 Some computations are expensive.
 
-Quarto supports caching and stored computation options. citeturn600654search0
+Quarto supports caching and stored computation options.
 
 Caching can reduce unnecessary recomputation, but introduces a question:
 
@@ -956,25 +956,25 @@ By the end of Week 8, you should be able to explain:
 
 ## Quarto — Using Python
 
-Official documentation for executable Python code, Jupyter integration, rendering, execution, and caching. citeturn600654search0turn600654search3
+Official documentation for executable Python code, Jupyter integration, rendering, execution, and caching.
 
 https://quarto.org/docs/computations/python
 
 ## Quarto — Jupyter Computations Tutorial
 
-A practical tutorial on controlling code, output, and rendered computational documents. citeturn600654search1
+A practical tutorial on controlling code, output, and rendered computational documents.
 
 https://quarto.org/docs/get-started/computations/jupyter.html
 
 ## Quarto — Jupyter Authoring Tutorial
 
-Covers document formats, equations, citations, cross-references, and other authoring tools. citeturn600654search2
+Covers document formats, equations, citations, cross-references, and other authoring tools.
 
 https://quarto.org/docs/get-started/authoring/jupyter.html
 
 ## Quarto — Virtual Environments
 
-Useful for connecting reproducible reports to reproducible Python environments. citeturn600654search5
+Useful for connecting reproducible reports to reproducible Python environments.
 
 https://quarto.org/docs/projects/virtual-environments.html
 
@@ -984,7 +984,7 @@ https://quarto.org/docs/projects/virtual-environments.html
 
 ## 1. Data Umbrella — "Reproducible Publications with Python and Quarto" — Thomas Mock
 
-A particularly strong fit for STA 556. The talk explains Quarto as a reproducible publishing system and demonstrates Python/Jupyter integration, executable documents, multi-format publishing, parameters, and reproducible computational publications. citeturn600654youtube35
+A particularly strong fit for STA 556. The talk explains Quarto as a reproducible publishing system and demonstrates Python/Jupyter integration, executable documents, multi-format publishing, parameters, and reproducible computational publications.
 
 **Recommended use:** Watch the first 30–40 minutes alongside the theory material. The sections on computational documents, rendering, Jupyter integration, and parameters map closely onto Week 8.
 
@@ -994,7 +994,7 @@ A particularly strong fit for STA 556. The talk explains Quarto as a reproducibl
 
 ## 2. Posit / Keith Galli — "Quarto Crash Course | Create Professional Reports, Dashboards & Websites w/ Markdown & Python Code!"
 
-A practical Python-based Quarto walkthrough covering setup, Markdown, HTML/PDF/Word outputs, parameters, and automated report generation. citeturn600654youtube36
+A practical Python-based Quarto walkthrough covering setup, Markdown, HTML/PDF/Word outputs, parameters, and automated report generation.
 
 **Recommended use:** Use selected chapters during or after the hands-on tutorial. The installation/setup, basic reporting, static document, and automated-report sections are particularly relevant.
 

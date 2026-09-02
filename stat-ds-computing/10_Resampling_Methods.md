@@ -547,7 +547,6 @@ This generates the null distribution.
 SciPy describes the independent-sample permutation null as one in which
 observations are pooled and randomly reassigned to samples under the
 hypothesis that the samples come from the same underlying distribution.
-citeturn880426search0
 
 ------------------------------------------------------------------------
 
@@ -571,7 +570,7 @@ permuted = rng.permutation(
 ```
 
 NumPy's generator `permutation()` returns a randomly permuted copy of an
-array. citeturn880426search1
+array.
 
 Split:
 
@@ -737,7 +736,6 @@ enormous.
 SciPy switches to exact calculation when the requested number of
 resamples is at least the number of distinct permutations; otherwise it
 approximates the null distribution with random resamples.
-citeturn880426search0
 
 ------------------------------------------------------------------------
 
@@ -956,7 +954,6 @@ scipy.stats.permutation_test
 
 SciPy's permutation interface accepts a statistic function, resampling
 count, alternative hypothesis, permutation type, and RNG.
-citeturn880426search0
 
 The pedagogical sequence should be:
 
@@ -1070,7 +1067,7 @@ https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html
 
 The official SciPy reference explains independent, paired-sample, and
 pairing permutation schemes, exact vs. randomized testing, null
-distributions, and p-values. citeturn880426search0
+distributions, and p-values.
 
 https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.permutation_test.html
 
@@ -1082,7 +1079,7 @@ https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.c
 
 ## NumPy --- Generator.permutation
 
-Reference for generating random permutations. citeturn880426search1
+Reference for generating random permutations.
 
 https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.permutation.html
 
@@ -1094,7 +1091,7 @@ https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.p
 
 A compact conceptual comparison of resampling, bootstrap distributions,
 permutation tests, and when the two procedures answer different
-statistical questions. citeturn880426youtube36
+statistical questions.
 
 **Recommended use:** Watch before the hands-on tutorial. It gives
 students the conceptual distinction before they implement either method.

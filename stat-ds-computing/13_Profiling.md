@@ -356,7 +356,7 @@ but not which line is expensive.
 
 `line_profiler` provides line-by-line timing for selected functions and
 is particularly useful for scientific Python code where one NumPy
-expression may dominate execution. citeturn174684search0
+expression may dominate execution.
 
 Typical Jupyter usage:
 
@@ -677,7 +677,7 @@ for compiling Python functions and:
 prange
 ```
 
-for supported parallel loops. citeturn174684search1
+for supported parallel loops.
 
 Numba can be especially effective for loops involving:
 
@@ -1045,14 +1045,14 @@ https://docs.python.org/3/library/profile.html
 ## line_profiler
 
 The current maintained `line_profiler` project provides line-by-line
-timing for selected functions. citeturn174684search0
+timing for selected functions.
 
 https://github.com/pyutils/line_profiler
 
 ## Numba Documentation
 
 The Numba user manual covers JIT compilation, NumPy support, performance
-tips, and automatic parallelization. citeturn174684search1
+tips, and automatic parallelization.
 
 https://numba.readthedocs.io/en/stable/
 
@@ -1071,7 +1071,7 @@ https://pandas.pydata.org/docs/user_guide/scale.html
 
 A recent introduction to the key idea of profiling before optimizing. It
 discusses benchmarking and using profiling to decide whether performance
-work is worth the effort. citeturn174684youtube37
+work is worth the effort.
 
 **Recommended use:** Watch before beginning the profiling exercises.
 
@@ -1083,7 +1083,6 @@ work is worth the effort. citeturn174684youtube37
 
 A practical walkthrough of `cProfile`, including terminal use,
 programmatic profiling, and exporting profiling data.
-citeturn174684youtube36
 
 **Recommended use:** Watch alongside the `cProfile` tutorial section.
 
