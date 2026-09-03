@@ -571,23 +571,19 @@ https://skills.github.com/
 
 This is my first recommendation because it comes directly from GitHub and provides a concise conceptual introduction to Git, including version control, repositories, staging, committing, branches, and the distinction between Git and GitHub.
 
-urlWatch on YouTubehttps://www.youtube.com/watch?v=r8jQ9hVA2qs
-
-**Use this before the activity.**
+[Watch on YouTube](https://www.youtube.com/watch?v=r8jQ9hVA2qs)
 
 ## 2. Software Carpentry — "The Shell - Episode 1 - Introduction"
 
 A short introduction to what a shell is and why computational researchers should care about it.
 
-urlWatch on YouTubehttps://www.youtube.com/watch?v=U3iNcBtycaQ
-
-**Use this before the command-line portion of the activity.**
+[Watch on YouTube](https://www.youtube.com/watch?v=U3iNcBtycaQ)
 
 ## 3. Kevin Stratvert — "Git and GitHub Tutorial for Beginners"
 
 A longer, very practical walkthrough. It covers initializing repositories, staging, committing, branches, GitHub, pushing/pulling, and typical Git workflows.
 
-urlWatch on YouTubehttps://www.youtube.com/watch?v=tRZGeaHPoaw
+[Watch on YouTube](https://www.youtube.com/watch?v=tRZGeaHPoaw)
 
 **Use this as an optional extension/reference rather than required viewing.**
 

@@ -1,4 +1,4 @@
-# 1.2 Advanced Data Types & Structures
+# 1.2 Data Types & Data Structures
 
 ## Why this week matters
 
@@ -6,7 +6,7 @@ Week 1 established the professional computational workflow. Week 2 moves inside 
 
 > **What actually happens when Python stores and manipulates data?**
 
-The syllabus identifies Week 2 as **Advanced Data Types & Structures**, covering mutable vs. immutable objects, memory models, static vs. dynamic typing, and list/dictionary comprehensions.
+Week 2 is about **Data Types & Data Structures**, covering mutable vs. immutable objects, memory models, static vs. dynamic typing, and list/dictionary comprehensions.
 
 For statistical computing, these ideas matter because data representation affects how code behaves, how functions interact with their inputs, readability, and eventually computational efficiency.
 
@@ -468,15 +468,11 @@ https://jakevdp.github.io/PythonDataScienceHandbook/
 
 A short, focused explanation of the difference between mutable and immutable Python objects. This is particularly useful alongside the Week 2 exercises on mutation, references, and copying.
 
-**Recommended use:** Watch before or after **Part 5 — A function that changes its input** in the tutorial.
-
 [Watch on YouTube](https://www.youtube.com/watch?v=5qQQ3yzbKp8)
 
 ### 2. Corey Schafer — Python Comprehensions
 
 A practical explanation of list, dictionary, and set comprehensions, including why comprehensions can be preferable to traditional loops for simple transformations.
-
-**Recommended use:** Watch before **Parts 14–17** of the tutorial.
 
 [Watch on YouTube](https://www.youtube.com/watch?v=3dt4OGnU5sM)
 
@@ -484,15 +480,11 @@ A practical explanation of list, dictionary, and set comprehensions, including w
 
 A concise explanation of dynamic versus static typing, including examples of when Python performs type checking and how type hints can add static-analysis capabilities.
 
-**Recommended use:** Watch alongside **Section 10 — Python is dynamically typed**.
-
 [Watch the video](https://realpython.com/videos/dynamic-vs-static/)
 
 ### 4. Real Python — Type Hinting
 
 An introduction to Python type annotations, including function arguments and return values. It provides a useful extension of the basic type-hinting material in this week's tutorial.
-
-**Recommended use:** Optional extension after **Part 13 — Type annotations**.
 
 [Watch the video](https://realpython.com/lessons/type-hinting/)
 
