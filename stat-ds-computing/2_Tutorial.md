@@ -18,7 +18,9 @@ By the end of this tutorial, you should be able to:
 - write list and dictionary comprehensions;
 - connect data-structure choices to statistical computing.
 
-## Part 0 — Set up
+---
+
+# Part 0 — Set up
 
 To begin this activity, open your repository for the course on GitHub, and open its Codespace.
 
@@ -34,7 +36,7 @@ or:
 src/week02_data_structures.py
 ```
 
-## Part 1 — Everything is an object
+# Part 1 — Everything is an object
 
 Run:
 
@@ -65,7 +67,7 @@ repr(x)
 
 Write your answers in a Markdown cell.
 
-## Part 2 — Names and objects
+# Part 2 — Names and objects
 
 Run:
 
@@ -99,7 +101,7 @@ y ─────┘
 
 Replace `?` with the object.
 
-## Part 3 — Mutation vs. rebinding
+# Part 3 — Mutation vs. rebinding
 
 Compare:
 
@@ -129,7 +131,7 @@ x is y
 
 What is the difference between `x.append(4)` and `x = [1, 2, 3, 4]`?
 
-## Part 4 — Mutable vs. immutable
+# Part 4 — Mutable vs. immutable
 
 Create:
 
@@ -170,7 +172,7 @@ d[0] = 99
 
 Explain the result.
 
-## Part 5 — A function that changes its input
+# Part 5 — A function that changes its input
 
 Run:
 
@@ -203,7 +205,7 @@ print(new_data)
 
 Which style would you prefer for a statistical function, and why?
 
-## Part 6 — Shallow copying
+# Part 6 — Shallow copying
 
 Run:
 
@@ -226,7 +228,7 @@ print(y)
 
 Explain why the inner list changed in both objects.
 
-## Part 7 — Lists
+# Part 7 — Lists
 
 Create:
 
@@ -255,7 +257,7 @@ Without NumPy, calculate:
 - maximum;
 - mean.
 
-## Part 8 — Tuples
+# Part 8 — Tuples
 
 Create:
 
@@ -278,7 +280,7 @@ flagstaff[0] = 40
 
 Explain why a tuple could make conceptual sense for a coordinate pair.
 
-## Part 9 — Dictionaries
+# Part 9 — Dictionaries
 
 Create:
 
@@ -303,7 +305,7 @@ student.get("email")
 
 Why might `.get()` be preferable when a key may not exist?
 
-## Part 10 — Sets
+# Part 10 — Sets
 
 Create:
 
@@ -326,7 +328,7 @@ unique_states
 
 Explain why a set can be useful for unique categories and membership testing.
 
-## Part 11 — Choosing data structures
+# Part 11 — Choosing data structures
 
 Choose a data structure for each:
 
@@ -338,7 +340,7 @@ E. A collection that will be repeatedly modified.
 
 Explain each answer.
 
-## Part 12 — Dynamic typing
+# Part 12 — Dynamic typing
 
 Run:
 
@@ -362,7 +364,7 @@ x + 5
 
 Explain why Python can be dynamically typed while still having types.
 
-## Part 13 — Type annotations
+# Part 13 — Type annotations
 
 Write:
 
@@ -390,7 +392,7 @@ add("hello", "world")
 
 Explain what the annotations communicate and why annotations do not make Python statically typed.
 
-## Part 14 — List comprehensions
+# Part 14 — List comprehensions
 
 Traditional loop:
 
@@ -419,7 +421,7 @@ even_squares = [
 
 Write the equivalent traditional loop and compare readability.
 
-## Part 15 — Statistical example
+# Part 15 — Statistical example
 
 Create:
 
@@ -439,7 +441,7 @@ sum(centered)
 
 Then calculate the population variance from `squared_deviations`.
 
-## Part 16 — Dictionary comprehensions
+# Part 16 — Dictionary comprehensions
 
 Run:
 
@@ -457,7 +459,7 @@ even = {
 }
 ```
 
-## Part 17 — Structured observations
+# Part 17 — Structured observations
 
 Create:
 
@@ -500,7 +502,7 @@ score_by_id = {
 
 Create a dictionary containing only observations with scores ≥ 85.
 
-## Part 18 — When not to use a comprehension
+# Part 18 — When not to use a comprehension
 
 Consider:
 
@@ -522,7 +524,7 @@ Ask whether compressing this into one comprehension would actually improve the c
 
 Do not use them merely to minimize lines.
 
-## Part 19 — Mini data-science challenge
+# Part 19 — Mini data-science challenge
 
 Create:
 
@@ -566,7 +568,7 @@ Add:
 summary: dict = ...
 ```
 
-## Part 20 — Compare loops and comprehensions
+# Part 20 — Compare loops and comprehensions
 
 Choose one previous problem and implement it both ways.
 
@@ -577,7 +579,7 @@ Answer:
 3. Which would you prefer in production code?
 4. Would your answer change if the transformation became more complicated?
 
-## Part 21 — Git checkpoint
+# Part 21 — Git checkpoint
 
 From your Week 1 repository:
 
@@ -595,7 +597,7 @@ Reinforce the Week 1 workflow:
 Create → Explore → Save → Inspect → Commit → Push
 ```
 
-## Part 22 — Reflection
+# Part 22 — Reflection
 
 Answer these questions in a Markdown cell.
 
