@@ -516,7 +516,7 @@ for person in people:
             results.append(transformed)
 ```
 
-Ask whether compressing this into one comprehension would actually improve the code.
+Consider whether compressing this into one comprehension would actually improve the code.
 
 ### Principle
 
@@ -591,7 +591,7 @@ git commit -m "Complete Week 2 data structures exercises"
 git push
 ```
 
-Reinforce the Week 1 workflow:
+Align what you've done here with the Week 1 workflow:
 
 ```text
 Create → Explore → Save → Inspect → Commit → Push
