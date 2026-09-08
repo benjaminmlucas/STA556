@@ -84,12 +84,11 @@ Then:
 x.append(4)
 
 print(x)
-print(y)
 ```
 
 ### Prediction
 
-Before running the code, predict the value of `y`.
+Now predict the value of `y`.
 
 Draw:
 
@@ -101,6 +100,11 @@ y ─────┘
 
 Replace `?` with the object.
 
+Verify by running:
+
+```python
+print(y)
+```
 # Part 3 — Mutation vs. rebinding
 
 Compare:
