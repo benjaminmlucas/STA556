@@ -562,7 +562,7 @@ summary = {
     "groups": ...,
     "mean_score": ...,
     "max_score": ...,
-    "high_performers": ...
+    "high_performers": ... # the IDs of the top 3 scores
 }
 ```
 
