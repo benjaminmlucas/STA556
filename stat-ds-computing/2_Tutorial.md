@@ -30,12 +30,6 @@ Inside your repository create:
 notebooks/week02_data_structures.ipynb
 ```
 
-or:
-
-```text
-src/week02_data_structures.py
-```
-
 # Part 1 — Everything is an object
 
 Run:
@@ -489,7 +483,7 @@ Filter scores ≥ 85:
 high_scores = [
     obs["score"]
     for obs in observations
-    if obs["score"] >= 85
+    if obs["score"] >= 90
 ]
 ```
 
@@ -562,7 +556,7 @@ summary = {
     "groups": ...,
     "mean_score": ...,
     "max_score": ...,
-    "high_performers": ... # the IDs of the top 3 scores
+    "high_performers": ... # IDs of students with scores >= 90
 }
 ```
 
