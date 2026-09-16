@@ -2,7 +2,7 @@
 
 ## DataFrames, Indexing, Slicing & Filtering
 
-**Tools:** Python, pandas, VS Code and/or Jupyter
+**Tools:** Python, pandas, VS Code, and/or Jupyter
 
 ## Learning objectives
 
