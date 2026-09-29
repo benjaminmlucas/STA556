@@ -618,9 +618,7 @@ Use a page containing tabular data:
 
 ```python
 url = (
-    "https://en.wikipedia.org/wiki/"
-    "List_of_states_and_territories_"
-    "of_the_United_States"
+    "https://www.basketball-reference.com/leagues/NBA_2023_per_game.html"
 )
 
 tables = pd.read_html(url)
