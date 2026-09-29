@@ -329,11 +329,11 @@ Why might filtering in SQL be advantageous for a very large database?
 ```python
 query = """
 SELECT
-    group,
+    "group",
     COUNT(*) AS n,
     AVG(score) AS mean_score
 FROM participants
-GROUP BY group
+GROUP BY "group"
 """
 
 summary = pd.read_sql(
@@ -358,7 +358,7 @@ Write SQL returning:
 query = """
 SELECT *
 FROM participants
-WHERE group = ?
+WHERE "group" = ?
 """
 ```
 
