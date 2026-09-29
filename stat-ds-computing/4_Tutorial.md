@@ -56,7 +56,7 @@ import requests
 Define:
 
 ```python
-DATA_DIR = Path("data")
+DATA_DIR = Path("../data")
 RAW_DIR = DATA_DIR / "raw"
 PROCESSED_DIR = DATA_DIR / "processed"
 EXTERNAL_DIR = DATA_DIR / "external"
