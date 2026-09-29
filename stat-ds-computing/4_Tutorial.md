@@ -401,7 +401,7 @@ query = """
 SELECT
     p.id,
     p.age,
-    p.group,
+    p."group",
     p.score,
     o.followup_score
 FROM participants AS p
