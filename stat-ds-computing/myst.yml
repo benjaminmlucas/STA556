@@ -62,6 +62,22 @@ project:
       children:
         - file: 14_Data_Ethics.md
         - file: 14_Tutorial.md
+    - title: "9. Activity Reference Answers"
+      children:
+        - file: 1_Tutorial_Answers.ipynb
+        # - file: 2_Tutorial_Answers.ipynb
+        # - file: 3_Tutorial_Answers.ipynb
+        # - file: 4_Tutorial_Answers.ipynb
+        # - file: 5_Tutorial_Answers.ipynb
+        # - file: 6_Tutorial_Answers.ipynb
+        # - file: 7_Tutorial_Answers.ipynb
+        # - file: 8_Tutorial_Answers.ipynb
+        # - file: 9_Tutorial_Answers.ipynb
+        # - file: 10_Tutorial_Answers.ipynb
+        # - file: 11_Tutorial_Answers.ipynb
+        # - file: 12_Tutorial_Answers.ipynb
+        # - file: 13_Tutorial_Answers.ipynb
+        # - file: 14_Tutorial_Answers.ipynb
 site:
   template: book-theme
   options:
