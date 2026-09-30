@@ -67,6 +67,7 @@ project:
         - file: 1_Tutorial_Reference.ipynb
         - file: 2_Tutorial_Reference.ipynb
         - file: 3_Tutorial_Reference.ipynb
+        - file: 3b_Tutorial_Reference.ipynb
         - file: 4_Tutorial_Reference.ipynb
         # - file: 5_Tutorial_Reference.ipynb
         # - file: 6_Tutorial_Reference.ipynb
