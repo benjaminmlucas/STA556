@@ -69,16 +69,16 @@ project:
         - file: 3_Tutorial_Reference.ipynb
         - file: 3b_Tutorial_Reference.ipynb
         - file: 4_Tutorial_Reference.ipynb
-        # - file: 5_Tutorial_Reference.ipynb
-        # - file: 6_Tutorial_Reference.ipynb
-        # - file: 7_Tutorial_Reference.ipynb
-        # - file: 8_Tutorial_Reference.ipynb
-        # - file: 9_Tutorial_Reference.ipynb
-        # - file: 10_Tutorial_Reference.ipynb
-        # - file: 11_Tutorial_Reference.ipynb
-        # - file: 12_Tutorial_Reference.ipynb
-        # - file: 13_Tutorial_Reference.ipynb
-        # - file: 14_Tutorial_Reference.ipynb
+        - file: 5_Tutorial_Reference.ipynb
+        - file: 6_Tutorial_Reference.ipynb
+        - file: 7_Tutorial_Reference.ipynb
+        - file: 8_Tutorial_Reference.ipynb
+        - file: 9_Tutorial_Reference.ipynb
+        - file: 10_Tutorial_Reference.ipynb
+        - file: 11_Tutorial_Reference.ipynb
+        - file: 12_Tutorial_Reference.ipynb
+        - file: 13_Tutorial_Reference.ipynb
+        - file: 14_Tutorial_Reference.ipynb
 site:
   template: book-theme
   options:
