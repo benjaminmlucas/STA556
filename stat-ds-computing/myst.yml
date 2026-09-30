@@ -62,12 +62,12 @@ project:
       children:
         - file: 14_Data_Ethics.md
         - file: 14_Tutorial.md
-    - title: "9. Activity Notebooks"
+    - title: "9. Reference Activity Notebooks"
       children:
         - file: 1_Tutorial_Reference.ipynb
         - file: 2_Tutorial_Reference.ipynb
-        # - file: 3_Tutorial_Reference.ipynb
-        # - file: 4_Tutorial_Reference.ipynb
+        - file: 3_Tutorial_Reference.ipynb
+        - file: 4_Tutorial_Reference.ipynb
         # - file: 5_Tutorial_Reference.ipynb
         # - file: 6_Tutorial_Reference.ipynb
         # - file: 7_Tutorial_Reference.ipynb
