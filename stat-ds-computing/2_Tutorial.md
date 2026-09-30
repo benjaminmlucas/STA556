@@ -477,7 +477,7 @@ Extract scores:
 scores = [obs["score"] for obs in observations]
 ```
 
-Filter scores ≥ 85:
+Filter scores ≥ 90:
 
 ```python
 high_scores = [
