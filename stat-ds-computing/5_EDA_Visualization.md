@@ -119,6 +119,13 @@ Histograms approximate a distribution by dividing a continuous range into bins a
 
 ---
 
+![Histogram of assessment scores](5_EDA_Visualization_assets/01_histogram.png)
+
+*Example: a histogram reveals the overall distribution of a continuous variable.*
+
+
+---
+
 # 6. Bin width matters
 
 Compare:
@@ -139,6 +146,13 @@ Too few bins can hide structure. Too many bins can emphasize random variation.
 
 ---
 
+![Comparison of histogram bin choices](5_EDA_Visualization_assets/02_histogram_bins.png)
+
+*The same data can look different under different bin choices.*
+
+
+---
+
 # 7. Density plots
 
 With seaborn:
@@ -153,6 +167,13 @@ sns.kdeplot(
 ```
 
 A density curve is a smoothed estimate rather than the raw observations. Its appearance depends on smoothing choices.
+
+---
+
+![Density plot of assessment scores](5_EDA_Visualization_assets/03_density.png)
+
+*Density plots emphasize smoothed distributional shape rather than individual observations.*
+
 
 ---
 
@@ -177,6 +198,13 @@ Boxplots are useful for group comparisons but hide distributional detail. When p
 
 ---
 
+![Boxplots of scores by group](5_EDA_Visualization_assets/04_boxplot.png)
+
+*Boxplots summarize center, spread, and possible outliers across groups.*
+
+
+---
+
 # 9. One categorical variable
 
 Start with counts or proportions:
@@ -195,6 +223,13 @@ sns.countplot(
 ```
 
 For categorical variables, bar heights should normally represent counts or meaningful summaries.
+
+---
+
+![Counts of participants by group](5_EDA_Visualization_assets/05_group_counts.png)
+
+*For a categorical variable, counts or proportions are a natural starting point.*
+
 
 ---
 
@@ -217,6 +252,13 @@ Ask:
 - Are there clusters?
 - Does variance change with x?
 - Are there outliers?
+
+---
+
+![Scatterplot of assessment score by age](5_EDA_Visualization_assets/06_scatterplot.png)
+
+*Scatterplots reveal form, strength, clusters, changing variance, and unusual observations.*
+
 
 ---
 
@@ -263,6 +305,13 @@ sns.stripplot(
     y="score"
 )
 ```
+
+---
+
+![Boxplots with raw observations](5_EDA_Visualization_assets/07_boxplot_raw.png)
+
+*Adding the observations reveals information hidden by the boxplot summary.*
+
 
 ---
 
@@ -331,6 +380,13 @@ group → color
 ```
 
 A mapped aesthetic represents data.
+
+---
+
+![Scatterplot with group mapped to color](5_EDA_Visualization_assets/08_scatter_group.png)
+
+*Here color encodes the categorical variable `group` rather than merely styling the figure.*
+
 
 ---
 
@@ -458,6 +514,13 @@ from plotnine import facet_wrap
 ```
 
 Faceting creates separate panels for subsets of the data and is often clearer than adding more visual encodings to a crowded figure.
+
+---
+
+![Faceted scatterplots by group](5_EDA_Visualization_assets/09_facets.png)
+
+*Faceting separates groups into panels and can reduce visual crowding.*
+
 
 ---
 
@@ -607,6 +670,13 @@ fig.tight_layout()
 
 ---
 
+![Example communication-quality figure](5_EDA_Visualization_assets/10_publication_quality.png)
+
+*Example of a more deliberate communication figure with meaningful labels, legend, and title.*
+
+
+---
+
 # 27. Save figures deliberately
 
 ```python
@@ -691,6 +761,13 @@ Visualization is part of data validation and cleaning, not just final reporting.
 
 ---
 
+![Histogram revealing a suspicious age value](5_EDA_Visualization_assets/11_data_quality.png)
+
+*The isolated value near 999 is immediately visible and should trigger investigation.*
+
+
+---
+
 # 31. Avoid overplotting
 
 With many observations, scatterplots may become dense.
@@ -714,6 +791,13 @@ sns.scatterplot(
     alpha=0.3
 )
 ```
+
+---
+
+![Opaque versus transparent scatterplots](5_EDA_Visualization_assets/12_overplotting.png)
+
+*Transparency can reveal density when many observations overlap.*
+
 
 ---
 
