@@ -310,7 +310,7 @@ sns.stripplot(
 
 ![Boxplots with raw observations](5_EDA_Visualization_assets/07_boxplot_raw.png)
 
-*Adding the observations reveals information hidden by the boxplot summary.*
+*The boxplot summarizes each group; the overlaid points show the observations that produced that summary. Here the additional structure is modest, but in other datasets raw points can reveal clusters, gaps, or small sample sizes.*
 
 
 ---
