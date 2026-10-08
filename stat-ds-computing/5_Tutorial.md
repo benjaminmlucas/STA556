@@ -272,12 +272,6 @@ sns.boxplot(
 plt.show()
 ```
 
-### Questions
-
-1. Which group has the highest median?
-2. Which appears most variable?
-3. What information is hidden?
-
 ---
 
 # Part 8 — Add raw observations
@@ -325,6 +319,12 @@ boxplot
 violin plot
 strip plot
 ```
+
+and questions:
+
+1. Which group has the highest median?
+2. Which appears most variable?
+3. What information is hidden?
 
 Which representation best answers which question?
 
