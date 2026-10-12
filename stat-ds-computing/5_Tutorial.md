@@ -262,6 +262,8 @@ Explain the difference between counts and proportions.
 
 # Part 7 — Continuous variable by group
 
+Start with a boxplot:
+
 ```python
 sns.boxplot(
     data=df,
@@ -272,9 +274,18 @@ sns.boxplot(
 plt.show()
 ```
 
+### Questions
+
+1. Which group has the highest median score?
+2. Which group has the greatest spread in the middle 50% of its scores?
+3. What information does the boxplot summarize well?
+4. What information does the boxplot hide?
+
 ---
 
 # Part 8 — Add raw observations
+
+Now overlay the individual observations on the boxplot:
 
 ```python
 fig, ax = plt.subplots()
@@ -290,17 +301,25 @@ sns.stripplot(
     data=df,
     x="group",
     y="score",
+    alpha=0.5,
+    jitter=True,
     ax=ax
 )
 
 plt.show()
 ```
 
-What becomes visible that was hidden by the boxplot?
+### Questions
+
+1. What additional information becomes visible when the individual observations are shown?
+2. Does seeing the raw observations change your interpretation of which group has the highest typical score or the greatest variability?
+3. Why can showing the raw observations be especially important when group sample sizes are small or unequal?
 
 ---
 
-# Part 9 — Violin plot
+# Part 9 — Compare boxplots, strip plots, and violin plots
+
+Now create a violin plot:
 
 ```python
 sns.violinplot(
@@ -312,21 +331,23 @@ sns.violinplot(
 plt.show()
 ```
 
-Compare:
+You have now examined the same grouped distributions in three different ways:
 
 ```text
 boxplot
+boxplot + strip plot
 violin plot
-strip plot
 ```
 
-and questions:
+### Questions
 
-1. Which group has the highest median?
-2. Which appears most variable?
-3. What information is hidden?
+1. Which display makes the median and quartiles easiest to compare?
+2. Which display makes the individual observations and sample sizes easiest to see?
+3. Which display makes the overall distributional shape easiest to see?
+4. What can a violin plot reveal that a boxplot may hide?
+5. Based on all three displays, briefly summarize how the score distributions differ among groups A, B, and C.
 
-Which representation best answers which question?
+> The goal is not to choose one universally "best" plot. Different displays emphasize different features of the same data.
 
 ---
 
