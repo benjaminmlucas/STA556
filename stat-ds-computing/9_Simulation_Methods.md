@@ -2,11 +2,9 @@
 
 ## Why this week matters
 
-Week 9 focused on vectorized numerical computing with NumPy. Week 10 uses that machinery to study one of the most important tools in computational statistics:
+The previous section focused on vectorized numerical computing with NumPy. This section uses that machinery to study one of the most important tools in computational statistics: **simulation**
 
-> **simulation**
-
-The approved STA 556 schedule identifies Week 10 as covering:
+In this section we will cover:
 
 - random-number generation;
 - inverse-transform sampling;
@@ -1255,13 +1253,13 @@ https://jakevdp.github.io/PythonDataScienceHandbook/
 
 # 42. YouTube recommendations
 
-## 1. jbstatistics — "Monte Carlo Simulation"
+## 1. Ben Lambert — "An introduction to inverse transform sampling"
 
-A clear conceptual introduction to Monte Carlo simulation and repeated random sampling. It is useful for reinforcing the idea that simulation approximates probabilities and expectations through repeated experiments.
+A clear, statistics-focused explanation of inverse-transform sampling. The video shows how draws from a Uniform(0,1) distribution can be transformed through an inverse CDF to generate samples from a target distribution.
 
-**Recommended use:** Watch before the Monte Carlo estimation section.
+**Recommended use:** Watch before the inverse-transform sampling section.
 
-[Find on YouTube](https://www.youtube.com/results?search_query=jbstatistics+Monte+Carlo+Simulation)
+[Watch on YouTube](https://www.youtube.com/watch?v=rnBbYsysPaU)
 
 ---
 
