@@ -2,7 +2,7 @@
 
 ## Why this week matters
 
-The previous section focused on vectorized numerical computing with NumPy. This section uses that machinery to study one of the most important tools in computational statistics: **simulation**
+The previous section focused on vectorized numerical computing with NumPy. This section will use that machinery to study one of the most important tools in computational statistics: simulation.
 
 In this section we will cover:
 
@@ -1253,23 +1253,23 @@ https://jakevdp.github.io/PythonDataScienceHandbook/
 
 # 42. YouTube recommendations
 
-## 1. Ben Lambert — "An introduction to inverse transform sampling"
+## 1. MIT OpenCourseWare — "Monte Carlo Simulation"
+
+A clear introduction to Monte Carlo simulation from MIT's *Introduction to Computational Thinking and Data Science*. The lecture focuses on using repeated random sampling to approximate quantities that are difficult to calculate directly and gives useful intuition for why Monte Carlo methods work.
+
+**Recommended use:** Watch before the Monte Carlo estimation section.
+
+[Watch on YouTube](https://www.youtube.com/watch?v=OgO1gpXSUzU)
+
+---
+
+## 2. Ben Lambert — "An introduction to inverse transform sampling"
 
 A clear, statistics-focused explanation of inverse-transform sampling. The video shows how draws from a Uniform(0,1) distribution can be transformed through an inverse CDF to generate samples from a target distribution.
 
 **Recommended use:** Watch before the inverse-transform sampling section.
 
 [Watch on YouTube](https://www.youtube.com/watch?v=rnBbYsysPaU)
-
----
-
-## 2. Inverse Transform Sampling
-
-A focused tutorial on inverse-transform sampling is particularly useful this week because the method connects uniform random-number generation to arbitrary target distributions.
-
-**Recommended use:** Watch before the inverse-transform sampling exercises.
-
-[Find inverse-transform sampling tutorials on YouTube](https://www.youtube.com/results?search_query=inverse+transform+sampling+tutorial)
 
 ---
 
