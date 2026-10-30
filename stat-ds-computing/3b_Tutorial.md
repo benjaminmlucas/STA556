@@ -26,7 +26,7 @@ By the end of this tutorial, you should be able to:
 Create:
 
 ```text
-notebooks/week04_wrangle_part2.ipynb
+notebooks/section_2_2_wrangle_part2.ipynb
 ```
 
 At the top:
@@ -1067,7 +1067,7 @@ git add .
 Commit:
 
 ```bash
-git commit -m "Complete Week 4 joining reshaping and missing data"
+git commit -m "Complete Section 2.2 joining reshaping and missing data"
 ```
 
 Push:
@@ -1118,7 +1118,7 @@ Why is dropping missing observations a statistical decision rather than only a p
 
 # Completion checklist
 
-- [ ] Created Week 4 notebook
+- [ ] Created Section 2.2 notebook
 - [ ] Performed an inner join
 - [ ] Performed a left join
 - [ ] Performed a right join
@@ -1171,4 +1171,4 @@ Validate
 Analysis-ready data
 ```
 
-Next week we will work with **external data sources**, including SQL databases, APIs, JSON, HTML, and binary file formats.
+The next section we will work with **external data sources**, including SQL databases, APIs, JSON, HTML, and binary file formats.

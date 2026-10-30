@@ -25,7 +25,7 @@ By the end of this tutorial, you should be able to:
 
 ---
 
-# Part 0 — Create a Week 5 project structure
+# Part 0 — Create a Section 2.3 project structure
 
 Create:
 
@@ -39,7 +39,7 @@ data/
 Create:
 
 ```text
-notebooks/week05_external_data.ipynb
+notebooks/section_2_3_external_data.ipynb
 ```
 
 Import:
@@ -422,7 +422,7 @@ joined
 joined.isna().sum()
 ```
 
-Which Week 4 pandas merge is equivalent?
+Which Section 2.2 pandas merge is equivalent?
 
 ---
 
@@ -777,7 +777,7 @@ If the required dependency is not installed, document that rather than installin
 metadata = {
     "source": "JSONPlaceholder users endpoint",
     "url": "https://jsonplaceholder.typicode.com/users",
-    "retrieved_for": "STA 556 Week 5",
+    "retrieved_for": "STA 556 Section 2.3",
     "raw_file": str(json_path),
     "processed_file": str(parquet_path)
 }
@@ -983,7 +983,7 @@ Commit appropriate code/documentation:
 
 ```bash
 git add .
-git commit -m "Complete Week 5 external data ingestion"
+git commit -m "Complete Section 2.3 external data ingestion"
 git push
 ```
 
@@ -1035,7 +1035,7 @@ Why can ingestion fail scientifically even when no Python exception occurs?
 
 # Completion checklist
 
-- [ ] Created Week 5 notebook
+- [ ] Created Section 2.3 notebook
 - [ ] Created raw/processed/external directories
 - [ ] Wrote and read CSV data
 - [ ] Controlled imported data types
@@ -1064,7 +1064,7 @@ Why can ingestion fail scientifically even when no Python exception occurs?
 - [ ] Built an end-to-end ingestion pipeline
 - [ ] Added validation checks
 - [ ] Completed the source-selection challenge
-- [ ] Committed appropriate Week 5 work to Git
+- [ ] Committed appropriate Section 2.3 work to Git
 - [ ] Pushed work to GitHub
 
 ---
@@ -1093,4 +1093,4 @@ Record provenance
 Save analysis-ready data
 ```
 
-Next week we move into **Exploratory Data Analysis and Visualization**.
+The next section we move into **Exploratory Data Analysis and Visualization**.

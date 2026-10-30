@@ -28,7 +28,7 @@ By the end of this tutorial, you should be able to:
 Create:
 
 ```text
-notebooks/week06_visualization.ipynb
+notebooks/section_3_1_visualization.ipynb
 ```
 
 Ensure the project contains:
@@ -840,7 +840,7 @@ Inspect the figure as a reader rather than as its author.
 ```python
 figure_path = (
     "figures/"
-    "week06_baseline_vs_score.png"
+    "section_3_1_baseline_vs_score.png"
 )
 ```
 
@@ -859,7 +859,7 @@ Also save as PDF:
 ```python
 fig.savefig(
     "figures/"
-    "week06_baseline_vs_score.pdf",
+    "section_3_1_baseline_vs_score.pdf",
     bbox_inches="tight"
 )
 ```
@@ -989,7 +989,7 @@ git add .
 Commit:
 
 ```bash
-git commit -m "Complete Week 6 exploratory visualization"
+git commit -m "Complete Section 3.1 exploratory visualization"
 ```
 
 Push:
@@ -1042,7 +1042,7 @@ Why should final figures be created and saved from code rather than manually edi
 
 # Completion checklist
 
-- [ ] Created Week 6 notebook
+- [ ] Created Section 3.1 notebook
 - [ ] Generated a reproducible analysis dataset
 - [ ] Classified variables by type
 - [ ] Created histograms
@@ -1072,7 +1072,7 @@ Why should final figures be created and saved from code rather than manually edi
 - [ ] Saved PNG and PDF output
 - [ ] Completed the mini EDA challenge
 - [ ] Critiqued and revised a visualization
-- [ ] Committed Week 6 work to Git
+- [ ] Committed Section 3.1 work to Git
 - [ ] Pushed work to GitHub
 
 ---
@@ -1099,4 +1099,4 @@ Communicate clearly
 Save reproducibly
 ```
 
-Next week we will move into **Modular Programming & Functions**, including pure functions, variable scope, and functional programming patterns.
+The next section we will move into **Modular Programming & Functions**, including pure functions, variable scope, and functional programming patterns.

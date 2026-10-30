@@ -1,10 +1,10 @@
 # 1.1 Building a Professional Python Data Science Environment
 
-## Why this week matters
+## Why this section matters
 
 STA 556 is not primarily a course about learning Python syntax. It is a course about developing **professional computational workflows for statistics and data science**.
 
-The course syllabus identifies Week 1 as the foundations module, covering:
+This foundational section covers:
 
 - GitHub Codespaces as the common course environment
 - command-line basics in a Linux shell
@@ -484,7 +484,7 @@ Later in the course we will develop more systematic approaches to managing depen
 
 For STA 556, the repository includes a `.devcontainer/devcontainer.json` configuration and `requirements.txt`. When the Codespace is created, these define/install the common course tools.
 
-The key principle for Week 1 is:
+The key principle for Section 1.1 is:
 
 > **Your code is only one part of a computational analysis. The environment in which the code runs also matters.**
 
@@ -526,7 +526,7 @@ A strong reference for the Python data science ecosystem, particularly NumPy, Pa
 
 https://jakevdp.github.io/PythonDataScienceHandbook/
 
-For Week 1, focus on the introductory material and the general philosophy of the Python data science stack rather than attempting to read the entire book.
+For Section 1.1, focus on the introductory material and the general philosophy of the Python data science stack rather than attempting to read the entire book.
 
 ### Wes McKinney — *Python for Data Analysis*, 3rd ed.
 
@@ -589,9 +589,9 @@ A longer, very practical walkthrough. It covers initializing repositories, stagi
 
 ---
 
-# Week 1 takeaway
+# Takeaway
 
-By the end of Week 1, students should be able to explain:
+By the end of this section, students should be able to explain:
 
 1. What a GitHub Codespace is and why the course uses one.
 2. What a command-line shell is and why it is useful.
@@ -602,4 +602,4 @@ By the end of Week 1, students should be able to explain:
 7. Why computational environments and dependencies matter.
 8. What a professional data science project structure looks like.
 
-Most importantly, students should leave Week 1 thinking about **data science as a computational workflow**, rather than simply as writing code.
+Most importantly, students should leave Section 1.1 thinking about **data science as a computational workflow**, rather than simply as writing code.

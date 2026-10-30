@@ -43,13 +43,13 @@ project/
 Create:
 
 ```text
-reports/week08_report.qmd
+reports/section_4_2_report.qmd
 ```
 
 Also create:
 
 ```text
-notebooks/week08_reproducibility.ipynb
+notebooks/section_4_2_reproducibility.ipynb
 ```
 
 Create a small Quarto project configuration at the **repository root**:
@@ -66,7 +66,7 @@ project:
   execute-dir: project
 ```
 
-`execute-dir: project` tells Quarto to execute report code from the project root. This keeps paths such as `data/processed/week08_data.csv` and imports such as `from src...` consistent with the rest of the course.
+`execute-dir: project` tells Quarto to execute report code from the project root. This keeps paths such as `data/processed/section_4_2_data.csv` and imports such as `from src...` consistent with the rest of the course.
 
 ---
 
@@ -109,7 +109,7 @@ Why could package versions matter if the same source code is run several years l
 In:
 
 ```text
-notebooks/week08_reproducibility.ipynb
+notebooks/section_4_2_reproducibility.ipynb
 ```
 
 create cells in this order.
@@ -257,7 +257,7 @@ Save:
 
 ```python
 df.to_csv(
-    "data/processed/week08_data.csv",
+    "data/processed/section_4_2_data.csv",
     index=False
 )
 ```
@@ -269,7 +269,7 @@ df.to_csv(
 In:
 
 ```text
-src/week08_analysis.py
+src/section_4_2_analysis.py
 ```
 
 write:
@@ -306,7 +306,7 @@ Save.
 In the notebook:
 
 ```python
-from src.week08_analysis import (
+from src.section_4_2_analysis import (
     summarize_groups
 )
 ```
@@ -329,14 +329,14 @@ Why is this preferable to copying the summary logic into every report?
 Open:
 
 ```text
-reports/week08_report.qmd
+reports/section_4_2_report.qmd
 ```
 
 Add:
 
 ```yaml
 ---
-title: "STA 556 Week 8 Reproducible Report"
+title: "STA 556 Section 4.2 Reproducible Report"
 author: "Your Name"
 format: html
 jupyter: python3
@@ -363,7 +363,7 @@ Add a Python block:
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from src.week08_analysis import summarize_groups
+from src.section_4_2_analysis import summarize_groups
 ```
 ````
 
@@ -382,7 +382,7 @@ Add:
 ````markdown
 ```{python}
 df = pd.read_csv(
-    "data/processed/week08_data.csv"
+    "data/processed/section_4_2_data.csv"
 )
 
 df.head()
@@ -527,7 +527,7 @@ Now reference the figure in your prose according to Quarto's cross-reference syn
 From the project root:
 
 ```bash
-quarto render reports/week08_report.qmd
+quarto render reports/section_4_2_report.qmd
 ```
 
 Locate the resulting HTML file.
@@ -548,7 +548,7 @@ Open it.
 Run:
 
 ```bash
-quarto preview reports/week08_report.qmd
+quarto preview reports/section_4_2_report.qmd
 ```
 
 In GitHub Codespaces, Quarto runs the preview server **inside the Codespace**, not on your laptop. Codespaces detects the preview server and exposes it through a forwarded port. Use the **Open in Browser** notification or the VS Code **Ports** panel rather than manually typing a `localhost` address.
@@ -623,7 +623,7 @@ format:
 Then:
 
 ```bash
-quarto render reports/week08_report.qmd
+quarto render reports/section_4_2_report.qmd
 ```
 
 Inspect both outputs.
@@ -729,7 +729,7 @@ Why should these remain conceptually distinct?
 Rename:
 
 ```text
-data/processed/week08_data.csv
+data/processed/section_4_2_data.csv
 ```
 
 temporarily.
@@ -783,7 +783,7 @@ This command documents how an environment can be recreated, but **students norma
 and then:
 
 ```bash
-quarto render reports/week08_report.qmd
+quarto render reports/section_4_2_report.qmd
 ```
 
 You do not need to destroy your current environment.
@@ -895,7 +895,7 @@ Create a small shell script conceptually containing:
 
 ```bash
 python src/prepare_data.py
-quarto render reports/week08_report.qmd
+quarto render reports/section_4_2_report.qmd
 ```
 
 You do not need sophisticated automation yet.
@@ -974,12 +974,12 @@ If your partner must ask you where everything is, improve the project documentat
 Add:
 
 ```markdown
-## Week 8 report
+## Section 4.2 report
 
 To render the report:
 
 ```bash
-quarto render reports/week08_report.qmd
+quarto render reports/section_4_2_report.qmd
 ```
 
 Required Python dependencies are listed in:
@@ -1020,7 +1020,7 @@ Then:
 
 ```bash
 git add .
-git commit -m "Complete Week 8 reproducible reporting workflow"
+git commit -m "Complete Section 4.2 reproducible reporting workflow"
 git push
 ```
 
@@ -1064,7 +1064,7 @@ Why should rendered Word/HTML/PDF files usually not become the primary source do
 
 ### 9. Modularity
 
-How did the Week 7 function/module work improve this week's report?
+How did the Section 4.1 function/module work improve this section's report?
 
 ### 10. Scientific validity
 
@@ -1074,7 +1074,7 @@ Why can a workflow be reproducible but still statistically wrong?
 
 # Completion checklist
 
-- [ ] Created Week 8 notebook
+- [ ] Created Section 4.2 notebook
 - [ ] Created a Quarto `.qmd` report
 - [ ] Demonstrated hidden notebook state
 - [ ] Restarted and ran a notebook from top to bottom
@@ -1107,7 +1107,7 @@ Why can a workflow be reproducible but still statistically wrong?
 - [ ] Audited the project for reproducibility
 - [ ] Attempted a peer reproducibility test
 - [ ] Updated the README
-- [ ] Committed Week 8 work to Git
+- [ ] Committed Section 4.2 work to Git
 - [ ] Pushed work to GitHub
 
 ---
@@ -1134,4 +1134,4 @@ HTML / Word / PDF
 Another person can reproduce it
 ```
 
-Next week we move into **Matrix Computation & Linear Algebra**, including broadcasting, vectorized operations, SVD, and QR decomposition for statistical computing.
+The next section we move into **Matrix Computation & Linear Algebra**, including broadcasting, vectorized operations, SVD, and QR decomposition for statistical computing.

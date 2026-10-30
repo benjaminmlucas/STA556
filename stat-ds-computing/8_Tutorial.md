@@ -29,7 +29,7 @@ By the end of this tutorial, you should be able to:
 Create:
 
 ```text
-notebooks/week09_linear_algebra.ipynb
+notebooks/section_5_1_linear_algebra.ipynb
 ```
 
 Import:
@@ -937,7 +937,7 @@ rather than exact equality?
 ```bash
 git status
 git add .
-git commit -m "Complete Week 9 matrix computation exercises"
+git commit -m "Complete Section 5.1 matrix computation exercises"
 git push
 ```
 
@@ -989,7 +989,7 @@ How can SVD or conditioning reveal problems such as multicollinearity?
 
 # Completion checklist
 
-- [ ] Created Week 9 notebook
+- [ ] Created Section 5.1 notebook
 - [ ] Created NumPy arrays
 - [ ] Inspected shape, dimension, size, and dtype
 - [ ] Compared `(n,)`, `(n,1)`, and `(1,n)`
@@ -1025,7 +1025,7 @@ How can SVD or conditioning reveal problems such as multicollinearity?
 - [ ] Compared loop and vectorized implementations
 - [ ] Completed the statistical-computing challenge
 - [ ] Used `np.allclose()` for numerical checks
-- [ ] Committed Week 9 work to Git
+- [ ] Committed Section 5.1 work to Git
 - [ ] Pushed work to GitHub
 
 ---
@@ -1052,4 +1052,4 @@ QR / SVD
 Stable and efficient computation
 ```
 
-Next week we will use this numerical foundation for **random-number generation, inverse-transform sampling, and Monte Carlo simulation**.
+The next section we will use this numerical foundation for **random-number generation, inverse-transform sampling, and Monte Carlo simulation**.

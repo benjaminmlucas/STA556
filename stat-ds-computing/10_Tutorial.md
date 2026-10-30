@@ -28,7 +28,7 @@ By the end of this tutorial, you should be able to:
 Create:
 
 ``` text
-notebooks/week11_resampling.ipynb
+notebooks/section_5_3_resampling.ipynb
 ```
 
 Import:
@@ -430,7 +430,7 @@ medians = bootstrap_statistic(
 
 ### Connection
 
-Which Week 7 concept allows `statistic` itself to be passed as an
+Which Section 4.1 concept allows `statistic` itself to be passed as an
 argument?
 
 ------------------------------------------------------------------------
@@ -1247,7 +1247,7 @@ git add .
 Commit:
 
 ``` bash
-git commit -m "Complete Week 11 bootstrap and permutation exercises"
+git commit -m "Complete Section 5.3 bootstrap and permutation exercises"
 ```
 
 Push:
@@ -1307,7 +1307,7 @@ permutation resampling?
 
 # Completion checklist
 
--   [ ] Created Week 11 notebook
+-   [ ] Created Section 5.3 notebook
 -   [ ] Generated one bootstrap sample
 -   [ ] Explained why replacement is required
 -   [ ] Constructed a bootstrap distribution with a loop
@@ -1341,7 +1341,7 @@ permutation resampling?
 -   [ ] Completed the mini resampling study
 -   [ ] Compared results across resampling counts
 -   [ ] Audited the resampling design
--   [ ] Committed Week 11 work to Git
+-   [ ] Committed Section 5.3 work to Git
 -   [ ] Pushed work to GitHub
 
 ------------------------------------------------------------------------
@@ -1370,6 +1370,6 @@ null distribution
 p-value
 ```
 
-Next week we move into **numerical optimization**, including root
+The next section we move into **numerical optimization**, including root
 finding, Newton--Raphson, gradient descent, and statistical objective
 functions.

@@ -1,14 +1,14 @@
 # 4.2 Reproducibility & Reporting
 
-## Why this week matters
+## Why this section matters
 
-In Week 7, we began turning repeated analysis steps into reusable functions and modules. This week asks how we turn those computational components into documents that another person can **read, rerun, verify, and regenerate**.
+In Section 4.1, we began turning repeated analysis steps into reusable functions and modules. This section asks how we turn those computational components into documents that another person can **read, rerun, verify, and regenerate**.
 
 The central question is:
 
 > **How do we make a statistical analysis reproducible from data and code all the way to the final report?**
 
-The approved STA 556 schedule identifies Week 8 as **Reproducibility & Reporting**, including:
+This section covers:
 
 - literate programming;
 - Quarto;
@@ -261,7 +261,7 @@ A reproducible notebook should behave like a program even though it is interacti
 
 # 10. Keep reusable logic outside the notebook
 
-Week 7 introduced modules.
+Section 4.1 introduced modules.
 
 Instead of placing every function in the notebook:
 
@@ -906,7 +906,7 @@ project:
 This makes Quarto execute code relative to the project root, matching the course convention for `data/`, `src/`, and other repository-relative paths.
 
 
-A Week 8 project might look like:
+A Section 4.2 project might look like:
 
 ```text
 project/
@@ -919,7 +919,7 @@ project/
 ├── src/
 │   └── analysis.py
 ├── reports/
-│   └── week08_report.qmd
+│   └── section_4_2_report.qmd
 └── figures/
 ```
 
@@ -929,7 +929,7 @@ The structure communicates the computational workflow.
 
 # 36. Key ideas
 
-By the end of Week 8, you should be able to explain:
+By the end of this section, you should be able to explain:
 
 1. What computational reproducibility means.
 2. Why copy-and-paste reporting creates errors.
@@ -986,7 +986,7 @@ https://quarto.org/docs/projects/virtual-environments.html
 
 A particularly strong fit for STA 556. The talk explains Quarto as a reproducible publishing system and demonstrates Python/Jupyter integration, executable documents, multi-format publishing, parameters, and reproducible computational publications.
 
-**Recommended use:** Watch the first 30–40 minutes alongside the theory material. The sections on computational documents, rendering, Jupyter integration, and parameters map closely onto Week 8.
+**Recommended use:** Watch the first 30–40 minutes alongside the theory material. The sections on computational documents, rendering, Jupyter integration, and parameters map closely onto Section 4.2.
 
 [Watch on YouTube](https://www.youtube.com/watch?v=TnVgHE9LAiw)
 
@@ -1002,17 +1002,17 @@ A practical Python-based Quarto walkthrough covering setup, Markdown, HTML/PDF/W
 
 ---
 
-## 3. Jupyter reproducibility / restart-and-run-all
+## 3. CodeRefinery — Reproducible Jupyter Notebooks
 
 For additional reinforcement, find a short Jupyter tutorial emphasizing kernel state, execution order, and restarting/running notebooks from top to bottom.
 
 **Recommended use:** Optional reinforcement for students who regularly work interactively in notebooks.
 
-[Find Jupyter reproducibility videos on YouTube](https://www.youtube.com/results?search_query=Jupyter+notebook+reproducibility+restart+run+all)
+[Watch on YouTube](https://www.youtube.com/watch?v=FGqz5_Do3Og)
 
 ---
 
-# 39. Week 8 takeaway
+# 39. Takeaway
 
 The central lesson is:
 
@@ -1038,4 +1038,4 @@ HTML / PDF / Word
 Reproduce
 ```
 
-Next week we move into **Matrix Computation & Linear Algebra**, including vectorization, broadcasting, and matrix decompositions for statistical computing.
+The next section we move into **Matrix Computation & Linear Algebra**, including vectorization, broadcasting, and matrix decompositions for statistical computing.

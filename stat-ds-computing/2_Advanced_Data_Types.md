@@ -1,12 +1,12 @@
 # 1.2 Data Types & Data Structures
 
-## Why this week matters
+## Why this section matters
 
-Week 1 established the professional computational workflow. Week 2 moves inside Python and asks:
+Section 1.1 established the professional computational workflow. Section 1.2 moves inside Python and asks:
 
 > **What actually happens when Python stores and manipulates data?**
 
-Week 2 is about **Data Types & Data Structures**, covering mutable vs. immutable objects, memory models, static vs. dynamic typing, and list/dictionary comprehensions.
+Section 1.2 is about **Data Types & Data Structures**, covering mutable vs. immutable objects, memory models, static vs. dynamic typing, and list/dictionary comprehensions.
 
 For statistical computing, these ideas matter because data representation affects how code behaves, how functions interact with their inputs, readability, and eventually computational efficiency.
 
@@ -421,7 +421,7 @@ These concepts prepare us for DataFrames, vectorization, matrix computation, sim
 
 ## 18. Key ideas
 
-By the end of Week 2, students should be able to explain:
+By the end of this section, students should be able to explain:
 
 1. A Python variable is a name bound to an object.
 2. Objects have identity, type, and value.
@@ -466,7 +466,7 @@ https://jakevdp.github.io/PythonDataScienceHandbook/
 
 ### 1. Corey Schafer — Mutable vs Immutable
 
-A short, focused explanation of the difference between mutable and immutable Python objects. This is particularly useful alongside the Week 2 exercises on mutation, references, and copying.
+A short, focused explanation of the difference between mutable and immutable Python objects. This is particularly useful alongside the Section 1.2 exercises on mutation, references, and copying.
 
 [Watch on YouTube](https://www.youtube.com/watch?v=5qQQ3yzbKp8)
 
@@ -484,12 +484,12 @@ A concise explanation of dynamic versus static typing, including examples of whe
 
 ### 4. Real Python — Type Hinting
 
-An introduction to Python type annotations, including function arguments and return values. It provides a useful extension of the basic type-hinting material in this week's tutorial.
+An introduction to Python type annotations, including function arguments and return values. It provides a useful extension of the basic type-hinting material in this section's tutorial.
 
 [Watch the video](https://realpython.com/lessons/type-hinting/)
 
 
-## 20. Week 2 takeaway
+## 20. Takeaway
 
 > **Good statistical computing begins with understanding how data are represented and manipulated.**
 

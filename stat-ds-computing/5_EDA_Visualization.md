@@ -1,12 +1,12 @@
 # 3.1 Exploratory Data Analysis & Visualization
 
-## Why this week matters
+## Why this section matters
 
-In Weeks 3–5, we learned how to acquire, combine, reshape, filter, and validate data. This week asks what comes next:
+In Weeks 3–5, we learned how to acquire, combine, reshape, filter, and validate data. This section asks what comes next:
 
 > **How do we use visualization to understand data before formal modeling, and how do we communicate those patterns clearly?**
 
-The approved STA 556 schedule identifies Week 6 as **Exploratory Data Analysis & Visualization**, including:
+This section covers:
 
 - the Grammar of Graphics concept;
 - visualizing continuous and categorical data;
@@ -842,7 +842,7 @@ Be explicit about what an interval represents. Not every shaded band has the sam
 
 # 34. Key ideas
 
-By the end of Week 6, you should be able to explain:
+By the end of this section, you should be able to explain:
 
 1. The role of visualization in EDA.
 2. Why numerical summaries and plots complement one another.
@@ -903,17 +903,17 @@ A practical introduction to using `plotnine` to construct statistical graphics i
 
 ---
 
-## 3. Corey Schafer — Matplotlib Tutorials
+## 3. Corey Schafer — "Matplotlib Tutorial (Part 1): Creating and Customizing Our First Plots"
 
 Corey Schafer's matplotlib material is a useful practical complement to the higher-level Grammar of Graphics perspective, particularly for students who want more control over figure objects, axes, labels, and export.
 
 **Recommended use:** Optional extension for producing polished matplotlib figures.
 
-[Find the Matplotlib tutorials on YouTube](https://www.youtube.com/results?search_query=Corey+Schafer+Matplotlib+tutorial)
+[Watch on YouTube](https://www.youtube.com/watch?v=UO98lJQ3QGI)
 
 ---
 
-# 37. Week 6 takeaway
+# 37. Takeaway
 
 > **A statistical visualization is an argument about data expressed through visual encodings.**
 
@@ -935,4 +935,4 @@ Refine communication
 Save reproducible figure
 ```
 
-Next week we move into **Modular Programming & Functions**, including pure functions, variable scope, and functional programming patterns.
+The next section we move into **Modular Programming & Functions**, including pure functions, variable scope, and functional programming patterns.

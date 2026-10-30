@@ -1,8 +1,8 @@
 # 2.2 Joining, Reshaping & Missing Data
 
-## Why this week matters
+## Why this section matters
 
-Week 3 focused on selecting observations and variables from a single DataFrame. Real data science projects often require something more complicated:
+Section 2.1 focused on selecting observations and variables from a single DataFrame. Real data science projects often require something more complicated:
 
 - information is split across several tables;
 - datasets need to be stacked together;
@@ -10,11 +10,11 @@ Week 3 focused on selecting observations and variables from a single DataFrame. 
 - observations may be represented in wide or long form;
 - data may be incomplete.
 
-The central question for Week 4 is:
+The central question for this section is:
 
 > **How do we transform multiple imperfect tables into one analysis-ready dataset without changing the meaning of the data?**
 
-This week covers:
+This section covers:
 
 - `merge()` and database-style joins;
 - `concat()` for stacking or combining DataFrames;
@@ -863,7 +863,7 @@ Document
 
 # 30. Key ideas
 
-By the end of Week 4, you should be able to explain:
+By the end of this section, you should be able to explain:
 
 1. What a join key represents.
 2. Inner, left, right, and outer joins.
@@ -930,7 +930,7 @@ A practical overview of combining DataFrames using merges, joins, and concatenat
 
 ## 2. Rob Mulla — "Melt & Pivot Data with Pandas"
 
-A concise demonstration of reshaping pandas DataFrames with `melt()` and `pivot()`. This maps directly onto the wide-to-long and long-to-wide material in this week.
+A concise demonstration of reshaping pandas DataFrames with `melt()` and `pivot()`. This maps directly onto the wide-to-long and long-to-wide material in this section.
 
 **Recommended use:** Watch before the reshaping exercises.
 
@@ -948,7 +948,7 @@ A detailed practical tutorial on cleaning pandas data, including detecting, drop
 
 ---
 
-# 33. Week 4 takeaway
+# 33. Takeaway
 
 The central lesson is:
 
@@ -976,4 +976,4 @@ Validation
 Analysis-ready data
 ```
 
-Next week we will move into **input/output and external data sources**, including SQL, APIs, JSON, HTML, and binary data formats.
+The next section we will move into **input/output and external data sources**, including SQL, APIs, JSON, HTML, and binary data formats.

@@ -3,12 +3,12 @@
 **Course:** STA 556 Statistics and Data Science Computing Workflows\
 **Program:** M.S. Statistics and Data Science, Northern Arizona
 University\
-**Week 11:** Statistical Computing --- Resampling Methods from Scratch
+**Section 5.3:** Statistical Computing --- Resampling Methods from Scratch
 
-## Why this week matters
+## Why this section matters
 
-Week 10 introduced repeated simulation from a known probability model.
-Week 11 changes the source of randomness.
+Section 5.2 introduced repeated simulation from a known probability model.
+Section 5.3 changes the source of randomness.
 
 Instead of saying:
 
@@ -25,7 +25,7 @@ The central question is:
 > **How can we approximate uncertainty and null distributions by
 > repeatedly resampling the data we actually observed?**
 
-This week focuses on:
+This section focuses on:
 
 -   the resampling idea;
 -   bootstrap resampling;
@@ -308,7 +308,7 @@ studentized
 BCa
 ```
 
-This week focuses primarily on the **percentile interval** because
+This section focuses primarily on the **percentile interval** because
 students are implementing the procedure from scratch.
 
 The important lesson is:
@@ -844,7 +844,7 @@ Useful questions:
 -   Is the p-value near a decision threshold?
 -   What is the Monte Carlo variability?
 
-As in Week 10, simulation size should be justified rather than chosen
+As in Section 5.2, simulation size should be justified rather than chosen
 ritualistically.
 
 ------------------------------------------------------------------------
@@ -898,7 +898,7 @@ def bootstrap_statistic(
 ```
 
 This uses a statistic function as an argument, connecting directly to
-Week 7's higher-order functions.
+Section 4.1's higher-order functions.
 
 ------------------------------------------------------------------------
 
@@ -1030,7 +1030,7 @@ Interpret statistically
 
 # 39. Key ideas
 
-By the end of Week 11, you should be able to explain:
+By the end of this section, you should be able to explain:
 
 1.  What resampling means.
 2.  Why bootstrap samples use replacement.
@@ -1110,11 +1110,11 @@ estimator uncertainty.
 confidence-interval sections.
 
 [Find on
-YouTube](https://www.youtube.com/results?search_query=StatQuest+bootstrapping)
+YouTube](https://www.youtube.com/watch?v=Xz0x-8-cgaQ)
 
 ------------------------------------------------------------------------
 
-## 3. Permutation Tests / Randomization Tests
+## 3. Wild About Statistics — "The Randomization Test"
 
 A visual permutation-test tutorial can reinforce the key idea that
 labels are rearranged to construct the distribution expected under the
@@ -1124,11 +1124,11 @@ null hypothesis.
 test.
 
 [Find on
-YouTube](https://www.youtube.com/results?search_query=permutation+test+randomization+test+statistics+tutorial)
+YouTube](https://www.youtube.com/watch?v=zecArldpptY)
 
 ------------------------------------------------------------------------
 
-# 42. Week 11 takeaway
+# 42. Takeaway
 
 The central lesson is:
 
@@ -1155,6 +1155,6 @@ null-distribution approximation
 SE / CI / p-value
 ```
 
-Next week we move into **numerical optimization**, including root
+The next section we move into **numerical optimization**, including root
 finding, Newton--Raphson, gradient descent, and statistical objective
 functions.

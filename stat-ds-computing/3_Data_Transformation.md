@@ -1,20 +1,20 @@
 # 2.1 DataFrames, Indexing, Slicing & Filtering
 
-## Why this week matters
+## Why this section matters
 
-In Week 2, we worked with Python's built-in data structures. This week we move to the central structure used for tabular statistical computing in Python: the **pandas DataFrame**.
+In Section 1.2, we worked with Python's built-in data structures. This section we move to the central structure used for tabular statistical computing in Python: the **pandas DataFrame**.
 
 The main question is:
 
 > **How do we tell the computer exactly which observations and variables belong in an analysis?**
 
-The approved course schedule identifies Week 3 as the first data-engineering module, covering **pandas DataFrames, indexing, slicing, and filtering**.
+The approved course schedule identifies Section 2.1 as the first data-engineering module, covering **pandas DataFrames, indexing, slicing, and filtering**.
 
 ---
 
 # 1. From Python objects to tabular data
 
-Last week we could represent observations as a list of dictionaries:
+The previous section we could represent observations as a list of dictionaries:
 
 ```python
 participants = [
@@ -717,7 +717,7 @@ df.loc[condition, "column"] = value
 
 # 28. Connection to the rest of STA 556
 
-This week's work forms the foundation for later data-engineering tasks:
+This section's work forms the foundation for later data-engineering tasks:
 
 ```text
 DataFrame
@@ -745,7 +745,7 @@ The underlying question remains:
 
 # 29. Key ideas
 
-By the end of Week 3, you should be able to explain:
+By the end of this section, you should be able to explain:
 
 1. What a pandas DataFrame represents.
 2. The relationship between a DataFrame and Series.
@@ -824,7 +824,7 @@ A practical walkthrough of conditional filtering in pandas, useful for reinforci
 
 ---
 
-# 32. Week 3 takeaway
+# 32. Takeaway
 
 The central lesson is:
 
@@ -850,4 +850,4 @@ Validate
 Analysis population
 ```
 
-Next week we will extend these ideas to **joining, merging, concatenating, reshaping, and missing-data strategies**.
+The next section we will extend these ideas to **joining, merging, concatenating, reshaping, and missing-data strategies**.

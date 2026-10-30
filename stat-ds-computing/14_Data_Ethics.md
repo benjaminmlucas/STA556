@@ -1,6 +1,6 @@
 # 8.1 Ethics, Fairness, Accountability & Transparency
 
-## Why this week matters
+## Why this section matters
 
 Throughout STA 556, we have emphasized reproducibility, validation, numerical correctness, and efficient computation.
 
@@ -24,11 +24,11 @@ and still be ethically poor if:
 - users misunderstand what the system can do;
 - there is no meaningful accountability for errors.
 
-The central question for Week 15 is:
+The central question for this section is:
 
 > **How do we evaluate whether a data-science workflow is responsible, not merely technically correct?**
 
-This week focuses on:
+This section focuses on:
 
 - data ethics;
 - bias and representativeness;
@@ -222,11 +222,11 @@ administrative burden
 systematic nonresponse
 ```
 
-Week 4 emphasized:
+Section 2.2 emphasized:
 
 > **Missingness is data.**
 
-In Week 15, we add:
+In Section 8.1, we add:
 
 > **Missingness may also reveal how a system treats different groups.**
 
@@ -651,7 +651,7 @@ transformations
 limitations
 ```
 
-This extends Week 5's provenance ideas.
+This extends Section 2.3's provenance ideas.
 
 ---
 
@@ -878,13 +878,13 @@ poor color choices
 missing denominators
 ```
 
-Week 6's visualization principles are also ethical principles.
+Section 3.1's visualization principles are also ethical principles.
 
 ---
 
 # 43. Responsible optimization
 
-Week 12 showed that an optimizer faithfully minimizes the objective provided.
+Section 6.1 showed that an optimizer faithfully minimizes the objective provided.
 
 If the objective is poorly chosen:
 
@@ -898,7 +898,7 @@ Mathematical optimization does not provide ethical justification for the target.
 
 # 44. Responsible performance engineering
 
-Week 14 emphasized speed.
+Section 7.2 emphasized speed.
 
 But performance improvements can create ethical tradeoffs if they:
 
@@ -955,7 +955,7 @@ Before deployment, ask:
 
 # 46. Key ideas
 
-By the end of Week 15, you should be able to explain:
+By the end of this section, you should be able to explain:
 
 1. Why technically correct analysis can still be ethically poor.
 2. How problem definition affects downstream ethics.
@@ -1029,31 +1029,31 @@ NIST provides official explanatory resources for the AI RMF, which is a useful w
 
 **Recommended use:** Watch before the governance/accountability portion of the week.
 
-[Find NIST AI RMF videos on YouTube](https://www.youtube.com/results?search_query=NIST+AI+Risk+Management+Framework)
+[Watch the official NIST explainer](https://www.nist.gov/video/introduction-nist-ai-risk-management-framework-ai-rmf-10-explainer-video)
 
 ---
 
-## 2. Fairness in Machine Learning
+## 2. MIT OpenCourseWare — Fairness Criteria in Machine Learning
 
 A focused introduction to fairness metrics is useful before the hands-on group-metric calculations.
 
 **Recommended use:** Watch before the demographic-parity, equal-opportunity, and equalized-odds exercises.
 
-[Find fairness-in-ML tutorials on YouTube](https://www.youtube.com/results?search_query=machine+learning+fairness+demographic+parity+equal+opportunity+equalized+odds)
+[Watch on YouTube](https://www.youtube.com/watch?v=euwc0va-7Vo)
 
 ---
 
-## 3. Model Cards and Responsible AI Documentation
+## 3. Google Research — Model Cards for Model Reporting
 
-A short model-card tutorial provides practical context for the documentation exercise in this week's tutorial.
+A short model-card tutorial provides practical context for the documentation exercise in this section's tutorial.
 
 **Recommended use:** Optional preparation for the model-card activity.
 
-[Find model-card tutorials on YouTube](https://www.youtube.com/results?search_query=model+cards+responsible+AI+tutorial)
+[Read the original Model Cards resource](https://research.google/pubs/model-cards-for-model-reporting/)
 
 ---
 
-# 49. Week 15 takeaway
+# 49. Takeaway
 
 The central lesson is:
 

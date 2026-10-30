@@ -28,7 +28,7 @@ By the end of this tutorial, you should be able to:
 Create:
 
 ``` text
-notebooks/week12_optimization.ipynb
+notebooks/section_6_1_optimization.ipynb
 ```
 
 Import:
@@ -1032,7 +1032,7 @@ Can it be checked against an analytical/library result?
 ``` bash
 git status
 git add .
-git commit -m "Complete Week 12 numerical optimization exercises"
+git commit -m "Complete Section 6.1 numerical optimization exercises"
 git push
 ```
 
@@ -1084,7 +1084,7 @@ What should be checked before trusting optimizer output?
 
 # Completion checklist
 
--   [ ] Created Week 12 notebook
+-   [ ] Created Section 6.1 notebook
 -   [ ] Defined and visualized a root problem
 -   [ ] Implemented bisection
 -   [ ] Validated bisection with SciPy
@@ -1115,7 +1115,7 @@ What should be checked before trusting optimizer output?
 -   [ ] Completed the root-vs-optimization challenge
 -   [ ] Completed the mini optimization study
 -   [ ] Audited an optimization workflow
--   [ ] Committed Week 12 work to Git
+-   [ ] Committed Section 6.1 work to Git
 -   [ ] Pushed work to GitHub
 
 ------------------------------------------------------------------------
@@ -1140,5 +1140,5 @@ Parameter estimate
 Validation
 ```
 
-Next week we will focus on **debugging, testing, defensive programming,
+The next section we will focus on **debugging, testing, defensive programming,
 and exception handling**.

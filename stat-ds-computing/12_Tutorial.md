@@ -23,14 +23,14 @@ By the end of this tutorial, you should be able to:
 
 ------------------------------------------------------------------------
 
-# Part 0 --- Set up the Week 13 project
+# Part 0 --- Set up the Section 7.1 project
 
 Create:
 
 ``` text
-src/week13_utils.py
-tests/test_week13_utils.py
-notebooks/week13_testing.ipynb
+src/section_7_1_utils.py
+tests/test_section_7_1_utils.py
+notebooks/section_7_1_testing.ipynb
 ```
 
 Check:
@@ -187,7 +187,7 @@ x.dtype
 
 ### Reflection
 
-How might shape inspection have prevented a Week 9 broadcasting bug?
+How might shape inspection have prevented a Section 5.1 broadcasting bug?
 
 ------------------------------------------------------------------------
 
@@ -399,7 +399,7 @@ from.
 
 # Part 12 --- Create a convergence exception
 
-In `src/week13_utils.py`:
+In `src/section_7_1_utils.py`:
 
 ``` python
 class ConvergenceError(
@@ -427,7 +427,7 @@ Test manually.
 
 # Part 13 --- First pytest test
 
-Add to `src/week13_utils.py`:
+Add to `src/section_7_1_utils.py`:
 
 ``` python
 def square(x):
@@ -437,13 +437,13 @@ def square(x):
 In:
 
 ``` text
-tests/test_week13_utils.py
+tests/test_section_7_1_utils.py
 ```
 
 write:
 
 ``` python
-from src.week13_utils import (
+from src.section_7_1_utils import (
     square
 )
 
@@ -511,7 +511,7 @@ Why might this structure help when tests become more complicated?
 Move `standardize()` into:
 
 ``` text
-src/week13_utils.py
+src/section_7_1_utils.py
 ```
 
 Write:
@@ -681,7 +681,7 @@ What role does the fixture play?
 
 ------------------------------------------------------------------------
 
-# Part 22 --- Test a Week 11 statistic
+# Part 22 --- Test a Section 5.3 statistic
 
 Add:
 
@@ -832,7 +832,7 @@ List three other useful statistical invariants from Weeks 10--12.
 
 ------------------------------------------------------------------------
 
-# Part 27 --- Test bisection from Week 12
+# Part 27 --- Test bisection from Section 6.1
 
 Move your `bisection()` function into `src/`.
 
@@ -876,7 +876,7 @@ def test_bisection_invalid_bracket():
         )
 ```
 
-This protects the fail-fast behavior you added in Week 12.
+This protects the fail-fast behavior you added in Section 6.1.
 
 ------------------------------------------------------------------------
 
@@ -1035,7 +1035,7 @@ Rewrite so each test creates its own data.
 
 ------------------------------------------------------------------------
 
-# Part 35 --- Build a Week 13 test suite
+# Part 35 --- Build a Section 7.1 test suite
 
 Your final test file should include tests for:
 
@@ -1070,7 +1070,7 @@ pytest
 Run one file:
 
 ``` bash
-pytest tests/test_week13_utils.py
+pytest tests/test_section_7_1_utils.py
 ```
 
 Run one test by keyword:
@@ -1131,11 +1131,11 @@ Your repository should now look approximately like:
 ``` text
 project/
 ├── src/
-│   └── week13_utils.py
+│   └── section_7_1_utils.py
 ├── tests/
-│   └── test_week13_utils.py
+│   └── test_section_7_1_utils.py
 ├── notebooks/
-│   └── week13_testing.ipynb
+│   └── section_7_1_testing.ipynb
 └── ...
 ```
 
@@ -1159,7 +1159,7 @@ Then:
 ``` bash
 git status
 git add .
-git commit -m "Complete Week 13 debugging and testing exercises"
+git commit -m "Complete Section 7.1 debugging and testing exercises"
 git push
 ```
 
@@ -1213,9 +1213,9 @@ Why should a fixed bug usually lead to a new permanent test?
 
 # Completion checklist
 
--   [ ] Created Week 13 notebook
--   [ ] Created `src/week13_utils.py`
--   [ ] Created `tests/test_week13_utils.py`
+-   [ ] Created Section 7.1 notebook
+-   [ ] Created `src/section_7_1_utils.py`
+-   [ ] Created `tests/test_section_7_1_utils.py`
 -   [ ] Distinguished syntax/runtime/logic errors
 -   [ ] Read a traceback
 -   [ ] Built a minimal failing example
@@ -1252,7 +1252,7 @@ Why should a fixed bug usually lead to a new permanent test?
 -   [ ] Debugged a failing test systematically
 -   [ ] Audited a function's test design
 -   [ ] Ran the full suite before committing
--   [ ] Committed Week 13 work to Git
+-   [ ] Committed Section 7.1 work to Git
 -   [ ] Pushed work to GitHub
 
 ------------------------------------------------------------------------
@@ -1277,5 +1277,5 @@ Regression test
 More reliable statistical software
 ```
 
-Next week we move into **profiling, bottleneck identification,
+The next section we move into **profiling, bottleneck identification,
 vectorization, parallel computation, and Numba**.

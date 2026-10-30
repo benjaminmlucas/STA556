@@ -1,14 +1,14 @@
 # 4.1 Modular Programming & Functions
 
-## Why this week matters
+## Why this section matters
 
 The first half of STA 556 has focused on data structures, wrangling, external data, and visualization. As projects grow, repeated blocks of code become difficult to maintain.
 
-The central question for Week 7 is:
+The central question for this section is:
 
 > **How do we turn repeated computational steps into reusable, testable, readable components?**
 
-The approved course schedule identifies Week 7 as **Modular Programming & Functions**, including:
+This section covers:
 
 - writing pure functions;
 - variable scope;
@@ -285,7 +285,7 @@ Calling `add_result()` changes external state.
 
 # 12. Mutation as a side effect
 
-From Week 2:
+From Section 1.2:
 
 ```python
 def add_score(scores):
@@ -922,7 +922,7 @@ The code reads like a description of the analysis.
 
 # 38. Key ideas
 
-By the end of Week 7, you should be able to explain:
+By the end of this section, you should be able to explain:
 
 1. Why functions improve statistical code.
 2. Parameters vs. arguments.
@@ -973,7 +973,7 @@ https://docs.python.org/3/library/functools.html
 
 A broad functions tutorial covering function definitions, scope, lambda expressions, `map`, `filter`, `reduce`, and functions as first-class objects.
 
-**Recommended use:** Use selected chapters rather than necessarily watching the entire video. The scope and functional-programming sections align particularly well with Week 7.
+**Recommended use:** Use selected chapters rather than necessarily watching the entire video. The scope and functional-programming sections align particularly well with Section 4.1.
 
 [Watch on YouTube](https://www.youtube.com/watch?v=vLEOBLDFq4g)
 
@@ -989,17 +989,17 @@ A focused treatment of lambda expressions, higher-order functions, and the `map`
 
 ---
 
-## 3. Python Scope / LEGB Rule
+## 3. Corey Schafer — "Python Tutorial: Variable Scope — Understanding the LEGB Rule"
 
 A focused scope tutorial is useful reinforcement for the distinction among Local, Enclosing, Global, and Built-in names.
 
 **Recommended use:** Optional extension after the variable-scope exercises.
 
-[Find LEGB tutorials on YouTube](https://www.youtube.com/results?search_query=Python+LEGB+scope+tutorial)
+[Watch on YouTube](https://www.youtube.com/watch?v=QVdf0LgmICw)
 
 ---
 
-# 41. Week 7 takeaway
+# 41. Takeaway
 
 > **Functions turn a sequence of commands into a reusable computational vocabulary.**
 
@@ -1019,4 +1019,4 @@ Modules
 Reusable statistical workflow
 ```
 
-Next week we move into **Reproducibility & Reporting**, where modular code becomes part of literate and automated computational documents.
+The next section we move into **Reproducibility & Reporting**, where modular code becomes part of literate and automated computational documents.

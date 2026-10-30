@@ -1,8 +1,8 @@
 # 7.1 Debugging, Testing & Defensive Programming
 
-## Why this week matters
+## Why this section matters
 
-By Week 13, you have written code that:
+By Section 7.1, you have written code that:
 
 -   reshapes and merges data;
 -   reads external sources;
@@ -20,7 +20,7 @@ The more important question is:
 > **How do we know the code is correct, robust, and likely to fail
 > clearly when its assumptions are violated?**
 
-This week focuses on:
+This section focuses on:
 
 -   systematic debugging;
 -   reading tracebacks;
@@ -865,7 +865,7 @@ rng = np.random.default_rng(
 
 Then test reproducibly.
 
-This is another reason Week 10 used explicit generator objects.
+This is another reason Section 5.2 used explicit generator objects.
 
 ------------------------------------------------------------------------
 
@@ -1238,7 +1238,7 @@ A concise treatment of built-in exceptions, `try`/`except`, `else`,
 
 ------------------------------------------------------------------------
 
-# 47. Week 13 takeaway
+# 47. Takeaway
 
 The central lesson is:
 
@@ -1266,6 +1266,6 @@ Regression test
 More reliable workflow
 ```
 
-Next week we move into **performance, profiling, and acceleration**,
+The next section we move into **performance, profiling, and acceleration**,
 where we will measure bottlenecks before deciding how to make
 statistical code faster.

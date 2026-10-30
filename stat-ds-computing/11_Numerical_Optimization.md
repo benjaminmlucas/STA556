@@ -1,6 +1,6 @@
 # 6.1 Numerical Optimization
 
-## Why this week matters
+## Why this section matters
 
 Many statistical procedures can be written as optimization problems.
 
@@ -8,12 +8,12 @@ Examples include ordinary least squares, maximum likelihood estimation,
 logistic regression, regularized regression, neural-network training,
 nonlinear curve fitting, and numerical equation solving.
 
-The central question for Week 12 is:
+The central question for this section is:
 
 > **How do we turn a statistical estimation problem into an objective
 > function that a numerical algorithm can solve?**
 
-This week focuses on root finding, bisection, Newton--Raphson, objective
+This section focuses on root finding, bisection, Newton--Raphson, objective
 and loss functions, gradients and Hessians, gradient descent, learning
 rates, convergence criteria, ordinary least squares as optimization,
 maximum likelihood as optimization, and validation against SciPy.
@@ -790,7 +790,7 @@ Interpret
 
 # 33. Key ideas
 
-By the end of Week 12, you should be able to explain:
+By the end of this section, you should be able to explain:
 
 1.  Root finding vs. optimization.
 2.  Bracketing and bisection.
@@ -862,7 +862,7 @@ sections.
 
 ------------------------------------------------------------------------
 
-## 3. StatQuest --- Gradient Descent
+## 3. StatQuest — "Gradient Descent, Step-by-Step"
 
 A visual explanation of gradients, step sizes, and movement across a
 loss surface.
@@ -871,11 +871,11 @@ loss surface.
 multivariable exercises.
 
 [Find on
-YouTube](https://www.youtube.com/results?search_query=StatQuest+Gradient+Descent)
+YouTube](https://www.youtube.com/watch?v=sDv4f4s2SB8)
 
 ------------------------------------------------------------------------
 
-# 36. Week 12 takeaway
+# 36. Takeaway
 
 > **Statistical estimation often becomes a numerical problem once we
 > express the model as an equation or objective function.**
@@ -898,5 +898,5 @@ Parameter estimate
 Validation
 ```
 
-Next week we move into **debugging, testing, defensive programming, and
+The next section we move into **debugging, testing, defensive programming, and
 exception handling**.

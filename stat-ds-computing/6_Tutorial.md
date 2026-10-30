@@ -29,13 +29,13 @@ By the end of this tutorial, you should be able to:
 Create:
 
 ```text
-notebooks/week07_functions.ipynb
+notebooks/section_4_1_functions.ipynb
 ```
 
 and:
 
 ```text
-src/week07_utils.py
+src/section_4_1_utils.py
 ```
 
 Import:
@@ -971,7 +971,7 @@ Readable code matters more than compact code.
 Open:
 
 ```text
-src/week07_utils.py
+src/section_4_1_utils.py
 ```
 
 Move these functions into it:
@@ -991,7 +991,7 @@ summarize_scores
 From the notebook:
 
 ```python
-from src.week07_utils import (
+from src.section_4_1_utils import (
     categorize_score,
     select_group,
     remove_missing_scores,
@@ -1013,9 +1013,9 @@ Your project now resembles:
 ```text
 project/
 ├── notebooks/
-│   └── week07_functions.ipynb
+│   └── section_4_1_functions.ipynb
 ├── src/
-│   └── week07_utils.py
+│   └── section_4_1_utils.py
 ├── data/
 ├── figures/
 └── tests/
@@ -1113,7 +1113,7 @@ git add .
 Commit:
 
 ```bash
-git commit -m "Complete Week 7 modular programming exercises"
+git commit -m "Complete Section 4.1 modular programming exercises"
 ```
 
 Push:
@@ -1170,8 +1170,8 @@ Why move functions from notebooks into modules?
 
 # Completion checklist
 
-- [ ] Created Week 7 notebook
-- [ ] Created a Week 7 Python module
+- [ ] Created Section 4.1 notebook
+- [ ] Created a Section 4.1 Python module
 - [ ] Refactored duplicated code into functions
 - [ ] Distinguished parameters and arguments
 - [ ] Used return values
@@ -1201,7 +1201,7 @@ Why move functions from notebooks into modules?
 - [ ] Built a modular analysis pipeline
 - [ ] Imported functions from `src/`
 - [ ] Refactored an analysis into reusable components
-- [ ] Committed Week 7 work to Git
+- [ ] Committed Section 4.1 work to Git
 - [ ] Pushed work to GitHub
 
 ---
@@ -1226,4 +1226,4 @@ Modules
 Maintainable statistical software
 ```
 
-Next week we will use these modular components inside **reproducible reports and literate programming workflows**.
+The next section we will use these modular components inside **reproducible reports and literate programming workflows**.

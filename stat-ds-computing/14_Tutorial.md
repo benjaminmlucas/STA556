@@ -27,7 +27,7 @@ By the end of this tutorial, you should be able to:
 Create:
 
 ```text
-notebooks/week15_ethics.ipynb
+notebooks/section_8_1_ethics.ipynb
 ```
 
 Import:
@@ -527,7 +527,7 @@ Why should a fairness metric never be interpreted without knowing how many obser
 
 # Part 17 — Bootstrap uncertainty for TPR
 
-Use Week 11's bootstrap logic.
+Use Section 5.3's bootstrap logic.
 
 For each group:
 
@@ -1053,7 +1053,7 @@ Commit:
 
 ```bash
 git add .
-git commit -m "Complete Week 15 responsible data science exercises"
+git commit -m "Complete Section 8.1 responsible data science exercises"
 git push
 ```
 
@@ -1107,7 +1107,7 @@ Which technical practice from this course most improves your ability to build tr
 
 # Completion checklist
 
-- [ ] Created Week 15 notebook
+- [ ] Created Section 8.1 notebook
 - [ ] Generated a synthetic classification dataset
 - [ ] Audited group representation
 - [ ] Compared base rates
@@ -1148,7 +1148,7 @@ Which technical practice from this course most improves your ability to build tr
 - [ ] Mapped the project to Govern/Map/Measure/Manage
 - [ ] Made a responsible deployment recommendation
 - [ ] Completed the final ethics audit
-- [ ] Committed Week 15 work to Git
+- [ ] Committed Section 8.1 work to Git
 - [ ] Pushed work to GitHub
 
 ---

@@ -130,7 +130,7 @@ You already have a Git repository.
 
 ---
 
-# Part 1 — Set up and check your Week 1 Python environment
+# Part 1 — Set up and check your Section 1.1 Python environment
 
 Because you created a new repository, you will also record the small set of Python packages needed for this activity.
 
@@ -325,7 +325,7 @@ print(sys.version)
 Inside `notebooks/`, create:
 
 ```text
-week01_exploration.ipynb
+section_1_1_exploration.ipynb
 ```
 
 If VS Code asks you to choose a kernel, select the Python environment supplied by the Codespace.
@@ -333,9 +333,9 @@ If VS Code asks you to choose a kernel, select the Python environment supplied b
 Create a Markdown cell:
 
 ```markdown
-# STA 556 Week 1 Exploration
+# STA 556 Section 1.1 Exploration
 
-This notebook is part of my Week 1 computational workflow.
+This notebook is part of my Section 1.1 computational workflow.
 ```
 
 Create a code cell:
@@ -374,7 +374,7 @@ src/hello_sta556.py
 and working in:
 
 ```text
-notebooks/week01_exploration.ipynb
+notebooks/section_1_1_exploration.ipynb
 ```
 
 Write 2–3 sentences in a Markdown cell.
@@ -517,7 +517,7 @@ Run:
 git status
 ```
 
-Stage your Week 1 work:
+Stage your Section 1.1 work:
 
 ```bash
 git add .
@@ -532,7 +532,7 @@ git status
 Commit:
 
 ```bash
-git commit -m "Complete Week 1 workflow activity"
+git commit -m "Complete Section 1.1 workflow activity"
 ```
 
 Inspect the history:
@@ -596,7 +596,7 @@ Then:
 
 ```bash
 git add src/hello_sta556.py
-git commit -m "Add workflow message to Week 1 script"
+git commit -m "Add workflow message to Section 1.1 script"
 git push
 ```
 
@@ -610,14 +610,14 @@ What information did `git diff` provide before the commit?
 
 Open the `README.md` that you created when you created the repository.
 
-Add a short section describing your Week 1 work, for example:
+Add a short section describing your Section 1.1 work, for example:
 
 ```markdown
-## Week 1 workflow
+## Section 1.1 workflow
 
 This project uses the STA 556 GitHub Codespaces environment.
 
-Week 1 demonstrates:
+Section 1.1 demonstrates:
 
 - repository-relative paths
 - Python scripts
@@ -649,7 +649,7 @@ python src/hello_sta556.py
 and open:
 
 ```text
-notebooks/week01_exploration.ipynb
+notebooks/section_1_1_exploration.ipynb
 ```
 
 without relying on anything installed on your personal laptop.

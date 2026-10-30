@@ -30,13 +30,13 @@ By the end of this tutorial, you should be able to:
 Create:
 
 ``` text
-notebooks/week14_performance.ipynb
+notebooks/section_7_2_performance.ipynb
 ```
 
 and:
 
 ``` text
-src/week14_performance.py
+src/section_7_2_performance.py
 ```
 
 Import:
@@ -56,7 +56,7 @@ rng = np.random.default_rng(
 )
 ```
 
-Before optimizing anything, run your Week 13 test suite:
+Before optimizing anything, run your Section 7.1 test suite:
 
 ``` bash
 pytest
@@ -304,7 +304,7 @@ Was the improvement caused by syntax or algorithm/data structure?
 
 # Part 8 --- Profile a workflow
 
-Add to `src/week14_performance.py`:
+Add to `src/section_7_2_performance.py`:
 
 ``` python
 def slow_transform(
@@ -367,7 +367,7 @@ From the terminal:
 
 ``` bash
 python -m cProfile \
-    src/week14_performance.py
+    src/section_7_2_performance.py
 ```
 
 Inspect the output.
@@ -389,7 +389,7 @@ Use:
 ``` bash
 python -m cProfile \
     -s cumulative \
-    src/week14_performance.py
+    src/section_7_2_performance.py
 ```
 
 ### Question
@@ -588,7 +588,7 @@ Estimate the additional memory footprint.
 
 When is copying worth the memory cost?
 
-Connect this to Week 2's mutation/reference material.
+Connect this to Section 1.2's mutation/reference material.
 
 ------------------------------------------------------------------------
 
@@ -998,7 +998,7 @@ pytest
 
 ### Question
 
-Why is Week 13's test suite essential when replacing a simple
+Why is Section 7.1's test suite essential when replacing a simple
 implementation with a faster one?
 
 ------------------------------------------------------------------------
@@ -1095,7 +1095,7 @@ Then:
 ``` bash
 git status
 git add .
-git commit -m "Complete Week 14 profiling and performance exercises"
+git commit -m "Complete Section 7.2 profiling and performance exercises"
 git push
 ```
 
@@ -1148,7 +1148,7 @@ Why must performance optimization be followed by correctness testing?
 
 # Completion checklist
 
--   [ ] Created Week 14 notebook
+-   [ ] Created Section 7.2 notebook
 -   [ ] Ran correctness tests before optimization
 -   [ ] Timed code using `perf_counter`
 -   [ ] Used `%timeit`
@@ -1183,7 +1183,7 @@ Why must performance optimization be followed by correctness testing?
 -   [ ] Completed the mini optimization project
 -   [ ] Calculated overall speedup
 -   [ ] Audited the performance tradeoff
--   [ ] Committed Week 14 work to Git
+-   [ ] Committed Section 7.2 work to Git
 -   [ ] Pushed work to GitHub
 
 ------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 # 2.3 Input/Output & External Data Sources
 
-## Why this week matters
+## Why this section matters
 
 In Weeks 3 and 4, we worked with DataFrames that already existed inside Python. Real data science rarely begins that way.
 
@@ -15,11 +15,11 @@ Data may live in:
 - HDF5 files;
 - remote servers.
 
-The central question for Week 5 is:
+The central question for this section is:
 
 > **How do we reliably move data from external systems into a statistical computing workflow?**
 
-The approved course schedule identifies Week 5 as **I/O and External Data Sources**, including:
+This section covers:
 
 - SQL databases;
 - web APIs;
@@ -27,7 +27,7 @@ The approved course schedule identifies Week 5 as **I/O and External Data Source
 - web scraping;
 - binary file formats such as Parquet and HDF5.
 
-The emphasis this week is not simply on knowing several `pandas.read_*()` functions. It is on understanding where data come from, what structure they have, how to ingest them correctly, how to validate them after ingestion, and how source format affects reproducibility and efficiency.
+The emphasis this section is not simply on knowing several `pandas.read_*()` functions. It is on understanding where data come from, what structure they have, how to ingest them correctly, how to validate them after ingestion, and how source format affects reproducibility and efficiency.
 
 ---
 
@@ -217,7 +217,7 @@ df = pd.read_csv(
 )
 ```
 
-This connects directly to Week 1's project-structure principles.
+This connects directly to Section 1.1's project-structure principles.
 
 ---
 
@@ -338,7 +338,7 @@ Why move more data than necessary?
 
 # 11. SQL joins
 
-The join ideas from Week 4 also exist in SQL.
+The join ideas from Section 2.2 also exist in SQL.
 
 ```sql
 SELECT
@@ -484,7 +484,7 @@ true/false  → True / False
 null        → None
 ```
 
-This connects directly to Week 2.
+This connects directly to Section 1.2.
 
 ---
 
@@ -900,7 +900,7 @@ Separating stages makes workflows easier to debug and reproduce.
 
 # 34. Key ideas
 
-By the end of Week 5, you should be able to explain:
+By the end of this section, you should be able to explain:
 
 1. What input/output means in a data workflow.
 2. Why source format affects data handling.
@@ -977,11 +977,11 @@ A broader introduction to APIs, endpoints, requests, responses, authentication, 
 
 **Recommended use:** Optional extension for students who want more conceptual background on APIs.
 
-[Find on YouTube](https://www.youtube.com/results?search_query=freeCodeCamp+APIs+for+Beginners)
+[Watch on YouTube](https://www.youtube.com/watch?v=WXsD0ZgxjRw)
 
 ---
 
-# 37. Week 5 takeaway
+# 37. Takeaway
 
 > **External data should enter an analysis through a documented, validated, and reproducible ingestion process.**
 
@@ -1005,4 +1005,4 @@ Record provenance
 Analysis-ready data
 ```
 
-Next week we move into **Exploratory Data Analysis and Visualization**.
+The next section we move into **Exploratory Data Analysis and Visualization**.

@@ -1,8 +1,8 @@
 # 7.2 Profiling, Performance & Acceleration
 
-## Why this week matters
+## Why this section matters
 
-By Week 14, you have written code that can:
+By Section 7.2, you have written code that can:
 
 -   manipulate complex data;
 -   simulate large numbers of observations;
@@ -15,7 +15,7 @@ The next question is:
 > **When code is too slow or uses too much memory, how do we improve it
 > without sacrificing correctness or readability?**
 
-This week focuses on:
+This section focuses on:
 
 -   timing code correctly;
 -   identifying bottlenecks;
@@ -79,7 +79,7 @@ optimized
 retested
 ```
 
-Week 13's test suite becomes especially important this week.
+Section 7.1's test suite becomes especially important this section.
 
 Before changing an implementation for speed, make sure tests capture its
 intended behavior.
@@ -464,7 +464,7 @@ Can I aggregate earlier?
 
 # 18. Push work toward the source
 
-Week 5 introduced this principle for SQL.
+Section 2.3 introduced this principle for SQL.
 
 Instead of:
 
@@ -486,7 +486,7 @@ Performance optimization often means **moving less data**.
 
 # 19. Vectorization revisited
 
-Week 9 showed:
+Section 5.1 showed:
 
 ``` python
 result = x ** 2
@@ -1008,7 +1008,7 @@ Forgetting to rerun correctness tests after optimization.
 
 # 42. Key ideas
 
-By the end of Week 14, you should be able to explain:
+By the end of this section, you should be able to explain:
 
 1.  Runtime vs. memory performance.
 2.  Why correctness precedes optimization.
@@ -1090,7 +1090,7 @@ programmatic profiling, and exporting profiling data.
 
 ------------------------------------------------------------------------
 
-## 3. Numba JIT Tutorials
+## 3. TechCode — "Numba Explained in 30 Minutes"
 
 A focused Numba tutorial is useful after students have profiled a
 numerical Python loop and identified it as a genuine hotspot.
@@ -1099,12 +1099,11 @@ numerical Python loop and identified it as a genuine hotspot.
 Numba is presented as a targeted solution rather than a default
 decoration.
 
-[Find Numba tutorials on
-YouTube](https://www.youtube.com/results?search_query=Numba+njit+prange+Python+tutorial)
+[Watch on YouTube](https://www.youtube.com/watch?v=DPyPmoeUdcE)
 
 ------------------------------------------------------------------------
 
-# 45. Week 14 takeaway
+# 45. Takeaway
 
 The central lesson is:
 

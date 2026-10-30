@@ -1,14 +1,14 @@
 # 5.1 Matrix Computation & Linear Algebra
 
-## Why this week matters
+## Why this section matters
 
-Up to this point, STA 556 has focused on data engineering, visualization, reproducibility, and software design. Week 9 shifts toward the numerical core of statistical computing.
+Up to this point, STA 556 has focused on data engineering, visualization, reproducibility, and software design. Section 5.1 shifts toward the numerical core of statistical computing.
 
 The central question is:
 
 > **How can we represent statistical computations as efficient operations on vectors and matrices?**
 
-This week focuses on:
+This section focuses on:
 
 - NumPy arrays;
 - vectorized computation;
@@ -699,7 +699,7 @@ For centered data, dominant singular directions identify important patterns in t
 
 This is closely related to Principal Component Analysis (PCA).
 
-We will not develop PCA fully this week, but SVD provides much of its computational foundation.
+We will not develop PCA fully this section, but SVD provides much of its computational foundation.
 
 ---
 
@@ -905,7 +905,7 @@ Validate numerical results
 
 # 40. Key ideas
 
-By the end of Week 9, you should be able to explain:
+By the end of this section, you should be able to explain:
 
 1. Why NumPy arrays are central to statistical computing.
 2. Why array shape matters.
@@ -987,7 +987,7 @@ A detailed treatment of QR decomposition, including NumPy computation, Gram–Sc
 
 ---
 
-# 43. Week 9 takeaway
+# 43. Takeaway
 
 > **Efficient statistical computing often begins by recognizing the linear-algebra structure of a problem and expressing it directly with arrays.**
 
@@ -1009,4 +1009,4 @@ QR / SVD
 Stable statistical computation
 ```
 
-Next week we will use NumPy's numerical machinery for **random-number generation, inverse-transform sampling, and Monte Carlo simulation**.
+The next section we will use NumPy's numerical machinery for **random-number generation, inverse-transform sampling, and Monte Carlo simulation**.

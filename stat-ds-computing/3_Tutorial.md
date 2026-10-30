@@ -29,7 +29,7 @@ Use the project/repository you have been building during the earlier parts of th
 Create:
 
 ```text
-notebooks/week03_dataframes.ipynb
+notebooks/section_2_1_dataframes.ipynb
 ```
 
 And at the top create a code cell to import `pandas`:
@@ -573,7 +573,7 @@ df.loc[
 
 ### Question
 
-Why is the `.loc` version clearer? Connect your answer to Week 2's discussion of references and mutation.
+Why is the `.loc` version clearer? Connect your answer to Section 1.2's discussion of references and mutation.
 
 ---
 
@@ -791,7 +791,7 @@ git add .
 Commit:
 
 ```bash
-git commit -m "Complete Week 3 pandas indexing and filtering"
+git commit -m "Complete Section 2.1 pandas indexing and filtering"
 ```
 
 Push:
@@ -800,7 +800,7 @@ Push:
 git push
 ```
 
-Continue the workflow established in Week 1:
+Continue the workflow established in Section 1.1:
 
 ```text
 Create
@@ -874,7 +874,7 @@ How can explicit filtering criteria make statistical analyses easier to reproduc
 
 # Completion checklist
 
-- [ ] Created the Week 3 notebook
+- [ ] Created the Section 2.1 notebook
 - [ ] Imported pandas
 - [ ] Created a DataFrame
 - [ ] Used `head()`, `shape`, `dtypes`, `info()`, and `describe()`
@@ -898,8 +898,8 @@ How can explicit filtering criteria make statistical analyses easier to reproduc
 - [ ] Completed the mini data-analysis challenge
 - [ ] Wrote a reusable filtering function
 - [ ] Validated filtered results
-- [ ] Committed Week 3 work to Git
-- [ ] Pushed Week 3 work to GitHub
+- [ ] Committed Section 2.1 work to Git
+- [ ] Pushed Section 2.1 work to GitHub
 
 ---
 
@@ -923,4 +923,4 @@ Validate
 Analysis-ready subset
 ```
 
-Next week we will extend the wrangling workflow to **joins, merges, concatenation, reshaping, and missing-data strategies**.
+The next section we will extend the wrangling workflow to **joins, merges, concatenation, reshaping, and missing-data strategies**.

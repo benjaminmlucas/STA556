@@ -29,7 +29,7 @@ By the end of this tutorial, you should be able to:
 Create:
 
 ```text
-notebooks/week10_simulation.ipynb
+notebooks/section_5_2_simulation.ipynb
 ```
 
 Import:
@@ -447,7 +447,7 @@ to compare loop and vectorized versions.
 
 ### Reflection
 
-How does Week 9's vectorization material improve simulation workflows?
+How does Section 5.1's vectorization material improve simulation workflows?
 
 ---
 
@@ -1200,7 +1200,7 @@ git add .
 Commit:
 
 ```bash
-git commit -m "Complete Week 10 simulation and Monte Carlo exercises"
+git commit -m "Complete Section 5.2 simulation and Monte Carlo exercises"
 ```
 
 Push:
@@ -1259,7 +1259,7 @@ Why is random-number management part of scientific reproducibility?
 
 # Completion checklist
 
-- [ ] Created Week 10 notebook
+- [ ] Created Section 5.2 notebook
 - [ ] Used `np.random.default_rng()`
 - [ ] Reproduced results with a fixed seed
 - [ ] Compared different seeds
@@ -1295,7 +1295,7 @@ Why is random-number management part of scientific reproducibility?
 - [ ] Designed a simulation study before coding
 - [ ] Completed the mini simulation challenge
 - [ ] Validated simulation output
-- [ ] Committed Week 10 work to Git
+- [ ] Committed Section 5.2 work to Git
 - [ ] Pushed work to GitHub
 
 ---
@@ -1320,4 +1320,4 @@ Simulation uncertainty
 Evaluate statistical procedures
 ```
 
-Next week we will build **bootstrap and permutation procedures from scratch**, using the repeated-sampling framework developed here.
+The next section we will build **bootstrap and permutation procedures from scratch**, using the repeated-sampling framework developed here.

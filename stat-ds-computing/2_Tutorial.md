@@ -27,7 +27,7 @@ To begin this activity, open your repository for the course on GitHub, and open 
 Inside your repository create:
 
 ```text
-notebooks/week02_data_structures.ipynb
+notebooks/section_1_2_data_structures.ipynb
 ```
 
 # Part 1 — Everything is an object
@@ -579,17 +579,17 @@ Answer:
 
 # Part 21 — Git checkpoint
 
-From your Week 1 repository:
+From your Section 1.1 repository:
 
 ```bash
 git status
 git diff
 git add .
-git commit -m "Complete Week 2 data structures exercises"
+git commit -m "Complete Section 1.2 data structures exercises"
 git push
 ```
 
-Align what you've done here with the Week 1 workflow:
+Align what you've done here with the Section 1.1 workflow:
 
 ```text
 Create → Explore → Save → Inspect → Commit → Push
@@ -609,7 +609,7 @@ Answer these questions in a Markdown cell.
 
 ## Completion checklist
 
-- [ ] Created Week 2 notebook/script
+- [ ] Created Section 1.2 notebook/script
 - [ ] Inspected objects using `type()` and `id()`
 - [ ] Demonstrated shared references
 - [ ] Demonstrated mutation and rebinding
@@ -624,8 +624,8 @@ Answer these questions in a Markdown cell.
 - [ ] Completed the participant data challenge
 - [ ] Compared loops with comprehensions
 - [ ] Created a statistical summary object
-- [ ] Committed Week 2 work to Git
-- [ ] Pushed Week 2 work to GitHub
+- [ ] Committed Section 1.2 work to Git
+- [ ] Pushed Section 1.2 work to GitHub
 
 ## What you should now understand
 

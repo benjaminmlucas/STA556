@@ -1,6 +1,6 @@
 # 5.2 Simulation & Monte Carlo Methods
 
-## Why this week matters
+## Why this section matters
 
 The previous section focused on vectorized numerical computing with NumPy. This section will use that machinery to study one of the most important tools in computational statistics: simulation.
 
@@ -562,7 +562,7 @@ estimate = (
 ).mean()
 ```
 
-Week 9's vectorization concepts become especially valuable in simulation.
+Section 5.1's vectorization concepts become especially valuable in simulation.
 
 ---
 
@@ -1175,7 +1175,7 @@ Naively giving every worker the same seed can produce duplicated simulations.
 
 This becomes important in later performance-oriented work.
 
-For Week 10, the main principle is:
+For Section 5.2, the main principle is:
 
 > **Random-number management is part of reproducible software design.**
 
@@ -1198,7 +1198,7 @@ Simulation code can run successfully and still simulate the wrong model.
 
 # 40. Key ideas
 
-By the end of Week 10, you should be able to explain:
+By the end of this section, you should be able to explain:
 
 1. What simulation means in statistical computing.
 2. What pseudorandom numbers are.
@@ -1273,17 +1273,17 @@ A clear, statistics-focused explanation of inverse-transform sampling. The video
 
 ---
 
-## 3. NumPy Random Number Generation
+## 3. NumPy `default_rng()` and Reproducible Random Numbers
 
 A practical NumPy tutorial on `default_rng`, distributions, seeds, and reproducible random-number generation is useful for the implementation side of the week.
 
 **Recommended use:** Optional reinforcement before starting the hands-on activity.
 
-[Find NumPy RNG tutorials on YouTube](https://www.youtube.com/results?search_query=NumPy+default_rng+random+number+generation+tutorial)
+[Watch on YouTube](https://www.youtube.com/watch?v=ryvY3RJucag)
 
 ---
 
-# 43. Week 10 takeaway
+# 43. Takeaway
 
 The central lesson is:
 
@@ -1309,4 +1309,4 @@ Quantify simulation error
 Statistical insight
 ```
 
-Next week we will use repeated simulation ideas to build **bootstrap and permutation procedures from scratch**.
+The next section we will use repeated simulation ideas to build **bootstrap and permutation procedures from scratch**.
