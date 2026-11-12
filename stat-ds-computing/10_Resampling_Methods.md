@@ -1,10 +1,5 @@
 # 5.3 Bootstrap & Permutation Methods
 
-**Course:** STA 556 Statistics and Data Science Computing Workflows\
-**Program:** M.S. Statistics and Data Science, Northern Arizona
-University\
-**Section 5.3:** Statistical Computing — Resampling Methods from Scratch
-
 ## Why this section matters
 
 Section 5.2 introduced repeated simulation from a known probability model.
