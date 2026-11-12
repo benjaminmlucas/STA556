@@ -4,6 +4,37 @@
 
 **Tools:** Python, NumPy, pandas, matplotlib, SciPy, Jupyter/VS Code
 
+## Course computing environment: GitHub Codespaces
+
+For STA 556, the **officially supported computing environment is the course GitHub Codespace**. This gives everyone the same Linux/Python environment whether you are using a Mac, a Windows PC, or a university computer.
+
+Before beginning this activity:
+
+1. Open the repository for your course/assignment on GitHub.
+2. Open or create its Codespace.
+3. In VS Code, make sure the **repository root** is the folder open in the Explorer.
+4. Open an integrated terminal and run:
+
+```bash
+pwd
+git status
+```
+
+Your working directory should be the repository under `/workspaces/...`, and `git status` should recognize the repository.
+
+Unless an activity explicitly says otherwise:
+
+- run terminal commands from the **repository root**;
+- use repository-relative paths such as `data/...`, `src/...`, and `notebooks/...`;
+- use `python` for Python commands;
+- do **not** run `git init` inside the course repository;
+- do **not** install packages manually just because an import fails—first check the course environment and `requirements.txt`;
+- commit and push meaningful work regularly.
+
+If this is your first time using Codespaces, read `0_Codespaces_Introduction.md` before continuing.
+
+---
+
 ## Learning objectives
 
 By the end of this tutorial, you should be able to:
@@ -23,12 +54,12 @@ By the end of this tutorial, you should be able to:
 
 ------------------------------------------------------------------------
 
-# Part 0 --- Set up
+# Part 0 — Set up
 
 Create:
 
 ``` text
-notebooks/section_5_3_resampling.ipynb
+notebooks/section5_3_resampling.ipynb
 ```
 
 Import:
@@ -54,7 +85,7 @@ N_PERM = 10000
 
 ------------------------------------------------------------------------
 
-# Part 1 --- A small observed sample
+# Part 1 — A small observed sample
 
 Create:
 
@@ -87,7 +118,7 @@ What do we *not* know?
 
 ------------------------------------------------------------------------
 
-# Part 2 --- One bootstrap sample
+# Part 2 — One bootstrap sample
 
 Run:
 
@@ -113,7 +144,7 @@ bootstrap_sample
 
 ------------------------------------------------------------------------
 
-# Part 3 --- Why replacement matters
+# Part 3 — Why replacement matters
 
 Try:
 
@@ -134,7 +165,7 @@ values?
 
 ------------------------------------------------------------------------
 
-# Part 4 --- One bootstrap statistic
+# Part 4 — One bootstrap statistic
 
 Calculate:
 
@@ -155,7 +186,7 @@ The bootstrap mean is one replicate of the estimator.
 
 ------------------------------------------------------------------------
 
-# Part 5 --- Bootstrap distribution with a loop
+# Part 5 — Bootstrap distribution with a loop
 
 Create:
 
@@ -188,7 +219,7 @@ bootstrap_means[:10]
 
 ------------------------------------------------------------------------
 
-# Part 6 --- Visualize the bootstrap distribution
+# Part 6 — Visualize the bootstrap distribution
 
 Plot:
 
@@ -214,7 +245,7 @@ original observations?
 
 ------------------------------------------------------------------------
 
-# Part 7 --- Bootstrap standard error
+# Part 7 — Bootstrap standard error
 
 Calculate:
 
@@ -246,7 +277,7 @@ Why are they similar but not identical?
 
 ------------------------------------------------------------------------
 
-# Part 8 --- Percentile confidence interval
+# Part 8 — Percentile confidence interval
 
 Compute:
 
@@ -267,7 +298,7 @@ What does the percentile procedure actually do computationally?
 
 ------------------------------------------------------------------------
 
-# Part 9 --- Bootstrap bias
+# Part 9 — Bootstrap bias
 
 Calculate:
 
@@ -284,7 +315,7 @@ Interpret the sign.
 
 ------------------------------------------------------------------------
 
-# Part 10 --- Vectorized bootstrap
+# Part 10 — Vectorized bootstrap
 
 Generate:
 
@@ -326,7 +357,7 @@ with the loop implementation.
 
 ------------------------------------------------------------------------
 
-# Part 11 --- Memory discussion
+# Part 11 — Memory discussion
 
 Estimate how many values would be created by:
 
@@ -343,7 +374,7 @@ is faster?
 
 ------------------------------------------------------------------------
 
-# Part 12 --- Bootstrap the median
+# Part 12 — Bootstrap the median
 
 Construct:
 
@@ -377,7 +408,7 @@ simple elementary SE formula?
 
 ------------------------------------------------------------------------
 
-# Part 13 --- Write a generic bootstrap function
+# Part 13 — Write a generic bootstrap function
 
 Write:
 
@@ -435,7 +466,7 @@ argument?
 
 ------------------------------------------------------------------------
 
-# Part 14 --- Bootstrap rows, not columns
+# Part 14 — Bootstrap rows, not columns
 
 Create:
 
@@ -466,7 +497,7 @@ age-score pairs.
 
 ------------------------------------------------------------------------
 
-# Part 15 --- Bootstrap paired rows
+# Part 15 — Bootstrap paired rows
 
 Generate bootstrap indices:
 
@@ -502,7 +533,7 @@ Why do row indices preserve the data structure?
 
 ------------------------------------------------------------------------
 
-# Part 16 --- Bootstrap a correlation
+# Part 16 — Bootstrap a correlation
 
 Repeat row-resampling `N_BOOT` times.
 
@@ -521,7 +552,7 @@ Plot the distribution.
 
 ------------------------------------------------------------------------
 
-# Part 17 --- Two-group data
+# Part 17 — Two-group data
 
 Create:
 
@@ -550,7 +581,7 @@ observed_difference
 
 ------------------------------------------------------------------------
 
-# Part 18 --- State the null hypothesis
+# Part 18 — State the null hypothesis
 
 Write in words:
 
@@ -567,7 +598,7 @@ What would the group labels mean if `H0` were true?
 
 ------------------------------------------------------------------------
 
-# Part 19 --- Pool the observations
+# Part 19 — Pool the observations
 
 Create:
 
@@ -593,7 +624,7 @@ n_a = len(group_a)
 
 ------------------------------------------------------------------------
 
-# Part 20 --- One permutation
+# Part 20 — One permutation
 
 Run:
 
@@ -628,7 +659,7 @@ Compare with the observed difference.
 
 ------------------------------------------------------------------------
 
-# Part 21 --- Build the permutation distribution
+# Part 21 — Build the permutation distribution
 
 Create:
 
@@ -662,7 +693,7 @@ for b in range(N_PERM):
 
 ------------------------------------------------------------------------
 
-# Part 22 --- Visualize the null distribution
+# Part 22 — Visualize the null distribution
 
 Plot:
 
@@ -692,7 +723,7 @@ Why?
 
 ------------------------------------------------------------------------
 
-# Part 23 --- One-sided p-value
+# Part 23 — One-sided p-value
 
 Suppose:
 
@@ -720,7 +751,7 @@ Interpret.
 
 ------------------------------------------------------------------------
 
-# Part 24 --- Two-sided p-value
+# Part 24 — Two-sided p-value
 
 Calculate:
 
@@ -748,7 +779,7 @@ What does "at least as extreme" mean here?
 
 ------------------------------------------------------------------------
 
-# Part 25 --- Why add one?
+# Part 25 — Why add one?
 
 Compare:
 
@@ -768,7 +799,7 @@ finite random sample of permutations was generated?
 
 ------------------------------------------------------------------------
 
-# Part 26 --- Change the number of permutations
+# Part 26 — Change the number of permutations
 
 Repeat the p-value estimation using:
 
@@ -788,7 +819,7 @@ When might more permutations matter?
 
 ------------------------------------------------------------------------
 
-# Part 27 --- Write a statistic function
+# Part 27 — Write a statistic function
 
 Create:
 
@@ -827,7 +858,7 @@ resampling mechanism
 
 ------------------------------------------------------------------------
 
-# Part 28 --- Generic independent permutation function
+# Part 28 — Generic independent permutation function
 
 Write:
 
@@ -875,7 +906,7 @@ Test it.
 
 ------------------------------------------------------------------------
 
-# Part 29 --- Compare statistics
+# Part 29 — Compare statistics
 
 Repeat the permutation procedure using:
 
@@ -901,7 +932,7 @@ What changed?
 
 ------------------------------------------------------------------------
 
-# Part 30 --- Small exact permutation example
+# Part 30 — Small exact permutation example
 
 Use:
 
@@ -938,7 +969,7 @@ This is an exact permutation distribution.
 
 ------------------------------------------------------------------------
 
-# Part 31 --- Exact vs. Monte Carlo
+# Part 31 — Exact vs. Monte Carlo
 
 Compare:
 
@@ -960,7 +991,7 @@ randomly sampled assignments
 
 ------------------------------------------------------------------------
 
-# Part 32 --- Paired data
+# Part 32 — Paired data
 
 Create:
 
@@ -991,7 +1022,7 @@ differences.mean()
 
 ------------------------------------------------------------------------
 
-# Part 33 --- Preserve the pairing
+# Part 33 — Preserve the pairing
 
 ### Incorrect
 
@@ -1025,7 +1056,7 @@ Calculate its mean.
 
 ------------------------------------------------------------------------
 
-# Part 34 --- Paired null distribution
+# Part 34 — Paired null distribution
 
 Repeat the random sign flip `N_PERM` times.
 
@@ -1041,7 +1072,7 @@ all observations?
 
 ------------------------------------------------------------------------
 
-# Part 35 --- Validate with SciPy: permutation
+# Part 35 — Validate with SciPy: permutation
 
 Import:
 
@@ -1092,7 +1123,7 @@ Compare with your own implementation.
 
 ------------------------------------------------------------------------
 
-# Part 36 --- Validate with SciPy: bootstrap
+# Part 36 — Validate with SciPy: bootstrap
 
 Import:
 
@@ -1118,7 +1149,7 @@ Check:
 
 ------------------------------------------------------------------------
 
-# Part 37 --- Bootstrap vs. permutation challenge
+# Part 37 — Bootstrap vs. permutation challenge
 
 For each goal, choose **bootstrap** or **permutation**.
 
@@ -1147,7 +1178,7 @@ Explain each choice.
 
 ------------------------------------------------------------------------
 
-# Part 38 --- Mini resampling study
+# Part 38 — Mini resampling study
 
 Create:
 
@@ -1190,7 +1221,7 @@ Complete:
 
 ------------------------------------------------------------------------
 
-# Part 39 --- Reproducibility and Monte Carlo stability
+# Part 39 — Reproducibility and Monte Carlo stability
 
 Repeat the mini study using:
 
@@ -1211,7 +1242,7 @@ Which quantities are most sensitive to the number of resamples?
 
 ------------------------------------------------------------------------
 
-# Part 40 --- Resampling audit
+# Part 40 — Resampling audit
 
 Before trusting a procedure, answer:
 
@@ -1230,7 +1261,7 @@ What inferential quantity is extracted?
 
 ------------------------------------------------------------------------
 
-# Part 41 --- Git checkpoint
+# Part 41 — Git checkpoint
 
 Run:
 
@@ -1258,7 +1289,7 @@ git push
 
 ------------------------------------------------------------------------
 
-# Part 42 --- Final reflection
+# Part 42 — Final reflection
 
 Answer in Markdown.
 
@@ -1370,6 +1401,6 @@ null distribution
 p-value
 ```
 
-The next section we move into **numerical optimization**, including root
-finding, Newton--Raphson, gradient descent, and statistical objective
+Section 6.1 moves into **numerical optimization**, including root
+finding, Newton–Raphson, gradient descent, and statistical objective
 functions.

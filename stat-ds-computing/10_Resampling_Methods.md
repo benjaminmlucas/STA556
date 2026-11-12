@@ -1,5 +1,10 @@
 # 5.3 Bootstrap & Permutation Methods
 
+**Course:** STA 556 Statistics and Data Science Computing Workflows\
+**Program:** M.S. Statistics and Data Science, Northern Arizona
+University\
+**Section 5.3:** Statistical Computing — Resampling Methods from Scratch
+
 ## Why this section matters
 
 Section 5.2 introduced repeated simulation from a known probability model.
@@ -412,7 +417,7 @@ bootstrap_means = (
 )
 ```
 
-This is a direct application of Weeks 9--10:
+This is a direct application of Sections 5.1--5.2:
 
 ``` text
 array shape
@@ -542,6 +547,7 @@ This generates the null distribution.
 SciPy describes the independent-sample permutation null as one in which
 observations are pooled and randomly reassigned to samples under the
 hypothesis that the samples come from the same underlying distribution.
+citeturn880426search0
 
 ------------------------------------------------------------------------
 
@@ -565,7 +571,7 @@ permuted = rng.permutation(
 ```
 
 NumPy's generator `permutation()` returns a randomly permuted copy of an
-array.
+array. citeturn880426search1
 
 Split:
 
@@ -731,6 +737,7 @@ enormous.
 SciPy switches to exact calculation when the requested number of
 resamples is at least the number of distinct permutations; otherwise it
 approximates the null distribution with random resamples.
+citeturn880426search0
 
 ------------------------------------------------------------------------
 
@@ -949,6 +956,7 @@ scipy.stats.permutation_test
 
 SciPy's permutation interface accepts a statistic function, resampling
 count, alternative hypothesis, permutation type, and RNG.
+citeturn880426search0
 
 The pedagogical sequence should be:
 
@@ -1025,7 +1033,7 @@ Interpret statistically
 
 # 39. Key ideas
 
-By the end of this section, you should be able to explain:
+By the end of Section 5.3, you should be able to explain:
 
 1.  What resampling means.
 2.  Why bootstrap samples use replacement.
@@ -1043,7 +1051,7 @@ By the end of this section, you should be able to explain:
 14. Why paired designs require different randomization schemes.
 15. The conceptual difference between bootstrap and permutation.
 16. Why resampling does not repair poor study design.
-17. How Weeks 7, 9, and 10 support reusable resampling implementations.
+17. How Sections 4.1, 5.1, and 5.2 support reusable resampling implementations.
 18. Why implementations should be validated against trusted libraries.
 
 ------------------------------------------------------------------------
@@ -1062,7 +1070,7 @@ https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html
 
 The official SciPy reference explains independent, paired-sample, and
 pairing permutation schemes, exact vs. randomized testing, null
-distributions, and p-values.
+distributions, and p-values. citeturn880426search0
 
 https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.permutation_test.html
 
@@ -1074,7 +1082,7 @@ https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.c
 
 ## NumPy --- Generator.permutation
 
-Reference for generating random permutations.
+Reference for generating random permutations. citeturn880426search1
 
 https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.permutation.html
 
@@ -1086,7 +1094,7 @@ https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.p
 
 A compact conceptual comparison of resampling, bootstrap distributions,
 permutation tests, and when the two procedures answer different
-statistical questions.
+statistical questions. citeturn880426youtube36
 
 **Recommended use:** Watch before the hands-on tutorial. It gives
 students the conceptual distinction before they implement either method.
@@ -1105,11 +1113,11 @@ estimator uncertainty.
 confidence-interval sections.
 
 [Find on
-YouTube](https://www.youtube.com/watch?v=Xz0x-8-cgaQ)
+YouTube](https://www.youtube.com/results?search_query=StatQuest+bootstrapping)
 
 ------------------------------------------------------------------------
 
-## 3. Wild About Statistics — "The Randomization Test"
+## 3. Permutation Tests / Randomization Tests
 
 A visual permutation-test tutorial can reinforce the key idea that
 labels are rearranged to construct the distribution expected under the
@@ -1119,11 +1127,11 @@ null hypothesis.
 test.
 
 [Find on
-YouTube](https://www.youtube.com/watch?v=zecArldpptY)
+YouTube](https://www.youtube.com/results?search_query=permutation+test+randomization+test+statistics+tutorial)
 
 ------------------------------------------------------------------------
 
-# 42. Takeaway
+# 42. Section 5.3 takeaway
 
 The central lesson is:
 
@@ -1150,6 +1158,6 @@ null-distribution approximation
 SE / CI / p-value
 ```
 
-The next section we move into **numerical optimization**, including root
+Section 6.1 moves into **numerical optimization**, including root
 finding, Newton--Raphson, gradient descent, and statistical objective
 functions.
