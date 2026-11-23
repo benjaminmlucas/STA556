@@ -25,7 +25,7 @@ By the end of this tutorial, you should be able to:
 
 ------------------------------------------------------------------------
 
-# Part 0 --- Set up
+# Part 0 — Set up
 
 Create:
 
@@ -80,7 +80,7 @@ Parallel code is not expected to be faster for every workload or every Codespace
 
 ---
 
-# Part 1 --- One-off timing
+# Part 1 — One-off timing
 
 Create:
 
@@ -117,7 +117,7 @@ Why not?
 
 ------------------------------------------------------------------------
 
-# Part 2 --- Use `%timeit`
+# Part 2 — Use `%timeit`
 
 Run:
 
@@ -135,7 +135,7 @@ Why is repeated benchmarking usually more informative?
 
 ------------------------------------------------------------------------
 
-# Part 3 --- Python loop vs. NumPy
+# Part 3 — Python loop vs. NumPy
 
 Write:
 
@@ -178,7 +178,7 @@ Then benchmark both.
 
 ------------------------------------------------------------------------
 
-# Part 4 --- Correctness before speed
+# Part 4 — Correctness before speed
 
 Temporarily introduce a bug:
 
@@ -203,7 +203,7 @@ Restore the correct code.
 
 ------------------------------------------------------------------------
 
-# Part 5 --- Scaling experiment
+# Part 5 — Scaling experiment
 
 Benchmark both methods using:
 
@@ -231,7 +231,7 @@ Does the relative advantage stay constant as `n` changes?
 
 ------------------------------------------------------------------------
 
-# Part 6 --- Algorithmic bottleneck
+# Part 6 — Algorithmic bottleneck
 
 Create:
 
@@ -270,7 +270,7 @@ Benchmark.
 
 ------------------------------------------------------------------------
 
-# Part 7 --- Change the data structure
+# Part 7 — Change the data structure
 
 Rewrite:
 
@@ -302,7 +302,7 @@ Was the improvement caused by syntax or algorithm/data structure?
 
 ------------------------------------------------------------------------
 
-# Part 8 --- Profile a workflow
+# Part 8 — Profile a workflow
 
 Add to `src/section_7_2_performance.py`:
 
@@ -361,7 +361,7 @@ if __name__ == "__main__":
 
 ------------------------------------------------------------------------
 
-# Part 9 --- Use cProfile
+# Part 9 — Use cProfile
 
 From the terminal:
 
@@ -382,7 +382,7 @@ how many calls were made?
 
 ------------------------------------------------------------------------
 
-# Part 10 --- Sort profile output
+# Part 10 — Sort profile output
 
 Use:
 
@@ -399,7 +399,7 @@ chain?
 
 ------------------------------------------------------------------------
 
-# Part 11 --- Profile only the hotspot
+# Part 11 — Profile only the hotspot
 
 Once `slow_transform()` is identified, focus your attention there.
 
@@ -410,7 +410,7 @@ all runtime occurs inside `slow_transform()`?
 
 ------------------------------------------------------------------------
 
-# Part 12 --- Optional line profiling
+# Part 12 — Optional line profiling
 
 If installed:
 
@@ -433,7 +433,7 @@ rather than installing blindly.
 
 ------------------------------------------------------------------------
 
-# Part 13 --- Vectorize the hotspot
+# Part 13 — Vectorize the hotspot
 
 Rewrite:
 
@@ -468,7 +468,7 @@ Benchmark both on a large array.
 
 ------------------------------------------------------------------------
 
-# Part 14 --- Reprofile
+# Part 14 — Reprofile
 
 Replace the slow implementation in the workflow.
 
@@ -482,7 +482,7 @@ Run `cProfile` again.
 
 ------------------------------------------------------------------------
 
-# Part 15 --- Inspect memory use
+# Part 15 — Inspect memory use
 
 For:
 
@@ -512,7 +512,7 @@ How much memory do 10 million `float64` values require?
 
 ------------------------------------------------------------------------
 
-# Part 16 --- DataFrame memory
+# Part 16 — DataFrame memory
 
 Create:
 
@@ -553,7 +553,7 @@ df.memory_usage(
 
 ------------------------------------------------------------------------
 
-# Part 17 --- Efficient dtypes
+# Part 17 — Efficient dtypes
 
 Convert:
 
@@ -574,7 +574,7 @@ Why can categorical data use less memory than repeated Python strings?
 
 ------------------------------------------------------------------------
 
-# Part 18 --- Copying cost
+# Part 18 — Copying cost
 
 Run:
 
@@ -592,7 +592,7 @@ Connect this to Section 1.2's mutation/reference material.
 
 ------------------------------------------------------------------------
 
-# Part 19 --- Select only needed columns
+# Part 19 — Select only needed columns
 
 Compare:
 
@@ -619,7 +619,7 @@ Move and retain only the data needed for the task.
 
 ------------------------------------------------------------------------
 
-# Part 20 --- Chunking concept
+# Part 20 — Chunking concept
 
 Create a temporary CSV from a manageable DataFrame.
 
@@ -653,7 +653,7 @@ running_sum / running_count
 
 ------------------------------------------------------------------------
 
-# Part 21 --- Verify chunked output
+# Part 21 — Verify chunked output
 
 Compare the chunked result with:
 
@@ -675,7 +675,7 @@ What resource tradeoff does chunking make?
 
 ------------------------------------------------------------------------
 
-# Part 22 --- Parallel-task concept
+# Part 22 — Parallel-task concept
 
 Suppose:
 
@@ -700,7 +700,7 @@ Why is this a good candidate for parallel execution?
 
 ------------------------------------------------------------------------
 
-# Part 23 --- Serial baseline
+# Part 23 — Serial baseline
 
 Create several independent seeds.
 
@@ -714,7 +714,7 @@ This is your baseline.
 
 ------------------------------------------------------------------------
 
-# Part 24 --- Process-based parallelism
+# Part 24 — Process-based parallelism
 
 Use Python's standard library:
 
@@ -746,7 +746,7 @@ If not, what overhead might explain the result?
 
 ------------------------------------------------------------------------
 
-# Part 25 --- Vary task size
+# Part 25 — Vary task size
 
 Repeat the serial/parallel comparison for:
 
@@ -761,7 +761,7 @@ At what point does parallel overhead become less important?
 
 ------------------------------------------------------------------------
 
-# Part 26 --- Randomness and parallel workers
+# Part 26 — Randomness and parallel workers
 
 Do **not** use:
 
@@ -781,7 +781,7 @@ What statistical error could identical random streams create?
 
 ------------------------------------------------------------------------
 
-# Part 27 --- Install/check Numba
+# Part 27 — Install/check Numba
 
 Check:
 
@@ -798,7 +798,7 @@ The goal is to understand when JIT compilation helps.
 
 ------------------------------------------------------------------------
 
-# Part 28 --- Numba baseline loop
+# Part 28 — Numba baseline loop
 
 Use:
 
@@ -821,7 +821,7 @@ Benchmark.
 
 ------------------------------------------------------------------------
 
-# Part 29 --- Compile with `@njit`
+# Part 29 — Compile with `@njit`
 
 If Numba is available:
 
@@ -859,7 +859,7 @@ Then benchmark subsequent calls.
 
 ------------------------------------------------------------------------
 
-# Part 30 --- Compilation overhead
+# Part 30 — Compilation overhead
 
 Time:
 
@@ -882,7 +882,7 @@ NumPy execution?
 
 ------------------------------------------------------------------------
 
-# Part 31 --- Compare Python, NumPy, and Numba
+# Part 31 — Compare Python, NumPy, and Numba
 
 Benchmark:
 
@@ -904,7 +904,7 @@ speedup vs Python
 
 ------------------------------------------------------------------------
 
-# Part 32 --- When NumPy is already excellent
+# Part 32 — When NumPy is already excellent
 
 Compare a matrix multiplication:
 
@@ -921,7 +921,7 @@ through optimized numerical libraries?
 
 ------------------------------------------------------------------------
 
-# Part 33 --- Numba-friendly algorithm challenge
+# Part 33 — Numba-friendly algorithm challenge
 
 Create a numerical loop that is less convenient to vectorize.
 
@@ -958,7 +958,7 @@ Why is this a better Numba candidate than simple element-wise squaring?
 
 ------------------------------------------------------------------------
 
-# Part 34 --- Optional Numba parallel loop
+# Part 34 — Optional Numba parallel loop
 
 If supported, experiment with:
 
@@ -988,7 +988,7 @@ Verify correctness before interpreting speed.
 
 ------------------------------------------------------------------------
 
-# Part 35 --- Performance regression check
+# Part 35 — Performance regression check
 
 After every optimization, rerun:
 
@@ -1003,7 +1003,7 @@ implementation with a faster one?
 
 ------------------------------------------------------------------------
 
-# Part 36 --- Mini optimization project
+# Part 36 — Mini optimization project
 
 Choose one previous course algorithm:
 
@@ -1030,7 +1030,7 @@ Complete:
 
 ------------------------------------------------------------------------
 
-# Part 37 --- Amdahl's-law thought experiment
+# Part 37 — Amdahl's-law thought experiment
 
 Suppose:
 
@@ -1062,7 +1062,7 @@ Why is hotspot identification so powerful?
 
 ------------------------------------------------------------------------
 
-# Part 38 --- Performance audit
+# Part 38 — Performance audit
 
 For your mini project, answer:
 
@@ -1082,7 +1082,7 @@ Would you keep the optimized version?
 
 ------------------------------------------------------------------------
 
-# Part 39 --- Git checkpoint
+# Part 39 — Git checkpoint
 
 Run:
 
@@ -1101,7 +1101,7 @@ git push
 
 ------------------------------------------------------------------------
 
-# Part 40 --- Final reflection
+# Part 40 — Final reflection
 
 ### 1. Profiling
 

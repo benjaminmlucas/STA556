@@ -1,6 +1,6 @@
 # 6.1 Activity
 
-## Root Finding, Newton--Raphson, Gradient Descent & Statistical Optimization
+## Root Finding, Newton–Raphson, Gradient Descent & Statistical Optimization
 
 **Tools:** Python, NumPy, SciPy, matplotlib, Jupyter/VS Code
 
@@ -10,7 +10,7 @@ By the end of this tutorial, you should be able to:
 
 -   formulate a root-finding problem;
 -   implement bisection;
--   implement Newton--Raphson;
+-   implement Newton–Raphson;
 -   diagnose convergence failures;
 -   define objective functions;
 -   compute analytical and numerical derivatives;
@@ -23,7 +23,7 @@ By the end of this tutorial, you should be able to:
 
 ------------------------------------------------------------------------
 
-# Part 0 --- Set up
+# Part 0 — Set up
 
 Create:
 
@@ -52,7 +52,7 @@ rng = np.random.default_rng(556)
 
 ------------------------------------------------------------------------
 
-# Part 1 --- Define a root problem
+# Part 1 — Define a root problem
 
 ``` python
 def f(x):
@@ -74,7 +74,7 @@ f(2)
 
 ------------------------------------------------------------------------
 
-# Part 2 --- Visualize the root
+# Part 2 — Visualize the root
 
 ``` python
 x_grid = np.linspace(
@@ -98,7 +98,7 @@ Identify the root visually.
 
 ------------------------------------------------------------------------
 
-# Part 3 --- One bisection step
+# Part 3 — One bisection step
 
 Start:
 
@@ -123,7 +123,7 @@ Which half contains the root?
 
 ------------------------------------------------------------------------
 
-# Part 4 --- Implement bisection
+# Part 4 — Implement bisection
 
 ``` python
 def bisection(
@@ -169,7 +169,7 @@ np.sqrt(2)
 
 ------------------------------------------------------------------------
 
-# Part 5 --- Invalid brackets
+# Part 5 — Invalid brackets
 
 Try:
 
@@ -185,7 +185,7 @@ Why is failing immediately useful?
 
 ------------------------------------------------------------------------
 
-# Part 6 --- Validate bisection with SciPy
+# Part 6 — Validate bisection with SciPy
 
 ``` python
 result = root_scalar(
@@ -205,7 +205,7 @@ result.iterations
 
 ------------------------------------------------------------------------
 
-# Part 7 --- Newton derivative
+# Part 7 — Newton derivative
 
 Define:
 
@@ -224,7 +224,7 @@ Perform one Newton update manually.
 
 ------------------------------------------------------------------------
 
-# Part 8 --- Implement Newton--Raphson
+# Part 8 — Implement Newton–Raphson
 
 ``` python
 def newton(
@@ -273,7 +273,7 @@ Run from `x0=1.5`.
 
 ------------------------------------------------------------------------
 
-# Part 9 --- Visualize Newton convergence
+# Part 9 — Visualize Newton convergence
 
 Plot the sequence of iterates against `sqrt(2)`.
 
@@ -281,7 +281,7 @@ Compare the number of iterations with bisection.
 
 ------------------------------------------------------------------------
 
-# Part 10 --- Validate Newton with SciPy
+# Part 10 — Validate Newton with SciPy
 
 ``` python
 result = root_scalar(
@@ -296,7 +296,7 @@ Inspect root, iteration count, and convergence.
 
 ------------------------------------------------------------------------
 
-# Part 11 --- Poor starting values
+# Part 11 — Poor starting values
 
 Define:
 
@@ -332,7 +332,7 @@ converged?
 
 ------------------------------------------------------------------------
 
-# Part 12 --- Numerical derivatives
+# Part 12 — Numerical derivatives
 
 ``` python
 def numerical_derivative(
@@ -352,7 +352,7 @@ Compare the exact and numerical derivative at `x=1.5`.
 
 ------------------------------------------------------------------------
 
-# Part 13 --- Finite-difference step size
+# Part 13 — Finite-difference step size
 
 Try:
 
@@ -370,7 +370,7 @@ Why is smaller not always better?
 
 ------------------------------------------------------------------------
 
-# Part 14 --- Simple optimization
+# Part 14 — Simple optimization
 
 Define:
 
@@ -397,7 +397,7 @@ Plot the objective.
 
 ------------------------------------------------------------------------
 
-# Part 15 --- One gradient-descent update
+# Part 15 — One gradient-descent update
 
 Start:
 
@@ -412,7 +412,7 @@ Did it move toward the minimum?
 
 ------------------------------------------------------------------------
 
-# Part 16 --- Implement gradient descent
+# Part 16 — Implement gradient descent
 
 ``` python
 def gradient_descent(
@@ -461,7 +461,7 @@ def gradient_descent(
 
 ------------------------------------------------------------------------
 
-# Part 17 --- Learning-rate experiment
+# Part 17 — Learning-rate experiment
 
 Run with:
 
@@ -485,7 +485,7 @@ Plot loss vs. iteration.
 
 ------------------------------------------------------------------------
 
-# Part 18 --- Multivariable gradient descent
+# Part 18 — Multivariable gradient descent
 
 Define:
 
@@ -539,7 +539,7 @@ Expected minimum:
 
 ------------------------------------------------------------------------
 
-# Part 19 --- Simulate regression data
+# Part 19 — Simulate regression data
 
 ``` python
 n = 200
@@ -570,7 +570,7 @@ y = (
 
 ------------------------------------------------------------------------
 
-# Part 20 --- MSE loss
+# Part 20 — MSE loss
 
 ``` python
 def mse_loss(
@@ -591,7 +591,7 @@ Evaluate at zero coefficients and at `beta_true`.
 
 ------------------------------------------------------------------------
 
-# Part 21 --- MSE gradient
+# Part 21 — MSE gradient
 
 ``` python
 def mse_gradient(
@@ -614,7 +614,7 @@ Inspect the gradient shape.
 
 ------------------------------------------------------------------------
 
-# Part 22 --- Numerical gradient checker
+# Part 22 — Numerical gradient checker
 
 Write:
 
@@ -652,7 +652,7 @@ Compare the numerical and analytical gradients with `np.allclose()`.
 
 ------------------------------------------------------------------------
 
-# Part 23 --- Fit OLS with gradient descent
+# Part 23 — Fit OLS with gradient descent
 
 Start:
 
@@ -670,7 +670,7 @@ Stop when parameter changes become small.
 
 ------------------------------------------------------------------------
 
-# Part 24 --- Compare with least squares
+# Part 24 — Compare with least squares
 
 ``` python
 beta_lstsq, *_ = (
@@ -694,7 +694,7 @@ Explain why the first two should agree.
 
 ------------------------------------------------------------------------
 
-# Part 25 --- Visualize regression convergence
+# Part 25 — Visualize regression convergence
 
 Plot:
 
@@ -708,7 +708,7 @@ What does convergence look like?
 
 ------------------------------------------------------------------------
 
-# Part 26 --- Feature scaling
+# Part 26 — Feature scaling
 
 Add a predictor on a much larger scale:
 
@@ -726,7 +726,7 @@ Compare convergence.
 
 ------------------------------------------------------------------------
 
-# Part 27 --- Normal likelihood
+# Part 27 — Normal likelihood
 
 Simulate:
 
@@ -765,7 +765,7 @@ def normal_nll_mu(
 
 ------------------------------------------------------------------------
 
-# Part 28 --- Plot the negative log-likelihood
+# Part 28 — Plot the negative log-likelihood
 
 Evaluate the NLL over a grid of `mu` values.
 
@@ -775,7 +775,7 @@ Where does the minimum occur relative to the sample mean?
 
 ------------------------------------------------------------------------
 
-# Part 29 --- Estimate the mean with SciPy
+# Part 29 — Estimate the mean with SciPy
 
 ``` python
 result = minimize(
@@ -808,7 +808,7 @@ data.mean()
 
 ------------------------------------------------------------------------
 
-# Part 30 --- Estimate mean and SD jointly
+# Part 30 — Estimate mean and SD jointly
 
 Parameterize:
 
@@ -846,7 +846,7 @@ def normal_nll(
 
 ------------------------------------------------------------------------
 
-# Part 31 --- Optimize both parameters
+# Part 31 — Optimize both parameters
 
 ``` python
 result = minimize(
@@ -875,7 +875,7 @@ Compare with sample summaries.
 
 ------------------------------------------------------------------------
 
-# Part 32 --- Why log SD?
+# Part 32 — Why log SD?
 
 Explain why optimizing unrestricted `sigma` can be problematic.
 
@@ -889,7 +889,7 @@ enforce the correct parameter domain?
 
 ------------------------------------------------------------------------
 
-# Part 33 --- Starting-value sensitivity
+# Part 33 — Starting-value sensitivity
 
 Repeat the two-parameter optimization from:
 
@@ -904,7 +904,7 @@ Record success, iterations, estimates, and final objective values.
 
 ------------------------------------------------------------------------
 
-# Part 34 --- Nonconvex objective
+# Part 34 — Nonconvex objective
 
 Define:
 
@@ -927,7 +927,7 @@ Do all runs find the same minimum?
 
 ------------------------------------------------------------------------
 
-# Part 35 --- Root finding or optimization?
+# Part 35 — Root finding or optimization?
 
 Choose the best framing.
 
@@ -957,7 +957,7 @@ Explain each answer.
 
 ------------------------------------------------------------------------
 
-# Part 36 --- Mini optimization study
+# Part 36 — Mini optimization study
 
 Simulate:
 
@@ -1009,7 +1009,7 @@ Complete:
 
 ------------------------------------------------------------------------
 
-# Part 37 --- Optimization audit
+# Part 37 — Optimization audit
 
 Before trusting an optimization result, answer:
 
@@ -1027,7 +1027,7 @@ Can it be checked against an analytical/library result?
 
 ------------------------------------------------------------------------
 
-# Part 38 --- Git checkpoint
+# Part 38 — Git checkpoint
 
 ``` bash
 git status
@@ -1038,7 +1038,7 @@ git push
 
 ------------------------------------------------------------------------
 
-# Part 39 --- Final reflection
+# Part 39 — Final reflection
 
 ### 1. Root finding
 
@@ -1048,7 +1048,7 @@ What does it mean to find a root?
 
 Why is it robust?
 
-### 3. Newton--Raphson
+### 3. Newton–Raphson
 
 Where does the update come from?
 
@@ -1088,7 +1088,7 @@ What should be checked before trusting optimizer output?
 -   [ ] Defined and visualized a root problem
 -   [ ] Implemented bisection
 -   [ ] Validated bisection with SciPy
--   [ ] Implemented Newton--Raphson
+-   [ ] Implemented Newton–Raphson
 -   [ ] Visualized Newton convergence
 -   [ ] Validated Newton with SciPy
 -   [ ] Explored poor starting values

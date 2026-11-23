@@ -23,7 +23,7 @@ By the end of this tutorial, you should be able to:
 
 ------------------------------------------------------------------------
 
-# Part 0 --- Set up the Section 7.1 project
+# Part 0 — Set up the Section 7.1 project
 
 Create:
 
@@ -51,7 +51,7 @@ You should initially see that no tests were collected.
 
 ------------------------------------------------------------------------
 
-# Part 1 --- Three kinds of failure
+# Part 1 — Three kinds of failure
 
 Consider:
 
@@ -91,7 +91,7 @@ Which is hardest to detect automatically?
 
 ------------------------------------------------------------------------
 
-# Part 2 --- Read a traceback
+# Part 2 — Read a traceback
 
 Run:
 
@@ -126,7 +126,7 @@ function-call chain
 
 ------------------------------------------------------------------------
 
-# Part 3 --- Create a minimal example
+# Part 3 — Create a minimal example
 
 Suppose a large analysis fails during:
 
@@ -159,7 +159,7 @@ Fix the shape problem.
 
 ------------------------------------------------------------------------
 
-# Part 4 --- Debug with object inspection
+# Part 4 — Debug with object inspection
 
 Create:
 
@@ -191,7 +191,7 @@ How might shape inspection have prevented a Section 5.1 broadcasting bug?
 
 ------------------------------------------------------------------------
 
-# Part 5 --- Assertions
+# Part 5 — Assertions
 
 Create:
 
@@ -237,7 +237,7 @@ standardize(
 
 ------------------------------------------------------------------------
 
-# Part 6 --- Identify a missing invariant
+# Part 6 — Identify a missing invariant
 
 Try:
 
@@ -259,7 +259,7 @@ What invariant was missing?
 
 ------------------------------------------------------------------------
 
-# Part 7 --- Replace developer assertions with validation
+# Part 7 — Replace developer assertions with validation
 
 Rewrite:
 
@@ -298,7 +298,7 @@ Why is this a better public function interface?
 
 ------------------------------------------------------------------------
 
-# Part 8 --- Improve error messages
+# Part 8 — Improve error messages
 
 Modify each validation message to include the received value/shape where
 helpful.
@@ -318,7 +318,7 @@ Good errors make debugging faster.
 
 ------------------------------------------------------------------------
 
-# Part 9 --- Exception handling
+# Part 9 — Exception handling
 
 Create:
 
@@ -354,7 +354,7 @@ read_numeric(
 
 ------------------------------------------------------------------------
 
-# Part 10 --- Catch specific exceptions
+# Part 10 — Catch specific exceptions
 
 Compare:
 
@@ -374,7 +374,7 @@ Why is a bare `except` dangerous?
 
 ------------------------------------------------------------------------
 
-# Part 11 --- Do not hide failures
+# Part 11 — Do not hide failures
 
 Consider:
 
@@ -397,7 +397,7 @@ from.
 
 ------------------------------------------------------------------------
 
-# Part 12 --- Create a convergence exception
+# Part 12 — Create a convergence exception
 
 In `src/section_7_1_utils.py`:
 
@@ -425,7 +425,7 @@ Test manually.
 
 ------------------------------------------------------------------------
 
-# Part 13 --- First pytest test
+# Part 13 — First pytest test
 
 Add to `src/section_7_1_utils.py`:
 
@@ -460,7 +460,7 @@ pytest
 
 ------------------------------------------------------------------------
 
-# Part 14 --- Make a test fail deliberately
+# Part 14 — Make a test fail deliberately
 
 Change:
 
@@ -484,7 +484,7 @@ How does the test output differ from a generic exception traceback?
 
 ------------------------------------------------------------------------
 
-# Part 15 --- Arrange--Act--Assert
+# Part 15 — Arrange–Act–Assert
 
 Rewrite:
 
@@ -506,7 +506,7 @@ Why might this structure help when tests become more complicated?
 
 ------------------------------------------------------------------------
 
-# Part 16 --- Test `standardize`
+# Part 16 — Test `standardize`
 
 Move `standardize()` into:
 
@@ -538,7 +538,7 @@ Add a second test for standard deviation.
 
 ------------------------------------------------------------------------
 
-# Part 17 --- Test approximate equality with pytest
+# Part 17 — Test approximate equality with pytest
 
 Import:
 
@@ -571,7 +571,7 @@ Why not use exact floating-point equality?
 
 ------------------------------------------------------------------------
 
-# Part 18 --- Test invalid input
+# Part 18 — Test invalid input
 
 Write:
 
@@ -597,7 +597,7 @@ The error behavior is now part of the tested contract.
 
 ------------------------------------------------------------------------
 
-# Part 19 --- Test the error message
+# Part 19 — Test the error message
 
 Use:
 
@@ -619,7 +619,7 @@ When could it make a test too brittle?
 
 ------------------------------------------------------------------------
 
-# Part 20 --- Parametrized tests
+# Part 20 — Parametrized tests
 
 Write:
 
@@ -651,7 +651,7 @@ What repetition did parametrization remove?
 
 ------------------------------------------------------------------------
 
-# Part 21 --- Create a fixture
+# Part 21 — Create a fixture
 
 Add:
 
@@ -681,7 +681,7 @@ What role does the fixture play?
 
 ------------------------------------------------------------------------
 
-# Part 22 --- Test a Section 5.3 statistic
+# Part 22 — Test a Section 5.3 statistic
 
 Add:
 
@@ -718,7 +718,7 @@ Expected difference:
 
 ------------------------------------------------------------------------
 
-# Part 23 --- Add defensive validation
+# Part 23 — Add defensive validation
 
 Modify:
 
@@ -740,7 +740,7 @@ empty y
 
 ------------------------------------------------------------------------
 
-# Part 24 --- Test random code deterministically
+# Part 24 — Test random code deterministically
 
 Write:
 
@@ -779,7 +779,7 @@ def test_simulate_normal_shape():
 
 ------------------------------------------------------------------------
 
-# Part 25 --- Test reproducibility
+# Part 25 — Test reproducibility
 
 Write:
 
@@ -814,7 +814,7 @@ zero?
 
 ------------------------------------------------------------------------
 
-# Part 26 --- Test probability bounds
+# Part 26 — Test probability bounds
 
 Suppose a function returns a permutation p-value.
 
@@ -828,11 +828,11 @@ assert (
 
 ### Challenge
 
-List three other useful statistical invariants from Weeks 10--12.
+List three other useful statistical invariants from Weeks 10–12.
 
 ------------------------------------------------------------------------
 
-# Part 27 --- Test bisection from Section 6.1
+# Part 27 — Test bisection from Section 6.1
 
 Move your `bisection()` function into `src/`.
 
@@ -860,7 +860,7 @@ pytest.approx(
 
 ------------------------------------------------------------------------
 
-# Part 28 --- Test invalid bisection brackets
+# Part 28 — Test invalid bisection brackets
 
 Write:
 
@@ -880,7 +880,7 @@ This protects the fail-fast behavior you added in Section 6.1.
 
 ------------------------------------------------------------------------
 
-# Part 29 --- Test optimization properties
+# Part 29 — Test optimization properties
 
 For the simple loss:
 
@@ -907,7 +907,7 @@ What mathematical property is this checking?
 
 ------------------------------------------------------------------------
 
-# Part 30 --- Deliberately introduce a bug
+# Part 30 — Deliberately introduce a bug
 
 Change the gradient from:
 
@@ -934,7 +934,7 @@ never flag?
 
 ------------------------------------------------------------------------
 
-# Part 31 --- Regression test workflow
+# Part 31 — Regression test workflow
 
 Introduce a realistic bug:
 
@@ -964,7 +964,7 @@ Keep the test.
 
 ------------------------------------------------------------------------
 
-# Part 32 --- Test a DataFrame function
+# Part 32 — Test a DataFrame function
 
 Create:
 
@@ -999,7 +999,7 @@ Write tests for:
 
 ------------------------------------------------------------------------
 
-# Part 33 --- Minimal datasets
+# Part 33 — Minimal datasets
 
 For testing, use tiny datasets.
 
@@ -1017,7 +1017,7 @@ unit test?
 
 ------------------------------------------------------------------------
 
-# Part 34 --- Test independence
+# Part 34 — Test independence
 
 Create two tests.
 
@@ -1035,7 +1035,7 @@ Rewrite so each test creates its own data.
 
 ------------------------------------------------------------------------
 
-# Part 35 --- Build a Section 7.1 test suite
+# Part 35 — Build a Section 7.1 test suite
 
 Your final test file should include tests for:
 
@@ -1059,7 +1059,7 @@ Include at least:
 
 ------------------------------------------------------------------------
 
-# Part 36 --- Run subsets of tests
+# Part 36 — Run subsets of tests
 
 Run all:
 
@@ -1087,7 +1087,7 @@ pytest -v
 
 ------------------------------------------------------------------------
 
-# Part 37 --- Debug a failing test
+# Part 37 — Debug a failing test
 
 Choose one passing test and temporarily break the corresponding
 function.
@@ -1106,7 +1106,7 @@ This is the core development cycle.
 
 ------------------------------------------------------------------------
 
-# Part 38 --- Testing audit
+# Part 38 — Testing audit
 
 For one statistical function, answer:
 
@@ -1124,7 +1124,7 @@ What past bug should become a regression test?
 
 ------------------------------------------------------------------------
 
-# Part 39 --- Project structure
+# Part 39 — Project structure
 
 Your repository should now look approximately like:
 
@@ -1144,7 +1144,7 @@ notebook.
 
 ------------------------------------------------------------------------
 
-# Part 40 --- Git checkpoint
+# Part 40 — Git checkpoint
 
 Run:
 
@@ -1165,7 +1165,7 @@ git push
 
 ------------------------------------------------------------------------
 
-# Part 41 --- Final reflection
+# Part 41 — Final reflection
 
 Answer in Markdown.
 
@@ -1229,7 +1229,7 @@ Why should a fixed bug usually lead to a new permanent test?
 -   [ ] Created a custom convergence exception
 -   [ ] Wrote a first `pytest` test
 -   [ ] Deliberately observed a failing test
--   [ ] Used Arrange--Act--Assert
+-   [ ] Used Arrange–Act–Assert
 -   [ ] Tested `standardize`
 -   [ ] Used `pytest.approx`
 -   [ ] Tested expected exceptions

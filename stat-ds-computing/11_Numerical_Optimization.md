@@ -13,7 +13,7 @@ The central question for this section is:
 > **How do we turn a statistical estimation problem into an objective
 > function that a numerical algorithm can solve?**
 
-This section focuses on root finding, bisection, Newton--Raphson, objective
+This section focuses on root finding, bisection, Newton–Raphson, objective
 and loss functions, gradients and Hessians, gradient descent, learning
 rates, convergence criteria, ordinary least squares as optimization,
 maximum likelihood as optimization, and validation against SciPy.
@@ -136,7 +136,7 @@ Bisection is slow but robust when its assumptions hold.
 
 ------------------------------------------------------------------------
 
-# 5. Newton--Raphson
+# 5. Newton–Raphson
 
 Newton's method uses derivative information:
 
@@ -173,7 +173,7 @@ This becomes the next iterate.
 
 ------------------------------------------------------------------------
 
-# 7. Newton--Raphson in Python
+# 7. Newton–Raphson in Python
 
 ``` python
 def newton(
@@ -794,7 +794,7 @@ By the end of this section, you should be able to explain:
 
 1.  Root finding vs. optimization.
 2.  Bracketing and bisection.
-3.  Newton--Raphson updates.
+3.  Newton–Raphson updates.
 4.  Why Newton's method can converge quickly or fail.
 5.  Why starting values matter.
 6.  Objective and loss functions.
@@ -817,19 +817,19 @@ By the end of this section, you should be able to explain:
 
 # 34. Recommended reading
 
-## SciPy --- Optimization and Root Finding
+## SciPy — Optimization and Root Finding
 
 https://docs.scipy.org/doc/scipy/reference/optimize.html
 
-## SciPy --- `root_scalar`
+## SciPy — `root_scalar`
 
 https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.root_scalar.html
 
-## SciPy --- Optimization Tutorial
+## SciPy — Optimization Tutorial
 
 https://docs.scipy.org/doc/scipy/tutorial/optimize.html
 
-## NumPy --- Linear Algebra
+## NumPy — Linear Algebra
 
 https://numpy.org/doc/stable/reference/routines.linalg.html
 
@@ -837,9 +837,9 @@ https://numpy.org/doc/stable/reference/routines.linalg.html
 
 # 35. YouTube recommendations
 
-## 1. MathAndPhysics --- Newton-Raphson Algorithm in Python
+## 1. MathAndPhysics — Newton-Raphson Algorithm in Python
 
-A focused implementation of Newton--Raphson in Python, including the
+A focused implementation of Newton–Raphson in Python, including the
 update rule and practical considerations.
 
 **Recommended use:** Watch before implementing Newton's method from
@@ -849,7 +849,7 @@ scratch.
 
 ------------------------------------------------------------------------
 
-## 2. Dataquest --- Gradient Descent From Scratch In Python
+## 2. Dataquest — Gradient Descent From Scratch In Python
 
 A practical implementation of gradient descent for linear regression. It
 covers loss, partial derivatives, parameter updates, learning rates, and
